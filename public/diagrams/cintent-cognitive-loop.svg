@@ -1,0 +1,43 @@
+<svg width="980" height="760" viewBox="0 0 980 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="loopTitle loopDesc">
+  <title id="loopTitle">CINTENT Cognitive Loop</title>
+  <desc id="loopDesc">A circular loop showing perception, understanding, reasoning, decision, action, and learning connected in a continuous system.</desc>
+  <defs>
+    <linearGradient id="loopBg" x1="0" y1="0" x2="980" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0F19"/>
+      <stop offset="1" stop-color="#101828"/>
+    </linearGradient>
+    <linearGradient id="loopLine" x1="250" y1="120" x2="730" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D1FF"/>
+      <stop offset="1" stop-color="#7C5CFF"/>
+    </linearGradient>
+    <filter id="loopGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="980" height="760" rx="32" fill="url(#loopBg)"/>
+  <text x="80" y="86" fill="#E5E7EB" font-family="Inter, sans-serif" font-size="30" font-weight="700">CINTENT Cognitive Loop</text>
+  <text x="80" y="118" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="18">A continuous loop for situational intelligence and autonomous action</text>
+  <circle cx="490" cy="380" r="220" stroke="url(#loopLine)" stroke-width="5" stroke-dasharray="18 18" filter="url(#loopGlow)"/>
+  <circle cx="490" cy="380" r="72" fill="#0E1629" stroke="#2D7CFF" stroke-width="2"/>
+  <text x="490" y="372" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="24" font-weight="600">CINTENT</text>
+  <text x="490" y="404" text-anchor="middle" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="18">Cognitive Loop</text>
+
+  <g filter="url(#loopGlow)">
+    <g transform="translate(490 150)"><circle r="56" fill="#101828" stroke="#00D1FF" stroke-width="2"/><text y="-4" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="20" font-weight="600">Perception</text><text y="22" text-anchor="middle" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14">Signals and events</text></g>
+    <g transform="translate(680 240)"><circle r="56" fill="#101828" stroke="#2D7CFF" stroke-width="2"/><text y="-4" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="20" font-weight="600">Understanding</text><text y="22" text-anchor="middle" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14">Context and meaning</text></g>
+    <g transform="translate(720 445)"><circle r="56" fill="#101828" stroke="#7C5CFF" stroke-width="2"/><text y="-4" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="20" font-weight="600">Reasoning</text><text y="22" text-anchor="middle" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14">Inference and planning</text></g>
+    <g transform="translate(490 610)"><circle r="56" fill="#101828" stroke="#00D1FF" stroke-width="2"/><text y="-4" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="20" font-weight="600">Decision</text><text y="22" text-anchor="middle" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14">Policy selection</text></g>
+    <g transform="translate(260 445)"><circle r="56" fill="#101828" stroke="#2D7CFF" stroke-width="2"/><text y="-4" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="20" font-weight="600">Action</text><text y="22" text-anchor="middle" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14">Execution and control</text></g>
+    <g transform="translate(300 240)"><circle r="56" fill="#101828" stroke="#7C5CFF" stroke-width="2"/><text y="-4" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="20" font-weight="600">Learning</text><text y="22" text-anchor="middle" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14">Feedback adaptation</text></g>
+  </g>
+
+  <g fill="url(#loopLine)">
+    <path d="M608 181L625 200L597 203L608 181Z"/>
+    <path d="M735 328L709 336L725 313L735 328Z"/>
+    <path d="M613 575L600 548L628 553L613 575Z"/>
+    <path d="M365 552L380 573L352 570L365 552Z"/>
+    <path d="M248 334L273 327L258 350L248 334Z"/>
+    <path d="M362 183L350 210L338 184H362Z"/>
+  </g>
+</svg>

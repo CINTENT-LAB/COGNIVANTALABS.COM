@@ -1,0 +1,22 @@
+{
+  "name": "Cognivanta Labs",
+  "short_name": "Cognivanta",
+  "description": "Cognivanta Labs builds CINTENT, a governed cognitive AI platform for reasoning-first decisions and action.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#04060d",
+  "theme_color": "#04060d",
+  "icons": [
+    {
+      "src": "/logos/cognivanta-favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logos/cognivanta-favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
