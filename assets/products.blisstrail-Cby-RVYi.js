@@ -1,0 +1,1 @@
+import{j as t,ap as o,az as s}from"./index-CAVwF7pQ.js";import{P as n}from"./ProductPageLayout-BMIqPABm.js";import"./Reveal-CKNYVMjM.js";const p=o.blisstrail,c=()=>t.jsx(n,{product:s,content:p});export{c as component};
