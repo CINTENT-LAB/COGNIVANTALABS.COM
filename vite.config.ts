@@ -14,6 +14,14 @@ export default defineConfig({
     tailwindcss(),
     tanstackStart({
       server: { entry: "server" },
+      prerender: {
+        enabled: true,
+        autoSubfolderIndex: true,
+        autoStaticPathsDiscovery: true,
+        crawlLinks: true,
+        concurrency: 8,
+        failOnError: true,
+      },
     }),
     react(),
   ],

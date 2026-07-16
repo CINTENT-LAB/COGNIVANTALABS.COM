@@ -1,0 +1,102 @@
+name: Publish Hostinger static artifact
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hostinger-static-production
+  cancel-in-progress: false
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.4.1
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check formatting
+        run: npx prettier --check src docs package.json vite.config.ts
+
+      - name: Typecheck
+        run: npx tsc --noEmit --pretty false
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build static artifact
+        run: npm run build
+
+      - name: Verify static artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -f dist/client/index.html
+          test -f dist/client/robots.txt
+          test -f dist/client/sitemap.xml
+          test -f dist/client/.htaccess
+
+          html_count="$(find dist/client -type f -name 'index.html' | wc -l)"
+          test "$html_count" -ge 25
+
+          if find dist/client -type d \( -name src -o -name node_modules -o -name .git \) -print -quit | grep -q .; then
+            echo "Source or repository directory found in deploy artifact"
+            exit 1
+          fi
+
+          if find dist/client -type f \( -name '.env' -o -name '.env.*' -o -name '*.map' \) -print -quit | grep -q .; then
+            echo "Environment file or source map found in deploy artifact"
+            exit 1
+          fi
+
+          if grep -RInE 'https?://(localhost|127\.0\.0\.1)(:[0-9]+)?|blogger\.com/blog/post/edit' dist/client; then
+            echo "Forbidden local or Blogger administrative URL found in deploy artifact"
+            exit 1
+          fi
+
+      - name: Publish artifact branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          remote_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          artifact_repo="$RUNNER_TEMP/hostinger-production"
+
+          if git ls-remote --exit-code --heads "$remote_url" hostinger-production >/dev/null 2>&1; then
+            git clone --branch hostinger-production --single-branch "$remote_url" "$artifact_repo"
+            find "$artifact_repo" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf -- {} +
+          else
+            mkdir -p "$artifact_repo"
+            git -C "$artifact_repo" init -b hostinger-production
+            git -C "$artifact_repo" remote add origin "$remote_url"
+          fi
+
+          cp -a dist/client/. "$artifact_repo/"
+
+          git -C "$artifact_repo" config user.name "github-actions[bot]"
+          git -C "$artifact_repo" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$artifact_repo" add -A
+
+          if git -C "$artifact_repo" diff --cached --quiet; then
+            echo "No artifact changes to publish"
+          else
+            git -C "$artifact_repo" commit -m "Publish static artifact ${GITHUB_SHA}"
+            git -C "$artifact_repo" push origin HEAD:hostinger-production
+          fi
