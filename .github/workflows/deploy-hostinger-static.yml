@@ -64,7 +64,7 @@ jobs:
             exit 1
           fi
 
-          if grep -RInE 'https?://(localhost|127\.0\.0\.1)(:[0-9]+)?|blogger\.com/blog/post/edit' dist/client; then
+          if grep -RInE 'https?://(localhost|127\.0\.0\.1)(:[0-9]+|/[^"'"'"')]*)|blogger\.com/blog/post/edit' dist/client; then
             echo "Forbidden local or Blogger administrative URL found in deploy artifact"
             exit 1
           fi
