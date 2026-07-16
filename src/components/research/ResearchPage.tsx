@@ -34,7 +34,7 @@ function SectionLabel({ index, children }: { index: string; children: string }) 
 
 const RESEARCH_HUB_URL = "https://research-hub.cognivantalabs.com";
 
-function ResearchLanding() {
+function ResearchPage() {
   const [activeArea, setActiveArea] = useState<(typeof researchAreas)[number]["id"] | "">(
     researchAreas[0].id,
   );
@@ -88,7 +88,7 @@ function ResearchLanding() {
               </a>
             </div>
             <div className="mt-9 flex items-center gap-3 text-xs uppercase tracking-[0.22em] text-muted-foreground">
-              <ArrowDown className="h-4 w-4 text-electric" /> Scroll through the research agenda
+              <ArrowDown className="h-4 w-4 text-electric" /> Explore the research programme
             </div>
           </Reveal>
           <Reveal delay={120}>
@@ -471,4 +471,4 @@ function ResearchLanding() {
   );
 }
 
-export default ResearchLanding;
+export default ResearchPage;

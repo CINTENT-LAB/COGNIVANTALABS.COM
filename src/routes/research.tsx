@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import ResearchLanding from "@/components/research/ResearchLanding";
+import ResearchPage from "@/components/research/ResearchPage";
 
 export const Route = createFileRoute("/research")({
   head: () => ({
@@ -18,9 +18,9 @@ export const Route = createFileRoute("/research")({
     ],
     links: [{ rel: "canonical", href: "/research" }],
   }),
-  component: ResearchPage,
+  component: ResearchRoutePage,
 });
 
-function ResearchPage() {
-  return <ResearchLanding />;
+function ResearchRoutePage() {
+  return <ResearchPage />;
 }
