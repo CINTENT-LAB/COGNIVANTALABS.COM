@@ -212,7 +212,7 @@ export function Footer() {
         <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1.5 font-mono text-[11px] text-muted-foreground">
           <span>Cognivanta Labs Pvt. Ltd.</span>
           <span>CIN: U86900UP2025PTC236604</span>
-          <span>GSTIN: 29AAHCC7104M1ZD</span>
+          <span>GSTIN: 09AANCC2670G1ZH</span>
         </div>
       </div>
     </footer>
