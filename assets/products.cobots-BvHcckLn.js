@@ -1,1 +1,0 @@
-import{j as o,ap as t,ax as n}from"./index-CAVwF7pQ.js";import{P as p}from"./ProductPageLayout-BMIqPABm.js";import"./Reveal-CKNYVMjM.js";const s=t.cobots,m=()=>o.jsx(p,{product:n,content:s});export{m as component};

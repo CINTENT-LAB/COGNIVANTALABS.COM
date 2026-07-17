@@ -1,1 +1,0 @@
-import{j as t,ap as o,at as n}from"./index-CAVwF7pQ.js";import{P as p}from"./ProductPageLayout-BMIqPABm.js";import"./Reveal-CKNYVMjM.js";const a=o["health-hub"],m=()=>t.jsx(p,{product:n,content:a});export{m as component};
