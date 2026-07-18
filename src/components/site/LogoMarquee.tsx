@@ -18,11 +18,8 @@ function targetFor(id: string): { to: string; external: boolean } {
   return { to: p?.href ?? `/products/${id}`, external: false };
 }
 
-// Real logos where we have them; icon+name chips for products whose logo
-// files haven't been supplied yet (CHAXU, IKSHANA — don't have real logo
-// assets on file). BYOBOT isn't its own product entry — it's the
-// marketplace domain mentioned inside IKSHANA's listing — so it links out
-// to byobot.store directly.
+// Use the centralized product logo whenever one is available. BYOBOT is not
+// a product record, so its approved studio logo is referenced directly here.
 const items: MarqueeItem[] = [
   { name: "CINTENT™", logo: "/logos/cintent-icon.png", ...targetFor("cintent") },
   {
@@ -37,12 +34,29 @@ const items: MarqueeItem[] = [
     ...targetFor("nyaynetra"),
   },
   { name: "CWOS™", logo: products.find((p) => p.id === "cwos")?.logo, ...targetFor("cwos") },
-  { name: "CHAXU™", icon: "Plane", ...targetFor("chaxu") },
-  { name: "IKSHANA™", icon: "Store", ...targetFor("ikshana") },
-  { name: "BYOBOT", icon: "Bot", to: "https://byobot.store", external: true },
+  {
+    name: "CHAXU™",
+    logo: products.find((p) => p.id === "chaxu")?.logo,
+    ...targetFor("chaxu"),
+  },
+  {
+    name: "IKSHANA™",
+    logo: products.find((p) => p.id === "ikshana")?.logo,
+    ...targetFor("ikshana"),
+  },
+  {
+    name: "BYOBOT",
+    logo: "/products/byobot-logo.png",
+    to: "https://byobot.store",
+    external: true,
+  },
   { name: "Cognitive Cobots", icon: "Bot", ...targetFor("cobots") },
-  { name: "AWCS", icon: "Accessibility", ...targetFor("awcs") },
-  { name: "Externovate", icon: "Users", ...targetFor("externovate") },
+  { name: "AWCS", logo: products.find((p) => p.id === "awcs")?.logo, ...targetFor("awcs") },
+  {
+    name: "Externovate",
+    logo: products.find((p) => p.id === "externovate")?.logo,
+    ...targetFor("externovate"),
+  },
 ];
 
 function Chip({ item }: { item: MarqueeItem }) {

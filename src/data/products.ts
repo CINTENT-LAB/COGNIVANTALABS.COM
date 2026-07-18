@@ -59,7 +59,7 @@ export const products: Product[] = [
     icon: "Languages",
     apiCount: 250,
     liveUrl: "https://shunya-ai.space",
-    logo: "https://shunya-ai.space/logo.webp",
+    logo: "/products/shunya-ai-logo.webp",
     href: "/products/shunyai",
   },
   {
@@ -89,7 +89,7 @@ export const products: Product[] = [
     apiCount: 513,
     liveUrl: "https://chaxu.co.in/",
     applicationLinks: [{ label: "CHAXU API Platform", url: "https://api.chaxu.co.in/" }],
-    logo: "/products/chaxu-logo.png",
+    logo: "/products/chaxu-logo.webp",
     href: "/products/chaxu",
   },
   {
@@ -122,6 +122,7 @@ export const products: Product[] = [
       { label: "Marketplace", url: "https://ikshana.chaxu.co.in/marketplace" },
       { label: "BYOBOT Design Studio", url: "https://byobot.store/" },
     ],
+    logo: "/products/byobot-logo.png",
     href: "/products/ikshana",
   },
   {
@@ -204,6 +205,7 @@ export const products: Product[] = [
     statusLabel: "Pilot",
     accent: "gold",
     icon: "Accessibility",
+    logo: "/products/awcs-logo.png",
     href: "/products/awcs",
   },
   {
