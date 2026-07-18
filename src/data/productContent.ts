@@ -747,7 +747,7 @@ export const productContent: Record<string, ProductContent> = {
   },
 
   ikshana: {
-    heroImage: "/products/byobot-logo.png",
+    heroImage: "/products/ikshana-logo.webp",
     overview:
       "IKSHANA is a governance-first marketplace and product-design ecosystem for drones, UAVs, robots, cobots, and autonomous products — connecting OEMs, distributors, service partners, and institutional buyers through compliance-first procurement (DGCA, FAA, EASA, NDAA), vendor trust, and an engineering workspace for designing and simulating autonomous products.",
     features: [

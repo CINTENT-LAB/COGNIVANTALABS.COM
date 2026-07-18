@@ -122,7 +122,7 @@ export const products: Product[] = [
       { label: "Marketplace", url: "https://ikshana.chaxu.co.in/marketplace" },
       { label: "BYOBOT Design Studio", url: "https://byobot.store/" },
     ],
-    logo: "/products/byobot-logo.png",
+    logo: "/products/ikshana-logo.webp",
     href: "/products/ikshana",
   },
   {
