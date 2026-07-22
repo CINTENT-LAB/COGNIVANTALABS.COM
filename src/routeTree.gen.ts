@@ -9,16 +9,23 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as RoadmapRouteImport } from './routes/roadmap'
 import { Route as ResearchRouteImport } from './routes/research'
 import { Route as ProductsRouteImport } from './routes/products'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PlatformRouteImport } from './routes/platform'
 import { Route as PilotsRouteImport } from './routes/pilots'
+import { Route as MediaRouteImport } from './routes/media'
+import { Route as InvestorsRouteImport } from './routes/investors'
 import { Route as EnterpriseRouteImport } from './routes/enterprise'
 import { Route as DevelopersRouteImport } from './routes/developers'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CognitesRouteImport } from './routes/cognites'
+import { Route as CareersRouteImport } from './routes/careers'
 import { Route as BlogRouteImport } from './routes/blog'
+import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as ApplicationsRouteImport } from './routes/applications'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -38,6 +45,16 @@ import { Route as ProductsSlugRouteImport } from './routes/products.$slug'
 import { Route as CognitesMycogniRouteImport } from './routes/cognites.mycogni'
 import { Route as CognitesLoginRouteImport } from './routes/cognites.login'
 
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoadmapRoute = RoadmapRouteImport.update({
+  id: '/roadmap',
+  path: '/roadmap',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ResearchRoute = ResearchRouteImport.update({
   id: '/research',
   path: '/research',
@@ -46,6 +63,11 @@ const ResearchRoute = ResearchRouteImport.update({
 const ProductsRoute = ProductsRouteImport.update({
   id: '/products',
   path: '/products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PricingRoute = PricingRouteImport.update({
@@ -61,6 +83,16 @@ const PlatformRoute = PlatformRouteImport.update({
 const PilotsRoute = PilotsRouteImport.update({
   id: '/pilots',
   path: '/pilots',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaRoute = MediaRouteImport.update({
+  id: '/media',
+  path: '/media',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InvestorsRoute = InvestorsRouteImport.update({
+  id: '/investors',
+  path: '/investors',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EnterpriseRoute = EnterpriseRouteImport.update({
@@ -83,9 +115,19 @@ const CognitesRoute = CognitesRouteImport.update({
   path: '/cognites',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CareersRoute = CareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogRoute = BlogRouteImport.update({
   id: '/blog',
   path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArchitectureRoute = ArchitectureRouteImport.update({
+  id: '/architecture',
+  path: '/architecture',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApplicationsRoute = ApplicationsRouteImport.update({
@@ -183,16 +225,23 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/applications': typeof ApplicationsRoute
+  '/architecture': typeof ArchitectureRoute
   '/blog': typeof BlogRoute
+  '/careers': typeof CareersRoute
   '/cognites': typeof CognitesRouteWithChildren
   '/contact': typeof ContactRoute
   '/developers': typeof DevelopersRoute
   '/enterprise': typeof EnterpriseRoute
+  '/investors': typeof InvestorsRoute
+  '/media': typeof MediaRoute
   '/pilots': typeof PilotsRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
+  '/privacy': typeof PrivacyRoute
   '/products': typeof ProductsRouteWithChildren
   '/research': typeof ResearchRoute
+  '/roadmap': typeof RoadmapRoute
+  '/terms': typeof TermsRoute
   '/cognites/login': typeof CognitesLoginRoute
   '/cognites/mycogni': typeof CognitesMycogniRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -213,16 +262,23 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/applications': typeof ApplicationsRoute
+  '/architecture': typeof ArchitectureRoute
   '/blog': typeof BlogRoute
+  '/careers': typeof CareersRoute
   '/cognites': typeof CognitesRouteWithChildren
   '/contact': typeof ContactRoute
   '/developers': typeof DevelopersRoute
   '/enterprise': typeof EnterpriseRoute
+  '/investors': typeof InvestorsRoute
+  '/media': typeof MediaRoute
   '/pilots': typeof PilotsRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
+  '/privacy': typeof PrivacyRoute
   '/products': typeof ProductsRouteWithChildren
   '/research': typeof ResearchRoute
+  '/roadmap': typeof RoadmapRoute
+  '/terms': typeof TermsRoute
   '/cognites/login': typeof CognitesLoginRoute
   '/cognites/mycogni': typeof CognitesMycogniRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -244,16 +300,23 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/applications': typeof ApplicationsRoute
+  '/architecture': typeof ArchitectureRoute
   '/blog': typeof BlogRoute
+  '/careers': typeof CareersRoute
   '/cognites': typeof CognitesRouteWithChildren
   '/contact': typeof ContactRoute
   '/developers': typeof DevelopersRoute
   '/enterprise': typeof EnterpriseRoute
+  '/investors': typeof InvestorsRoute
+  '/media': typeof MediaRoute
   '/pilots': typeof PilotsRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
+  '/privacy': typeof PrivacyRoute
   '/products': typeof ProductsRouteWithChildren
   '/research': typeof ResearchRoute
+  '/roadmap': typeof RoadmapRoute
+  '/terms': typeof TermsRoute
   '/cognites/login': typeof CognitesLoginRoute
   '/cognites/mycogni': typeof CognitesMycogniRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -276,16 +339,23 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/applications'
+    | '/architecture'
     | '/blog'
+    | '/careers'
     | '/cognites'
     | '/contact'
     | '/developers'
     | '/enterprise'
+    | '/investors'
+    | '/media'
     | '/pilots'
     | '/platform'
     | '/pricing'
+    | '/privacy'
     | '/products'
     | '/research'
+    | '/roadmap'
+    | '/terms'
     | '/cognites/login'
     | '/cognites/mycogni'
     | '/products/$slug'
@@ -306,16 +376,23 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/applications'
+    | '/architecture'
     | '/blog'
+    | '/careers'
     | '/cognites'
     | '/contact'
     | '/developers'
     | '/enterprise'
+    | '/investors'
+    | '/media'
     | '/pilots'
     | '/platform'
     | '/pricing'
+    | '/privacy'
     | '/products'
     | '/research'
+    | '/roadmap'
+    | '/terms'
     | '/cognites/login'
     | '/cognites/mycogni'
     | '/products/$slug'
@@ -336,16 +413,23 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/applications'
+    | '/architecture'
     | '/blog'
+    | '/careers'
     | '/cognites'
     | '/contact'
     | '/developers'
     | '/enterprise'
+    | '/investors'
+    | '/media'
     | '/pilots'
     | '/platform'
     | '/pricing'
+    | '/privacy'
     | '/products'
     | '/research'
+    | '/roadmap'
+    | '/terms'
     | '/cognites/login'
     | '/cognites/mycogni'
     | '/products/$slug'
@@ -367,20 +451,41 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ApplicationsRoute: typeof ApplicationsRoute
+  ArchitectureRoute: typeof ArchitectureRoute
   BlogRoute: typeof BlogRoute
+  CareersRoute: typeof CareersRoute
   CognitesRoute: typeof CognitesRouteWithChildren
   ContactRoute: typeof ContactRoute
   DevelopersRoute: typeof DevelopersRoute
   EnterpriseRoute: typeof EnterpriseRoute
+  InvestorsRoute: typeof InvestorsRoute
+  MediaRoute: typeof MediaRoute
   PilotsRoute: typeof PilotsRoute
   PlatformRoute: typeof PlatformRoute
   PricingRoute: typeof PricingRoute
+  PrivacyRoute: typeof PrivacyRoute
   ProductsRoute: typeof ProductsRouteWithChildren
   ResearchRoute: typeof ResearchRoute
+  RoadmapRoute: typeof RoadmapRoute
+  TermsRoute: typeof TermsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/roadmap': {
+      id: '/roadmap'
+      path: '/roadmap'
+      fullPath: '/roadmap'
+      preLoaderRoute: typeof RoadmapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/research': {
       id: '/research'
       path: '/research'
@@ -393,6 +498,13 @@ declare module '@tanstack/react-router' {
       path: '/products'
       fullPath: '/products'
       preLoaderRoute: typeof ProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pricing': {
@@ -414,6 +526,20 @@ declare module '@tanstack/react-router' {
       path: '/pilots'
       fullPath: '/pilots'
       preLoaderRoute: typeof PilotsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media': {
+      id: '/media'
+      path: '/media'
+      fullPath: '/media'
+      preLoaderRoute: typeof MediaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/investors': {
+      id: '/investors'
+      path: '/investors'
+      fullPath: '/investors'
+      preLoaderRoute: typeof InvestorsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/enterprise': {
@@ -444,11 +570,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CognitesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/careers': {
+      id: '/careers'
+      path: '/careers'
+      fullPath: '/careers'
+      preLoaderRoute: typeof CareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog': {
       id: '/blog'
       path: '/blog'
       fullPath: '/blog'
       preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/architecture': {
+      id: '/architecture'
+      path: '/architecture'
+      fullPath: '/architecture'
+      preLoaderRoute: typeof ArchitectureRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/applications': {
@@ -634,16 +774,23 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ApplicationsRoute: ApplicationsRoute,
+  ArchitectureRoute: ArchitectureRoute,
   BlogRoute: BlogRoute,
+  CareersRoute: CareersRoute,
   CognitesRoute: CognitesRouteWithChildren,
   ContactRoute: ContactRoute,
   DevelopersRoute: DevelopersRoute,
   EnterpriseRoute: EnterpriseRoute,
+  InvestorsRoute: InvestorsRoute,
+  MediaRoute: MediaRoute,
   PilotsRoute: PilotsRoute,
   PlatformRoute: PlatformRoute,
   PricingRoute: PricingRoute,
+  PrivacyRoute: PrivacyRoute,
   ProductsRoute: ProductsRouteWithChildren,
   ResearchRoute: ResearchRoute,
+  RoadmapRoute: RoadmapRoute,
+  TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

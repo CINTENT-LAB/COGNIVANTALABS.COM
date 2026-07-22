@@ -1,0 +1,368 @@
+{
+  "generatedAt": "2026-07-22T08:24:09.100Z",
+  "sourceRepo": "D:\\CINTENT.TECH",
+  "publications": [
+    {
+      "id": "beyond-deep-learning-quantum-cognitive-ai",
+      "slug": "beyond-deep-learning-quantum-cognitive-ai",
+      "title": "Beyond Deep Learning: The Coming Fusion of Quantum Computing and Cognitive AI",
+      "summary": "An exploration of how quantum computing and cognitive AI could reshape problem-solving across science, medicine, and industry.",
+      "contentType": "article",
+      "publisher": "LinkedIn",
+      "author": "Rajesh Parmar",
+      "sourceUrl": "https://www.linkedin.com/posts/parmarr_quantum-computing-with-cognition-activity-7421264880093126656-Pw3q",
+      "canonicalUrl": "https://www.linkedin.com/posts/parmarr_quantum-computing-with-cognition-activity-7421264880093126656-Pw3q",
+      "publishedAt": null,
+      "updatedAt": null,
+      "categories": [
+        "Quantum and Future Intelligence"
+      ],
+      "tags": [
+        "quantum computing",
+        "cognitive AI",
+        "future intelligence"
+      ],
+      "featured": true,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": null,
+      "imageAlt": "No publisher-supplied image is available for this LinkedIn post.",
+      "relatedPublicationIds": [],
+      "evidenceNote": "Publish date is not independently verifiable from the public LinkedIn URL; publication is confirmed live, but exact date/time metadata is unavailable without an authenticated LinkedIn session."
+    },
+    {
+      "id": "cognitive-ai-platforms-next-frontier",
+      "slug": "cognitive-ai-platforms-next-frontier-in-artificial-intelligence",
+      "title": "Cognitive AI Platforms: The Next Frontier in Artificial Intelligence",
+      "summary": "An external CINTENT publication on how cognitive AI platforms extend beyond narrow automation through context, learning, reasoning, analytics, and human-centred enterprise intelligence.",
+      "contentType": "article",
+      "publisher": "CINTENT Blog",
+      "author": "CINTENT - COGNIVANTA LABS",
+      "sourceUrl": "https://cintent.blogspot.com/2026/07/cognitive-ai-platforms-next-frontier-in.html",
+      "canonicalUrl": "https://cintent.blogspot.com/2026/07/cognitive-ai-platforms-next-frontier-in.html",
+      "publishedAt": "2026-07-13T17:34:57.355-07:00",
+      "updatedAt": "2026-07-13T17:34:57.355-07:00",
+      "categories": [
+        "CINTENT Platform"
+      ],
+      "tags": [
+        "cognitive AI platforms",
+        "enterprise intelligence",
+        "CINTENT"
+      ],
+      "featured": true,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrxYYski4NAUqr_SaZxpDxMQJm_ypk67fwhWJOuOvsGlhRiV8YzgHVhMKYfCbCybOM7-l5aiR65ydXGTfxZC5yucAZibpP2wm4RDNTkxeU0xLWgBeIeR-GHaVrW0cAswS5s9EihgDOO99CQ4zDI69rHEv6QTac6TD_foS6wwsKf8zBVUTJlQfoBb-XFKdg/w560-h290/COGNITIVE%20AI%20(2).png",
+      "imageAlt": "Cognitive AI Platforms: The Next Frontier in Artificial Intelligence — CINTENT Blog cover image",
+      "relatedPublicationIds": [],
+      "evidenceNote": "Verified 22 Jul 2026 via the existing packages/content/src/registry/blogger-posts.json record and a live fetch of the public URL. This is the single canonical entry for this title; it must not be duplicated elsewhere in this registry."
+    },
+    {
+      "id": "cognitive-ai-trust-ethics-machines",
+      "slug": "how-cognitive-ai-builds-trust-and-ethics-in-machines",
+      "title": "How Cognitive AI Builds Trust and Ethics in Machines",
+      "summary": "A perspective on how context, emotion, and intent can support trust, awareness, and ethical autonomy in intelligent systems.",
+      "contentType": "post",
+      "publisher": "LinkedIn",
+      "author": "Cognivanta Labs",
+      "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7393643910230663168/",
+      "canonicalUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7393643910230663168/",
+      "publishedAt": null,
+      "updatedAt": null,
+      "categories": [
+        "Trust and Responsible AI"
+      ],
+      "tags": [
+        "trust",
+        "ethics",
+        "responsible AI"
+      ],
+      "featured": false,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": null,
+      "imageAlt": "No publisher-supplied image is available for this LinkedIn post.",
+      "relatedPublicationIds": [],
+      "evidenceNote": "Author shown as the Cognivanta Labs company presence; the feed URL does not expose a personal author slug for independent confirmation. Publish date not independently verifiable without an authenticated LinkedIn session."
+    },
+    {
+      "id": "cintent-ai-cancer-care-optimization",
+      "slug": "cintent-ai-for-cancer-care-optimization",
+      "title": "CINTENT: AI for Cancer Care Optimization",
+      "summary": "A precision oncology perspective on treatment pathways, clinical decision support, and personalized therapy planning.",
+      "contentType": "post",
+      "publisher": "LinkedIn",
+      "author": "Cognivanta Labs",
+      "sourceUrl": "https://lnkd.in/gdP6PBBt",
+      "canonicalUrl": "https://lnkd.in/gdP6PBBt",
+      "publishedAt": null,
+      "updatedAt": null,
+      "categories": [
+        "Healthcare and MedTech"
+      ],
+      "tags": [
+        "oncology",
+        "healthcare",
+        "clinical decision support"
+      ],
+      "featured": false,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": null,
+      "imageAlt": "No publisher-supplied image is available for this LinkedIn post.",
+      "relatedPublicationIds": [],
+      "evidenceNote": "Publish date not independently verifiable from the public LinkedIn URL without an authenticated session."
+    },
+    {
+      "id": "cognitive-ai-smart-manufacturing",
+      "slug": "cognitive-ai-in-smart-manufacturing",
+      "title": "Cognitive AI in Smart Manufacturing",
+      "summary": "How perception, reasoning, adaptation, and edge intelligence can support safer collaboration between people, robots, and cobots in manufacturing environments.",
+      "contentType": "article",
+      "publisher": "LinkedIn",
+      "author": "Rajesh Parmar",
+      "sourceUrl": "https://www.linkedin.com/pulse/cognitive-ai-smart-manufacturing-rajesh-parmar-mkffc",
+      "canonicalUrl": "https://www.linkedin.com/pulse/cognitive-ai-smart-manufacturing-rajesh-parmar-mkffc",
+      "publishedAt": null,
+      "updatedAt": null,
+      "categories": [
+        "Robotics and Autonomous Systems"
+      ],
+      "tags": [
+        "manufacturing",
+        "robotics",
+        "cobots",
+        "edge intelligence"
+      ],
+      "featured": false,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": null,
+      "imageAlt": "No publisher-supplied image is available for this LinkedIn article.",
+      "relatedPublicationIds": [],
+      "evidenceNote": "Live LinkedIn Pulse article title is 'Cognitive AI in Autonomous Robots and Cobots for Smart Manufacturing'; the shorter approved title above is used as the canonical publication title per the approved catalogue. Publish date not independently verifiable without an authenticated session."
+    },
+    {
+      "id": "cognitive-ai-criminal-profiling",
+      "slug": "cognitive-ai-for-automated-criminal-profiling",
+      "title": "Cognitive AI for Automated Criminal Profiling",
+      "summary": "A public-sector perspective on using cognitive AI to support investigative workflows and structured decision-making.",
+      "contentType": "post",
+      "publisher": "LinkedIn",
+      "author": "Cognivanta Labs",
+      "sourceUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7336744850379128834/",
+      "canonicalUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7336744850379128834/",
+      "publishedAt": null,
+      "updatedAt": null,
+      "categories": [
+        "Public Sector and Legal"
+      ],
+      "tags": [
+        "criminal profiling",
+        "public sector",
+        "investigations"
+      ],
+      "featured": false,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": null,
+      "imageAlt": "No publisher-supplied image is available for this LinkedIn post.",
+      "relatedPublicationIds": [
+        "cognitive-ai-criminal-profiling-ssrn"
+      ],
+      "evidenceNote": "Related to the SSRN research paper covering the same subject in greater depth. Publish date not independently verifiable from the public LinkedIn URL without an authenticated session."
+    },
+    {
+      "id": "cognitive-ai-medtech",
+      "slug": "cognitive-ai-in-medtech",
+      "title": "Cognitive AI in MedTech",
+      "summary": "Owner-supplied Medium article on cognitive AI in medical technology, covering digital twins, rare-disease detection, and other MedTech applications.",
+      "contentType": "article",
+      "publisher": "Medium",
+      "author": "Arin Vyas",
+      "sourceUrl": "https://medium.com/@arinvyas/cognitive-ai-in-medtech-fcc9eea37940",
+      "canonicalUrl": "https://medium.com/@arinvyas/cognitive-ai-in-medtech-fcc9eea37940",
+      "publishedAt": "2025-05-30T15:46:55.731Z",
+      "updatedAt": "2025-05-30T15:46:55.731Z",
+      "categories": [
+        "Healthcare and MedTech"
+      ],
+      "tags": [
+        "medtech",
+        "healthcare",
+        "digital twins"
+      ],
+      "featured": false,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": "https://miro.medium.com/v2/resize:fit:1200/1*W-Pr16NUFSYOmqIKobkm5Q.png",
+      "imageAlt": "Cognitive AI in MedTech — Medium article cover image",
+      "relatedPublicationIds": [],
+      "evidenceNote": "Verified 22 Jul 2026 via a live fetch of the public URL: author, title, and publish date confirmed from page metadata."
+    },
+    {
+      "id": "cognitive-ai-human-centric-world",
+      "slug": "the-rise-of-cognitive-ai-in-a-human-centric-world",
+      "title": "The Rise of Cognitive AI in a Human-Centric World",
+      "summary": "A look at the human-centric future of neuro-symbolic AI and cognitive computing.",
+      "contentType": "article",
+      "publisher": "LinkedIn",
+      "author": "Cognivanta Labs",
+      "sourceUrl": "https://www.linkedin.com/pulse/rise-cognitive-ai-human-centric-world-cognivanta-labs-h0kfc",
+      "canonicalUrl": "https://www.linkedin.com/pulse/rise-cognitive-ai-human-centric-world-cognivanta-labs-h0kfc",
+      "publishedAt": null,
+      "updatedAt": null,
+      "categories": [
+        "Trust and Responsible AI"
+      ],
+      "tags": [
+        "human-centric AI",
+        "neuro-symbolic AI",
+        "cognitive computing"
+      ],
+      "featured": false,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": null,
+      "imageAlt": "No publisher-supplied image is available for this LinkedIn article.",
+      "relatedPublicationIds": [],
+      "evidenceNote": "Publish date not independently verifiable from the public LinkedIn URL without an authenticated session."
+    },
+    {
+      "id": "cognitive-ai-criminal-profiling-ssrn",
+      "slug": "cognitive-ai-for-automated-criminal-profiling-fir-summarization-and-investigation-dashboards",
+      "title": "Cognitive AI for Automated Criminal Profiling, FIR Summarization and Investigation Dashboards",
+      "summary": "Research on cognitive AI for criminal profiling, FIR summarization, and investigation dashboards.",
+      "contentType": "research-paper",
+      "publisher": "SSRN",
+      "author": "Cognivanta Labs",
+      "sourceUrl": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5284319",
+      "canonicalUrl": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5284319",
+      "publishedAt": null,
+      "updatedAt": null,
+      "categories": [
+        "Research Papers",
+        "Public Sector and Legal"
+      ],
+      "tags": [
+        "criminal profiling",
+        "FIR summarization",
+        "investigation dashboards",
+        "research"
+      ],
+      "featured": false,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": null,
+      "imageAlt": "No publisher-supplied image is available for this SSRN paper.",
+      "relatedPublicationIds": [
+        "cognitive-ai-criminal-profiling"
+      ],
+      "evidenceNote": "SSRN's abstract page did not return readable page metadata on the last fetch (22 Jul 2026); author is attributed to Cognivanta Labs pending a named-author confirmation from the owner. Related to the LinkedIn post covering the same subject."
+    },
+    {
+      "id": "from-generative-ai-to-cognitive-ai",
+      "slug": "from-generative-ai-to-cognitive-ai",
+      "title": "From Generative AI to Cognitive AI",
+      "summary": "A public CINTENT article tracing the shift from generative AI toward cognitive AI, covering enterprise memory, governance, model-agnostic architecture, and real-world domains.",
+      "contentType": "article",
+      "publisher": "CINTENT Blog",
+      "author": "CINTENT - COGNIVANTA LABS",
+      "sourceUrl": "https://cintent.blogspot.com/2026/07/from-generative-ai-to-cognitive-ai.html",
+      "canonicalUrl": "https://cintent.blogspot.com/2026/07/from-generative-ai-to-cognitive-ai.html",
+      "publishedAt": "2026-07-13",
+      "updatedAt": "2026-07-13",
+      "categories": [
+        "CINTENT Platform"
+      ],
+      "tags": [
+        "generative AI",
+        "cognitive AI",
+        "enterprise memory",
+        "governance"
+      ],
+      "featured": true,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2zm_NfzqPR0CIi78bcnOkiIXAvGXRJmrdCaQbeYXba766dHghiSeHyvnvkroWD3KaZm1aditE-LN26GmBiuiAifzudhBgDcCrKy_mRGs1gXytTv_HUs65HEm55OqYRxprd2dr9AHif3XymmTbGUeAM-NddQM_nMySvvdNcEUYrstR1pT9RwN3Z8mvXvhp/w1200-h630-p-k-no-nu/COG1.png",
+      "imageAlt": "From Generative AI to Cognitive AI — CINTENT Blog cover image",
+      "relatedPublicationIds": [
+        "cognitive-ai-platforms-next-frontier",
+        "cognitive-ai-trust-faith-truth"
+      ],
+      "evidenceNote": "Verified 22 Jul 2026 via a live fetch of the public URL: page shows a 'July 13, 2026' publish date without time-of-day precision, so publishedAt/updatedAt are recorded at date-level precision only."
+    },
+    {
+      "id": "cognitive-ai-trust-faith-truth",
+      "slug": "cognitive-ai-trust-faith-truth-can-this-progression-be-achieved",
+      "title": "Cognitive AI → Trust → Faith → Truth: Can This Progression Be Achieved?",
+      "summary": "An examination of whether cognitive AI can support a genuine progression from intelligence to trust, from trust to earned confidence, and from confidence toward evidence-supported truth — and why that progression must be engineered through transparency, governance, and human accountability rather than assumed.",
+      "contentType": "article",
+      "publisher": "CINTENT Blog",
+      "author": "CINTENT - COGNIVANTA LABS",
+      "sourceUrl": "https://cintent.blogspot.com/2026/07/cognitive-ai-trust-faith-truth-can-this.html",
+      "canonicalUrl": "https://cintent.blogspot.com/2026/07/cognitive-ai-trust-faith-truth-can-this.html",
+      "publishedAt": "2026-07-21",
+      "updatedAt": "2026-07-21",
+      "categories": [
+        "Trust and Responsible AI"
+      ],
+      "tags": [
+        "trust",
+        "governance",
+        "explainable AI",
+        "epistemics"
+      ],
+      "featured": true,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKwcDwFtw_2ErBo2YpBucG-g_8UmXdaBW5ieqx17QGvejWLad9_JkDlSxCU83DYIiva5p8lyuVAg2IkM5o30uRyI1F20xfszbwxAzxaUwkjC8-iIRiY-RiXgQcgBDFj45OxjgKx7AVpPsnwC4vUTUdeTPB0UwDOQP55cNIeW9xuLiFlHK0qDPLIKrl8t6e/w1200-h630-p-k-no-nu/TRUST-COGNIGIVITY.png",
+      "imageAlt": "Cognitive AI → Trust → Faith → Truth — CINTENT Blog cover image",
+      "relatedPublicationIds": [
+        "from-generative-ai-to-cognitive-ai",
+        "cognitive-ai-platforms-next-frontier"
+      ],
+      "evidenceNote": "New publication added per owner instruction (22 Jul 2026); found and verified live on the CINTENT Blogger blog via direct fetch (published 21 Jul 2026), not present in any prior registry or hard-coded list before this change."
+    },
+    {
+      "id": "cognivanta-labs-visual-publication",
+      "slug": "cognivanta-labs-visual-publication",
+      "title": "Cognivanta Labs Visual Publication",
+      "summary": "Owner-supplied Canva publication for the Cognivanta Labs content catalogue.",
+      "contentType": "visual-publication",
+      "publisher": "Canva",
+      "author": "Cognivanta Labs",
+      "sourceUrl": "https://www.canva.com/design/DAFwdzRyKcI/J0GMkEf_DKFUSPrXe52F2w/view",
+      "canonicalUrl": "https://www.canva.com/design/DAFwdzRyKcI/J0GMkEf_DKFUSPrXe52F2w/view",
+      "publishedAt": null,
+      "updatedAt": null,
+      "categories": [
+        "Visual Publications"
+      ],
+      "tags": [
+        "visual publication",
+        "Cognivanta Labs"
+      ],
+      "featured": false,
+      "external": true,
+      "publicationStatus": "Published",
+      "ownerApproved": true,
+      "image": null,
+      "imageAlt": "No preview image is captured for this Canva publication; open the source to view it.",
+      "relatedPublicationIds": [],
+      "evidenceNote": "Title used exactly as owner-supplied; no title was inferred or invented. Canva design links do not expose a public publish date."
+    }
+  ]
+}

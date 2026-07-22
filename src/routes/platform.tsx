@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -11,6 +12,7 @@ import {
   Check,
   Minus,
   X,
+  ChevronDown,
 } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { CintentCoreDiagram } from "@/components/site/CintentCoreDiagram";
@@ -38,36 +40,57 @@ export const Route = createFileRoute("/platform")({
   component: PlatformPage,
 });
 
+// CR-11: added `detail` + `endpoint` so each card can expand in place instead
+// of navigating away. Detail text stays consistent with the same real layers
+// and API surface already published lower on this page — nothing new claimed.
 const capabilities = [
   {
     icon: BrainCircuit,
     name: "Context Awareness",
     desc: "Live internal models capture actors, relationships, constraints and recent events across digital and physical systems.",
+    detail:
+      "Powered by the Cognitive Layer, which builds internal context and task-specific reasoning traces instead of answering each query in isolation.",
+    endpoint: "/context",
   },
   {
     icon: Layers,
     name: "Real-Time Reasoning",
     desc: "Inference is guided by active state, current signals and confidence thresholds rather than static prompts alone.",
+    detail:
+      "Every reasoning trace is explainable and grounded in active memory — not a black-box confidence score with no underlying signal.",
+    endpoint: "/reason",
   },
   {
     icon: Sparkles,
     name: "Multi-Agent Orchestration",
     desc: "Specialized agents coordinate through shared cognitive memory, producing clearer role separation and better traceability.",
+    detail:
+      "Agents share the same memory spine rather than operating as isolated silos, so handoffs between agents preserve context instead of losing it.",
+    endpoint: "/orchestrate",
   },
   {
     icon: Cpu,
     name: "Edge Autonomy",
     desc: "Critical loops can execute close to the environment to reduce latency, preserve privacy and survive connectivity loss.",
+    detail:
+      "Supports Edge and Embedded deployment surfaces — latency-sensitive perception and control can run locally while cloud services handle broader coordination.",
+    endpoint: null,
   },
   {
     icon: Zap,
     name: "Adaptive Learning",
     desc: "The system improves from outcomes, feedback and changing conditions while preserving traceability.",
+    detail:
+      "This is the Learn stage of the Intent → Context → Reason → Decide → Act → Learn loop — outcomes feed back into how the next decision is made.",
+    endpoint: "/govern",
   },
   {
     icon: ShieldCheck,
     name: "Governed Control",
     desc: "Safety policies, confidence thresholds and human review points guide decisions before execution.",
+    detail:
+      "Every decision carries full audit provenance and policy checks before it's allowed to execute — see the Architecture page for the governance model in full.",
+    endpoint: "/govern",
   },
 ];
 
@@ -181,25 +204,7 @@ function PlatformPage() {
       <PlatformOverview />
       <CognitiveArchitectureSection />
 
-      <section className="relative mx-auto max-w-7xl px-5 py-20 md:px-8">
-        <Reveal>
-          <div className="kicker">Capabilities</div>
-          <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-            Platform capabilities for autonomy and high-context reasoning.
-          </h2>
-        </Reveal>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {capabilities.map((c, i) => (
-            <Reveal key={c.name} delay={i * 60}>
-              <div className="glass glass-hover h-full rounded-2xl p-6">
-                <c.icon className="h-6 w-6 text-electric-soft" />
-                <h3 className="mt-4 font-display text-lg font-semibold">{c.name}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{c.desc}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <CapabilitiesSection />
 
       <section className="relative mx-auto max-w-7xl px-5 py-20 md:px-8">
         <Reveal>
@@ -208,7 +213,8 @@ function PlatformPage() {
             A text answer vs. a decision you can act on.
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Real example: a $2M supply agreement, multiple risk factors, a time-sensitive call.
+            Illustrative example: a supply agreement with multiple risk factors and a
+            time-sensitive call.
           </p>
         </Reveal>
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
@@ -233,7 +239,7 @@ function PlatformPage() {
               <div className="flex items-center justify-between">
                 <div className="kicker text-electric-soft">CINTENT™ · Structured Decision</div>
                 <span className="rounded-full border border-electric/30 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest text-electric-soft">
-                  94% confidence
+                  Illustrative output
                 </span>
               </div>
               <div className="mt-4 font-display text-lg font-bold">Sign with conditions</div>
@@ -253,7 +259,7 @@ function PlatformPage() {
                 <div className="flex items-center justify-between rounded-md bg-white/5 px-3 py-2">
                   <span className="text-muted-foreground">Enforceability (Delaware law)</span>
                   <span className="font-mono text-[11px] uppercase tracking-wide text-electric-soft">
-                    98%
+                    Favorable
                   </span>
                 </div>
               </div>
@@ -495,6 +501,70 @@ function PlatformPage() {
         </Reveal>
       </section>
     </div>
+  );
+}
+
+// CR-11: cards expand in place on click to show real implementation detail.
+// Click analytics (which capability gets clicked most) is deliberately not
+// wired up — no analytics provider (GA4/Plausible/PostHog) is installed on
+// the site yet; see docs/CLAIMS_REGISTER.md for that open item.
+function CapabilitiesSection() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  return (
+    <section className="relative mx-auto max-w-7xl px-5 py-20 md:px-8">
+      <Reveal>
+        <div className="kicker">Capabilities</div>
+        <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
+          Platform capabilities for autonomy and high-context reasoning.
+        </h2>
+        <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+          Click any capability for how it actually maps to the CINTENT architecture.
+        </p>
+      </Reveal>
+      <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {capabilities.map((c, i) => {
+          const open = openIndex === i;
+          return (
+            <Reveal key={c.name} delay={i * 60}>
+              <button
+                type="button"
+                onClick={() => setOpenIndex(open ? null : i)}
+                aria-expanded={open}
+                className="glass glass-hover h-full w-full rounded-2xl p-6 text-left transition-colors"
+              >
+                <div className="flex items-start justify-between">
+                  <c.icon className="h-6 w-6 text-electric-soft" />
+                  <ChevronDown
+                    className={`h-4 w-4 shrink-0 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`}
+                  />
+                </div>
+                <h3 className="mt-4 font-display text-lg font-semibold">{c.name}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{c.desc}</p>
+                {open && (
+                  <div className="mt-4 border-t border-white/10 pt-4">
+                    <p className="text-sm text-muted-foreground">{c.detail}</p>
+                    {c.endpoint && (
+                      <span className="mt-3 inline-flex rounded-full border border-electric/30 bg-electric/10 px-2.5 py-1 font-mono text-[10px] text-electric-soft">
+                        {c.endpoint}
+                      </span>
+                    )}
+                  </div>
+                )}
+              </button>
+            </Reveal>
+          );
+        })}
+      </div>
+      <Reveal delay={300}>
+        <Link
+          to="/architecture"
+          className="mt-6 inline-flex items-center gap-1.5 text-sm text-electric-soft hover:underline"
+        >
+          See the full architecture <ArrowRight className="h-3.5 w-3.5" />
+        </Link>
+      </Reveal>
+    </section>
   );
 }
 

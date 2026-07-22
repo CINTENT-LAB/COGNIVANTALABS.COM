@@ -9,7 +9,9 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "sync:publications": "node scripts/sync-publications.mjs",
+    "test:publications": "node --test scripts/validate-publications.test.mjs scripts/publications-ui.test.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",

@@ -7,25 +7,34 @@ import { getLucideIcon } from "@/lib/lucideIcon";
 
 const COGNIVANTA_LOGO = "/logos/cognivanta-logo-white.png";
 
+// CR-1 persona-driven / business-function navigation. Every top-level item
+// here has a real destination. Items from change_scope.md Section 3 that
+// don't have substantive content yet (Partners, Customers, a full Solutions
+// vertical rebuild) are deliberately deferred rather than shipped as dead
+// links — see docs/CLAIMS_REGISTER.md / CR-1 follow-up notes.
 const navLinks = [
-  { to: "/platform", label: "Platform" },
-  { to: "/applications", label: "Applications" },
-  { to: "/pilots", label: "Pilots" },
+  { to: "/platform", label: "CINTENT" },
+  { to: "/applications", label: "Solutions" },
   { to: "/developers", label: "Developers" },
-  { to: "/research", label: "Research" },
+  { to: "/investors", label: "Investor Relations" },
+  { to: "/cognites", label: "Cognites" },
+  { to: "/media", label: "Media" },
+  { to: "/blog", label: "Blogs" },
 ] as const;
 
 const aboutLinks = [
   { to: "/about", label: "About" },
-  { to: "/cognites", label: "Cognites" },
-  { to: "/blog", label: "Blog" },
+  { to: "/research", label: "Research" },
+  { to: "/roadmap", label: "Roadmap" },
+  { to: "/careers", label: "Careers" },
+  { to: "/contact", label: "Contact" },
 ] as const;
 
 const resourceLinks = [
   { to: "/developers", label: "Developers", detail: "API contracts and release controls" },
   { to: "/research", label: "Research", detail: "Questions, methods, and evidence" },
-  { to: "/blog", label: "Blog", detail: "Stories from the cognitive ecosystem" },
-  { to: "/platform", label: "Platform guide", detail: "CINTENT architecture and capabilities" },
+  { to: "/blog", label: "Blogs", detail: "Stories from the cognitive ecosystem" },
+  { to: "/platform", label: "CINTENT guide", detail: "Architecture and capabilities" },
 ] as const;
 
 function productTarget(p: (typeof products)[number]): { to: string; external: boolean } {
@@ -65,10 +74,8 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
-  const [resourcesOpen, setResourcesOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
-  const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -122,14 +129,14 @@ export function Header() {
           <img src={COGNIVANTA_LOGO} alt="Cognivanta Labs" className="h-8 w-auto object-contain" />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">
           <Link
-            to="/platform"
+            to={navLinks[0].to}
             activeProps={{ className: "text-foreground bg-white/5" }}
             inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
-            className="rounded-md px-3 py-2 text-sm transition-colors hover:bg-white/5"
+            className="rounded-md px-2.5 py-2 text-sm transition-colors hover:bg-white/5 xl:px-3"
           >
-            Platform
+            {navLinks[0].label}
           </Link>
 
           {/* Products — hover, focus, and keyboard (Escape) accessible dropdown */}
@@ -220,65 +227,15 @@ export function Header() {
               to={n.to}
               activeProps={{ className: "text-foreground bg-white/5" }}
               inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
-              className="focus-ring rounded-md px-3 py-2 text-sm transition-colors hover:bg-white/5"
+              className="focus-ring whitespace-nowrap rounded-md px-2.5 py-2 text-sm transition-colors hover:bg-white/5 xl:px-3"
             >
               {n.label}
             </Link>
           ))}
 
-          {/* About — hover, focus, and keyboard (Escape) accessible dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => {
-              setResourcesOpen(true);
-              pauseMotion();
-            }}
-            onMouseLeave={() => setResourcesOpen(false)}
-            onFocus={() => {
-              setResourcesOpen(true);
-              pauseMotion();
-            }}
-            onBlur={(event) => {
-              if (!event.currentTarget.contains(event.relatedTarget as Node))
-                setResourcesOpen(false);
-            }}
-            onKeyDown={(event) => {
-              if (event.key === "Escape") setResourcesOpen(false);
-            }}
-          >
-            <button
-              type="button"
-              className="focus-ring inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-white/5 hover:text-foreground"
-              aria-expanded={resourcesOpen}
-              aria-haspopup="menu"
-              onClick={() => setResourcesOpen((value) => !value)}
-            >
-              Resources
-              <ChevronDown
-                className={`h-3.5 w-3.5 transition-transform ${resourcesOpen ? "rotate-180" : ""}`}
-              />
-            </button>
-            {resourcesOpen && (
-              <div className="absolute left-1/2 top-full w-72 -translate-x-1/2 pt-2">
-                <div className="glass flex flex-col gap-0.5 rounded-2xl p-2 shadow-[var(--shadow-glow-electric)]">
-                  {resourceLinks.map((resource) => (
-                    <Link
-                      key={resource.to}
-                      to={resource.to}
-                      className="focus-ring rounded-xl px-3 py-2.5 transition-colors hover:bg-white/5"
-                      onClick={() => setResourcesOpen(false)}
-                    >
-                      <span className="block text-sm text-foreground">{resource.label}</span>
-                      <span className="mt-0.5 block text-xs text-muted-foreground">
-                        {resource.detail}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-
+          {/* Company — hover, focus, and keyboard (Escape) accessible dropdown.
+              Careers (CR-9) and Roadmap (CR-8) added once those pages existed.
+              Legal/Trust Centre still join this menu once that page exists. */}
           <div
             className="relative"
             onMouseEnter={() => {
@@ -297,23 +254,21 @@ export function Header() {
               if (e.key === "Escape") setAboutOpen(false);
             }}
           >
-            <Link
-              to="/about"
-              activeProps={{ className: "text-foreground bg-white/5" }}
-              inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
-              className="focus-ring inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm transition-colors hover:bg-white/5"
+            <button
+              type="button"
+              className="focus-ring inline-flex items-center gap-1 rounded-md px-2.5 py-2 text-sm text-muted-foreground transition-colors hover:bg-white/5 hover:text-foreground xl:px-3"
               aria-expanded={aboutOpen}
               aria-haspopup="menu"
-              onClick={() => setAboutOpen(false)}
+              onClick={() => setAboutOpen((v) => !v)}
             >
-              About
+              Company
               <ChevronDown
                 className={`h-3.5 w-3.5 transition-transform ${aboutOpen ? "rotate-180" : ""}`}
               />
-            </Link>
+            </button>
 
             {aboutOpen && (
-              <div className="absolute left-1/2 top-full w-48 -translate-x-1/2 pt-2">
+              <div className="absolute right-0 top-full w-48 pt-2">
                 <div className="glass flex flex-col gap-0.5 rounded-2xl p-2 shadow-[var(--shadow-glow-electric)]">
                   {aboutLinks.map((l) => (
                     <Link
@@ -329,15 +284,6 @@ export function Header() {
               </div>
             )}
           </div>
-
-          <Link
-            to="/contact"
-            activeProps={{ className: "text-foreground bg-white/5" }}
-            inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
-            className="rounded-md px-3 py-2 text-sm transition-colors hover:bg-white/5"
-          >
-            Contact
-          </Link>
         </nav>
 
         <div className="hidden lg:flex items-center gap-2">
@@ -477,13 +423,13 @@ export function Header() {
         <div className="lg:hidden border-t border-border bg-background/95 backdrop-blur-xl">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4">
             <Link
-              to="/platform"
+              to={navLinks[0].to}
               onClick={() => setOpen(false)}
               activeProps={{ className: "text-foreground bg-white/5" }}
               inactiveProps={{ className: "text-muted-foreground" }}
               className="rounded-md px-3 py-3 text-sm"
             >
-              Platform
+              {navLinks[0].label}
             </Link>
 
             <div className="rounded-md">
@@ -562,46 +508,13 @@ export function Header() {
             <div className="rounded-md">
               <button
                 onClick={() => {
-                  setMobileResourcesOpen((v) => !v);
-                  pauseMotion();
-                }}
-                className="focus-ring flex w-full items-center justify-between rounded-md px-3 py-3 text-left text-sm text-muted-foreground"
-                aria-expanded={mobileResourcesOpen}
-              >
-                Resources
-                <ChevronDown
-                  className={`h-4 w-4 transition-transform ${mobileResourcesOpen ? "rotate-180" : ""}`}
-                />
-              </button>
-              {mobileResourcesOpen && (
-                <div className="ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-3">
-                  {resourceLinks.map((resource) => (
-                    <Link
-                      key={resource.to}
-                      to={resource.to}
-                      onClick={() => {
-                        setOpen(false);
-                        setMobileResourcesOpen(false);
-                      }}
-                      className="focus-ring rounded-md px-3 py-2 text-sm text-muted-foreground"
-                    >
-                      {resource.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <div className="rounded-md">
-              <button
-                onClick={() => {
                   setMobileAboutOpen((v) => !v);
                   pauseMotion();
                 }}
                 className="flex w-full items-center justify-between rounded-md px-3 py-3 text-left text-sm text-muted-foreground"
                 aria-expanded={mobileAboutOpen}
               >
-                About
+                Company
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${mobileAboutOpen ? "rotate-180" : ""}`}
                 />
@@ -633,15 +546,6 @@ export function Header() {
               className="rounded-md px-3 py-3 text-sm"
             >
               Pricing
-            </Link>
-            <Link
-              to="/contact"
-              onClick={() => setOpen(false)}
-              activeProps={{ className: "text-foreground bg-white/5" }}
-              inactiveProps={{ className: "text-muted-foreground" }}
-              className="rounded-md px-3 py-3 text-sm"
-            >
-              Contact
             </Link>
             <Link
               to="/developers"

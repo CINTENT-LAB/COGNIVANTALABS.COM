@@ -1,7 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { TeamCard } from "@/components/site/TeamCard";
-import { team } from "@/data/team";
+import { publishedTeam } from "@/data/team";
 import { CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
@@ -30,14 +30,8 @@ const points = [
   "Global vision, India-built",
 ];
 
-const partners = [
-  { name: "HKSTP", role: "APAC gateway" },
-  { name: "Avnet", role: "Silicon & hardware" },
-  { name: "element14", role: "Engineering network" },
-];
-
-const leadership = team.filter((m) => m.group === "leadership");
-const advisors = team.filter((m) => m.group === "advisor");
+const leadership = publishedTeam.filter((m) => m.group === "leadership");
+const advisors = publishedTeam.filter((m) => m.group === "advisor");
 
 const roadmap = [
   {
@@ -72,9 +66,9 @@ function AboutPage() {
               Human + AI. <span className="text-gradient-aurora">India-built for the world.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-muted-foreground md:text-lg">
-              Cognivanta Labs is a deep-tech company building a sovereign cognitive core and a
-              multi-domain ecosystem on top of it — backed by patent-holding advisors and deep-tech
-              operators.
+              Cognivanta Labs is a deep-tech company building a governed cognitive core and a
+              multi-domain ecosystem on top of it — backed by a leadership team of deep-tech
+              operators and research advisors. Full credentials are below.
             </p>
           </Reveal>
         </div>
@@ -87,25 +81,6 @@ function AboutPage() {
               <div className="glass rounded-xl p-5 flex items-start gap-3">
                 <CheckCircle2 className="h-5 w-5 shrink-0 text-electric-soft" />
                 <span className="text-sm">{p}</span>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="relative mx-auto max-w-7xl px-5 py-14 md:px-8">
-        <Reveal>
-          <div className="kicker">Strategic Partners</div>
-          <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-            Global reach, from day one.
-          </h2>
-        </Reveal>
-        <div className="mt-8 grid gap-5 sm:grid-cols-3">
-          {partners.map((p, i) => (
-            <Reveal key={p.name} delay={i * 60}>
-              <div className="glass glass-hover rounded-2xl p-6">
-                <div className="font-display text-xl font-bold">{p.name}</div>
-                <div className="mt-1 kicker">{p.role}</div>
               </div>
             </Reveal>
           ))}
@@ -152,6 +127,12 @@ function AboutPage() {
         <Reveal>
           <div className="kicker">Roadmap</div>
           <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">2026 → 2030</h2>
+          <Link
+            to="/roadmap"
+            className="mt-3 inline-flex items-center gap-1.5 text-sm text-electric-soft hover:underline"
+          >
+            See the full roadmap →
+          </Link>
         </Reveal>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {roadmap.map((r, i) => (

@@ -1,5 +1,7 @@
 export type TeamGroup = "leadership" | "advisor";
 
+export type PublicationStatus = "draft" | "published";
+
 export interface TeamMember {
   id: string;
   name: string;
@@ -7,6 +9,16 @@ export interface TeamMember {
   group: TeamGroup;
   bio: string;
   photo?: string;
+  /**
+   * CR-5 publication approval workflow: a profile only appears on any public
+   * page when both `ownerApproved` is true AND `publicationStatus` is
+   * "published". Adding a new team member or editing an existing bio should
+   * default to `ownerApproved: false, publicationStatus: "draft"` until the
+   * owner has actually signed off on the wording, credentials, and photo —
+   * see docs/CLAIMS_REGISTER.md.
+   */
+  ownerApproved: boolean;
+  publicationStatus: PublicationStatus;
 }
 
 export const team: TeamMember[] = [
@@ -15,8 +27,10 @@ export const team: TeamMember[] = [
     name: "Rajesh",
     role: "Founder, CTO & CEO",
     group: "leadership",
-    bio: "IIT Bombay alumnus with 34+ years leading AI, IoT and telecom globally, including 14 years as Regional Head (Digital & IoT) – EMEA at Tech Mahindra. Founded Cognivanta Labs in 2023 to build CINTENT — a deterministic, explainable cognitive engine with no generative LLM, running under 500ms at under $0.0001 per query. Built BlissTrail as CINTENT's first proof of concept.",
+    bio: "IIT Bombay alumnus with 34+ years leading AI, IoT and telecom globally, including 14 years as Regional Head (Digital & IoT) – EMEA at Tech Mahindra. Founded Cognivanta Labs in 2023 to build CINTENT — a deterministic, explainable cognitive engine designed without a generative LLM in the reasoning loop. Built BlissTrail as CINTENT's first proof of concept.",
     photo: "/team/rajesh.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
   {
     id: "kunal",
@@ -25,6 +39,8 @@ export const team: TeamMember[] = [
     group: "leadership",
     bio: "18+ years in international business development and technology transfer across Asia, Europe and the US, with a track record building partnerships for Marubeni, Toyota, SK Group and Mitsubishi. Leads CINTENT's enterprise pilots, partner negotiations and channel ecosystem.",
     photo: "/team/kunal.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
   {
     id: "rashi",
@@ -33,6 +49,8 @@ export const team: TeamMember[] = [
     group: "leadership",
     bio: "Shapes CINTENT's go-to-market strategy and partnership roadmap, translating the platform's deterministic reasoning into clear value for enterprise customers across travel, legal and supply chain. Drives licensing strategy, pilot identification and cross-functional execution.",
     photo: "/team/rashi.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
   {
     id: "srinivas",
@@ -41,6 +59,8 @@ export const team: TeamMember[] = [
     group: "leadership",
     bio: "20-year engineering leader who architected IssueBook, a global fixed-income issuance system at IHS Markit, and built Kafka/Storm pipelines processing millions of daily trades at Deutsche Bank. Leads engineering to turn BlissTrail, NyayNetra and other prototypes into a multi-tenant cognitive platform.",
     photo: "/team/srinivas.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
   {
     id: "rupam",
@@ -49,6 +69,8 @@ export const team: TeamMember[] = [
     group: "leadership",
     bio: "Program Director with 15+ years leading large-scale digital transformation, AI strategy and PMO governance across Fortune 500 organizations, including CareFirst BlueCross BlueShield, T. Rowe Price, Cigna, PNC and Bank of America. PMP, PMI-CPMAI and SAFe SPC certified; leads delivery and operations at Cognivanta Labs.",
     photo: "/team/rupam.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
   {
     id: "lakshith",
@@ -57,6 +79,8 @@ export const team: TeamMember[] = [
     group: "leadership",
     bio: "Architects CINTENT's agent orchestration, episodic memory retrieval and frontend integration. Built ProApp, an AI-powered social accountability platform, and a real-time university seat-availability tracker; AWS Cloud Practitioner certified, proficient in Python, Java and React Native.",
     photo: "/team/lakshith.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
   {
     id: "oscar",
@@ -65,6 +89,8 @@ export const team: TeamMember[] = [
     group: "leadership",
     bio: "Madrid-based senior technology architect with 20+ years in enterprise integration, AI and cloud platforms across Santander UK, Vodafone Spain, IFRC and Accenture. Brings deep Azure, Power Platform and Generative AI expertise to CINTENT's architecture.",
     photo: "/team/oscar.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
   {
     id: "amit",
@@ -73,6 +99,8 @@ export const team: TeamMember[] = [
     group: "advisor",
     bio: "Founder of Dazeinfo, an AI-powered market intelligence platform, and Venture Partner at 3to1 Capital backing early-stage startups. Advises CINTENT on fund-raising, financial modeling, valuation and investor readiness.",
     photo: "/team/amit.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
   {
     id: "dr-sridhar",
@@ -81,6 +109,8 @@ export const team: TeamMember[] = [
     group: "advisor",
     bio: "Senior Director of Product Management at Salesforce AI Research, with prior leadership roles at Nokia, Nortel and Nuance Communications spanning speech recognition, NLP and generative AI. Ph.D. from Georgia State University, Master's from IIT Bombay; guides CINTENT's strategic vision.",
     photo: "/team/dr-sridhar.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
   {
     id: "dr-asoke",
@@ -89,5 +119,12 @@ export const team: TeamMember[] = [
     group: "advisor",
     bio: "30+ year deep-tech veteran with senior technology roles at Microsoft, Oracle, HP and Digital, and former DaimlerChrysler Chair Professor at IIIT-Bangalore. Co-founded Cellnext and InterpretOmics; leads CINTENT's technical strategy and architecture roadmap.",
     photo: "/team/dr-asoke.png",
+    ownerApproved: true,
+    publicationStatus: "published",
   },
 ];
+
+/** CR-5 acceptance criteria: profiles render only when approved + published. */
+export const publishedTeam = team.filter(
+  (m) => m.ownerApproved && m.publicationStatus === "published",
+);

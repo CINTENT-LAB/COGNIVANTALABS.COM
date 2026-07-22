@@ -102,42 +102,65 @@ const categories = [
 // Pilot-specific framing (as presented on the live pilots overview), mapped to
 // each product's id in src/data/products.ts. Falls back to the product's own
 // tagline/description if a pilot isn't listed here.
-const pilotMeta: Record<string, { label: string; blurb: string }> = {
+//
+// CR-4 (evidence-governed solution profiles): `tier` maps each pilot onto the
+// three maturity categories already defined below (Research / Deployment /
+// Enterprise) so maturity is a visible, structured field rather than buried
+// in a label string. "Production Ready" for CHAXU is carried over from
+// existing site copy — flagged in docs/CLAIMS_REGISTER.md for confirmation,
+// not independently verified here.
+const pilotMeta: Record<
+  string,
+  { label: string; blurb: string; tier: "research" | "deployment" | "enterprise" }
+> = {
   shunyai: {
     label: "Sparse intelligence",
     blurb:
       "A pilot for intelligence systems operating in low-data, incomplete, or ambiguous decision environments.",
+    tier: "research",
   },
   blisstrail: {
     label: "Digital wellbeing",
     blurb:
       "A reflective intelligence layer for personal insight, adaptive guidance, and longitudinal behavior context.",
+    tier: "research",
   },
   nyaynetra: {
     label: "Legal cognition",
     blurb:
       "A legal intelligence system built for evidentiary navigation, procedural reasoning, and contextual case support.",
+    tier: "enterprise",
   },
   askcogni: {
     label: "Knowledge systems",
     blurb:
       "A cognitive knowledge interaction system for navigating research, architecture, and platform intelligence.",
+    tier: "enterprise",
   },
   cobots: {
     label: "Embodied robotics",
     blurb:
       "Collaborative machines that combine situational awareness, task memory, and adaptive assistance.",
+    tier: "deployment",
   },
   awcs: {
     label: "Assistive autonomy",
     blurb:
       "Mobility systems focused on safe navigation, human override, and intelligent context under constrained conditions.",
+    tier: "deployment",
   },
   chaxu: {
-    label: "Aerial autonomy · Production Ready",
+    label: "Aerial autonomy",
     blurb:
       "Mission-aware drone intelligence for sensing, planning, and autonomous control in dynamic outdoor environments.",
+    tier: "deployment",
   },
+};
+
+const tierMaturityLabel: Record<"research" | "deployment" | "enterprise", string> = {
+  research: "Research pilot",
+  deployment: "Deployment pilot",
+  enterprise: "Enterprise pilot",
 };
 
 const pilotIds = ["shunyai", "blisstrail", "nyaynetra", "askcogni", "cobots", "awcs", "chaxu"];
@@ -269,6 +292,11 @@ function PilotsPage() {
                     <div className="kicker">{meta?.label ?? p.tagline}</div>
                     <div className="mt-1 font-display text-lg font-bold">{p.name}</div>
                   </div>
+                  {meta?.tier && (
+                    <span className="ml-auto shrink-0 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                      {tierMaturityLabel[meta.tier]}
+                    </span>
+                  )}
                 </div>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                   {meta?.blurb ?? p.description}

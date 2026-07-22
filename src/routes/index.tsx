@@ -34,16 +34,20 @@ import { getLucideIcon } from "@/lib/lucideIcon";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cognivanta Labs — Building the future beyond AI" },
+      { title: "Cognivanta Labs — CINTENT understands intent before AI decides or acts" },
       {
         name: "description",
         content:
-          "From responses to real decisions. Cognivanta Labs builds CINTENT™ — a sovereign cognitive core powering a multi-domain ecosystem of reasoning-first AI products.",
+          "Cognivanta Labs develops CINTENT™, a governed cognitive intelligence platform that understands intent, interprets context, reasons across knowledge and constraints, makes accountable decisions, and enables purposeful action.",
       },
-      { property: "og:title", content: "Cognivanta Labs — Building the future beyond AI" },
+      {
+        property: "og:title",
+        content: "Cognivanta Labs — CINTENT understands intent before AI decides or acts",
+      },
       {
         property: "og:description",
-        content: "From Ask → Decide → Act. The future won't be generated. It will be understood.",
+        content:
+          "Intent → Context → Reason → Decide → Act → Learn → Refined Intent Understanding.",
       },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -72,25 +76,24 @@ function Home() {
   );
 }
 
-const rotatingMessages = [
-  "The best way to predict the future is to build it.",
-  "From responses to real decisions.",
-  "One cognitive core. A multi-domain ecosystem.",
-  "Human + AI. India-built for the world.",
+// CR-10: each stage's detail matches, word for word in substance, the same
+// real terms already published on /platform's API surface and /architecture
+// — no invented model architecture (e.g. no "Graph-Neural Network" claim).
+const lifecycleStages = [
+  { stage: "Intent", detail: "Resolve what the user or system is actually trying to accomplish." },
+  { stage: "Context", detail: "Assemble the current world state — actors, constraints, recent events." },
+  { stage: "Reason", detail: "Produce an explainable decision trace grounded in active memory." },
+  { stage: "Decide", detail: "Arbitrate goals, constraints, and confidence into a ranked recommendation." },
+  { stage: "Act", detail: "Execute workflows or actions through orchestration, with monitored feedback." },
+  { stage: "Learn", detail: "Improve from outcomes while preserving a full, auditable decision trace." },
+  {
+    stage: "Refined Intent Understanding",
+    detail: "Outcomes feed back into how the next Intent is understood — the loop closes.",
+  },
 ];
 
-const MESSAGE_INTERVAL_MS = 3000;
-
 function Hero() {
-  const [messageIndex, setMessageIndex] = useState(0);
   const [motionPaused, setMotionPaused] = useState(false);
-
-  useEffect(() => {
-    const id = window.setInterval(() => {
-      setMessageIndex((i) => (i + 1) % rotatingMessages.length);
-    }, MESSAGE_INTERVAL_MS);
-    return () => window.clearInterval(id);
-  }, []);
 
   useEffect(() => {
     const unsubscribe = onPauseMotion(() => setMotionPaused(true));
@@ -121,37 +124,29 @@ function Hero() {
             </div>
           </Reveal>
 
-          <div className="relative mt-6 min-h-[12.5rem] sm:min-h-[10rem] md:min-h-[12rem] lg:min-h-[14.5rem]">
-            {rotatingMessages.map((message, index) => (
-              <h1
-                key={message}
-                aria-hidden={messageIndex !== index}
-                className={`absolute inset-x-0 top-0 font-display text-4xl font-black leading-[1.05] tracking-tight transition-[opacity,transform] duration-500 ease-out sm:text-5xl md:text-6xl lg:text-7xl ${
-                  messageIndex === index
-                    ? "translate-y-0 opacity-100"
-                    : "pointer-events-none translate-y-2 opacity-0"
-                }`}
-              >
-                {index === 0 ? (
-                  <>
-                    The best way to predict <br className="hidden sm:block" />
-                    the future is to <span className="text-gradient-aurora">build it.</span>
-                  </>
-                ) : (
-                  <span className="text-gradient-aurora">{message}</span>
-                )}
-              </h1>
-            ))}
-          </div>
+          <Reveal>
+            <h1 className="mt-6 font-display text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+              CINTENT understands what people and enterprises{" "}
+              <span className="text-gradient-aurora">intend</span> — before AI decides or acts.
+            </h1>
+          </Reveal>
 
-          <Reveal delay={160}>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              From <span className="text-foreground">responses</span> to real{" "}
-              <span className="text-gradient-electric font-semibold">decisions</span>. CINTENT™ is
-              the sovereign cognitive core behind a growing, multi-domain ecosystem — built in
-              India, for the world.
+          <Reveal delay={140}>
+            <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-foreground md:text-lg">
+              Traditional AI responds to instructions. CINTENT first understands the purpose behind
+              them.
             </p>
           </Reveal>
+
+          <Reveal delay={200}>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+              Cognivanta Labs develops <span className="text-foreground">CINTENT™</span>, a governed
+              cognitive intelligence platform that understands intent, interprets context, reasons
+              across knowledge and constraints, makes accountable decisions and enables purposeful
+              action.
+            </p>
+          </Reveal>
+
           <Reveal delay={240}>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -161,21 +156,41 @@ function Hero() {
                 Explore CINTENT™ <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
-                to="/products"
+                to="/contact"
                 className="btn-ghost-glow inline-flex items-center gap-2 rounded-md px-5 py-3 text-sm font-semibold"
               >
-                See the ecosystem
+                Talk to an Expert
               </Link>
             </div>
           </Reveal>
           <Reveal delay={320}>
-            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-              <span>Ask</span>
-              <span className="text-electric">→</span>
-              <span>Decide</span>
-              <span className="text-electric">→</span>
-              <span>Act</span>
+            <div className="mt-10 flex flex-wrap items-center gap-x-3 gap-y-3 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+              {lifecycleStages.map((s, i) => (
+                <span key={s.stage} className="flex items-center gap-3">
+                  <span className="group relative inline-flex cursor-help items-center">
+                    <span
+                      className={
+                        i === lifecycleStages.length - 1
+                          ? "border-b border-dotted border-electric-soft/50 text-electric-soft"
+                          : "border-b border-dotted border-white/20 hover:text-foreground"
+                      }
+                    >
+                      {s.stage}
+                    </span>
+                    <span className="pointer-events-none absolute left-1/2 top-full z-20 mt-2 w-56 -translate-x-1/2 rounded-lg border border-white/10 bg-[#0a0a12] p-3 text-left normal-case tracking-normal text-muted-foreground opacity-0 shadow-xl transition-opacity duration-150 group-hover:opacity-100">
+                      {s.detail}
+                    </span>
+                  </span>
+                  {i < lifecycleStages.length - 1 && <span className="text-electric">→</span>}
+                </span>
+              ))}
             </div>
+            <Link
+              to="/architecture"
+              className="mt-3 inline-flex items-center gap-1.5 font-sans text-xs normal-case tracking-normal text-electric-soft hover:underline"
+            >
+              See how the loop actually runs <ArrowRight className="h-3 w-3" />
+            </Link>
           </Reveal>
           <Reveal delay={380}>
             <div className="mt-10 flex flex-wrap gap-x-8 gap-y-4 border-t border-white/10 pt-6">
@@ -352,23 +367,23 @@ function TrustSection() {
     {
       icon: Rocket,
       title: "Deployment Proof",
-      desc: "7 pilot platforms and 6 application domains are already shaping how the architecture evolves under real operating requirements.",
+      desc: "Domain pilots across legal intelligence, travel, and aerial autonomy are actively shaping how the architecture evolves under real operating requirements.",
       detail:
-        "NyayNetra (legal AI), BlissTrail (travel), CHAXU (aerial), Ask COGNI (interactive assistant), plus enterprise pilots across robotics, mobility, and knowledge systems — processing real contracts, real bookings, real operational constraints.",
+        "Pilot maturity and scope for each domain are published on the applications pages and updated as programs progress.",
     },
     {
       icon: ShieldCheck,
       title: "Founder & Advisor Depth",
-      desc: "Leadership includes cognitive architecture research, deep-tech operators, and advisors with multiple patents in AI and machine learning.",
+      desc: "Leadership includes cognitive architecture research and deep-tech operators.",
       detail:
-        "40+ patents across the advisory board in AI, ML, robotics, and autonomous systems, backed by strategic partners (HKSTP, Avnet, element14) and 15+ years of deep-tech operating experience.",
+        "Verified team profiles, credentials, and advisor bios are published on the About page as each is approved.",
     },
     {
       icon: BrainCircuit,
       title: "One Shared Core",
       desc: "The same platform extends across legal intelligence, knowledge systems, wellbeing, mobility, robotics, and aerial autonomy.",
       detail:
-        "Capabilities developed for legal reasoning apply to medical decision-making; constraint handling from mobility scales to aerial autonomy — the platform gets stronger as new domains contribute patterns.",
+        "Capabilities developed for one domain are designed to transfer to others — the platform is intended to get stronger as new domains contribute patterns.",
     },
   ];
   return (
@@ -379,9 +394,8 @@ function TrustSection() {
           A platform company <span className="text-gradient-aurora">and</span> a research lab.
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          We are not presenting abstract AI claims. The platform is backed by pilot programs,
-          research credentials, patent-backed advisory depth, and a shared architecture tested
-          across multiple domains.
+          The platform is developed alongside active domain pilots and a shared architecture
+          intended to work across multiple application domains.
         </p>
       </Reveal>
       <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -512,7 +526,7 @@ function RealDecisionExample() {
   const risks = [
     { label: "Volume Commitment (500 units/month)", level: "MEDIUM", ok: false },
     { label: "Termination Clause (30-day)", level: "LOW", ok: true },
-    { label: "Enforceability (Delaware Law)", level: "98%", ok: true },
+    { label: "Enforceability (Delaware Law)", level: "Favorable", ok: true },
   ];
   const safeguards = [
     {
@@ -533,12 +547,12 @@ function RealDecisionExample() {
       <Reveal>
         <div className="kicker">From Responses to Real Decisions</div>
         <h2 className="mt-3 max-w-2xl font-display text-3xl font-bold tracking-tight sm:text-4xl">
-          Real example: <span className="text-gradient-electric">legal contract</span> risk
+          Illustrative example: <span className="text-gradient-electric">legal contract</span> risk
           assessment.
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          $2M supply agreement · multiple risk factors · time-sensitive decision required. Same
-          input, two very different outputs.
+          A representative supply-agreement scenario with multiple risk factors and a
+          time-sensitive decision. Same input, two very different styles of output.
         </p>
       </Reveal>
 
@@ -580,7 +594,7 @@ function RealDecisionExample() {
                 SIGN WITH CONDITIONS
               </span>
               <span className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-                94% confidence · execution ready
+                Illustrative output · execution ready
               </span>
             </div>
 
@@ -687,6 +701,14 @@ function Architecture() {
       <Reveal delay={400}>
         <p className="mt-6 text-center font-mono text-xs uppercase tracking-widest text-muted-foreground">
           Shared memory turns isolated inference into a continuous cognitive system.
+        </p>
+        <p className="mt-4 text-center">
+          <Link
+            to="/architecture"
+            className="inline-flex items-center gap-1.5 text-sm text-electric-soft hover:underline"
+          >
+            See the full architecture deep dive <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
         </p>
       </Reveal>
     </section>

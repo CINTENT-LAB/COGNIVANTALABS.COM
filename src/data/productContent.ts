@@ -71,12 +71,7 @@ export const productContent: Record<string, ProductContent> = {
     overview:
       "Shunya AI is a cognitive AI-based multilingual speech transformer and transcriber built for real-time speech-to-speech, speech-to-text, and translation across India's linguistic complexity. It understands speech as communication, not as isolated words — engineered for the reality of Indian conversation: code-mixing, regional accents, and fast transitions between languages.",
     heroImage: "https://shunya-ai.space/language-bridge.png",
-    stats: [
-      { value: "42", label: "Indian Languages" },
-      { value: "97.8%", label: "STT Accuracy" },
-      { value: "245ms", label: "Response Time" },
-      { value: "99.9%", label: "System Uptime" },
-    ],
+    stats: [{ value: "42", label: "Indian Languages (target)" }],
     features: [
       {
         icon: "Mic",
@@ -181,18 +176,13 @@ export const productContent: Record<string, ProductContent> = {
       },
     ],
     closingNote:
-      "Preliminary benchmarking across 6 Indian languages + English shows ~10% better quality and performance versus major commercial speech systems. Built natively for Indian languages and accents — not adapted after the fact.",
+      "Built natively for Indian languages and accents — not adapted after the fact. Benchmark comparisons against commercial speech systems are being validated and will be published with methodology once evidenced.",
   },
 
   blisstrail: {
     overview:
       "BlissTrail is an AI-powered travel companion that understands you, anticipates your needs, and crafts every journey to match your preferences, style, and aspirations. It analyzes cost, weather, crowd and safety data across 500+ destinations and returns a TDIS score — a clear BOOK, WAIT, or AVOID signal — instead of another wall of listings.",
-    stats: [
-      { value: "500+", label: "Destinations" },
-      { value: "10K+", label: "Active Travelers" },
-      { value: "99%", label: "Prediction Accuracy" },
-      { value: "₹50Cr+", label: "Savings Generated" },
-    ],
+    stats: [{ value: "500+", label: "Destinations covered" }],
     features: [
       {
         icon: "IndianRupee",
@@ -273,25 +263,8 @@ export const productContent: Record<string, ProductContent> = {
         desc: "Built on voice, vision, and predictive capabilities, with proprietary TDIS algorithms.",
       },
     ],
-    testimonials: [
-      {
-        quote:
-          "BlissTrail saved me ₹18,000 on my Goa trip by recommending I wait just 3 weeks for off-peak prices.",
-        author: "Priya Sharma, Solo Traveler · Mumbai",
-      },
-      {
-        quote:
-          "Planning a family trip to Manali used to stress me out. BlissTrail gave us a detailed day-by-day cost breakdown.",
-        author: "Rajesh Kumar, Family Vacationer · Delhi",
-      },
-      {
-        quote:
-          "BlissTrail's CINTENT framework is genuinely revolutionary. It predicted the crowd surge before any other tool caught it.",
-        author: "Sneha Patel, Travel Blogger · Bangalore",
-      },
-    ],
     closingNote:
-      "Blissful journeys, intelligently yours — built on CINTENT, developed by Cognivanta Labs.",
+      "Blissful journeys, intelligently yours — built on CINTENT, developed by Cognivanta Labs. Traveler testimonials will be published here once real, permissioned user reviews are collected.",
   },
 
   nyaynetra: {
@@ -299,10 +272,6 @@ export const productContent: Record<string, ProductContent> = {
       "NyayNetra is revolutionizing legal assistance with AI-driven solutions, making justice accessible and efficient for citizens, legal professionals, and institutions — from FIR interpretation to case search, draft generation, and legal insight, all built on the CINTENT cognitive core.",
     heroImage:
       "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=1024,fit=crop/mk3JQ4Zk2vtxe077/generated/generated-4x56FwVkm8gPcZwW.png",
-    stats: [
-      { value: "150+", label: "Trusted by Many" },
-      { value: "15", label: "Legal Innovators" },
-    ],
     features: [
       {
         icon: "Search",
@@ -343,15 +312,8 @@ export const productContent: Record<string, ProductContent> = {
         desc: "IPC/BNS mapping, case law search, case tracking, timeline engine, risk scoring, and a recommendation engine for next steps and lawyer suggestions.",
       },
     ],
-    testimonials: [
-      {
-        quote:
-          "Nyaynetra transformed my legal experience with its intelligent insights and fast assistance. Highly recommended!",
-        author: "Adv. Sunil Awasthi",
-      },
-    ],
     closingNote:
-      "Intelligent. Trusted. Just. — CINTENT is the cognitive core behind every NyayNetra recommendation.",
+      "Intelligent. Trusted. Just. — CINTENT is the cognitive core behind every NyayNetra recommendation. Practitioner testimonials will be published here once permissioned, verifiable reviews are on file.",
   },
 
   chaxu: {
@@ -485,12 +447,7 @@ export const productContent: Record<string, ProductContent> = {
   "health-hub": {
     overview:
       "Health Hub integrates 4,500+ healthcare APIs into a cognitive hospital AI: unifying EHR, lab results, imaging, medication history and allergy profiles into one decision context, cross-referencing clinical guidelines and hospital resource availability to recommend ranked, explainable care pathways.",
-    gallery: ["https://cognivantalabs.com/diagrams/chaxu-architecture.svg"],
-    stats: [
-      { value: "4,500+", label: "Healthcare APIs" },
-      { value: "30%", label: "Faster Care Decisions" },
-      { value: "94%", label: "Guideline Compliance" },
-    ],
+    stats: [{ value: "4,500+", label: "Healthcare APIs (catalog scope)" }],
     features: [
       {
         icon: "HeartPulse",
@@ -555,34 +512,22 @@ export const productContent: Record<string, ProductContent> = {
         desc: "Rank final recommendations by clinical confidence, evidence strength, and resource feasibility.",
       },
     ],
-    testimonials: [
-      {
-        quote:
-          "It does what I don't have time to do — integrate the patient's full history, cross-reference guidelines, check contraindications. I make the decision, but faster and with better information.",
-        author: "Emergency Medicine Physician, Major Medical Center",
-      },
-      {
-        quote:
-          "The drug interaction checking alone is worth it. It's not a black box — I can see exactly what it flagged and why.",
-        author: "Chief Pharmacist, Hospital System",
-      },
-    ],
     faqs: [
       {
         q: "Is it approved for clinical use?",
-        a: "The underlying MVP is in hospital pilot with FDA clearance in progress. It's designed to support clinician decision-making, not replace clinical judgment — all recommendations are reviewed and authorized by qualified clinical staff.",
+        a: "Health Hub is an MVP in early hospital-pilot planning, not yet in live clinical use, and holds no regulatory clearance today. It is designed to support clinician decision-making, not replace it — every recommendation would be reviewed and authorized by qualified clinical staff, and any clearance status will be published here only once actually obtained.",
       },
       {
         q: "How does it handle HIPAA and patient privacy?",
-        a: "Designed to operate on-premise or on HIPAA-compliant cloud infrastructure. Patient data never leaves the hospital system; audit logging tracks all data access.",
+        a: "The architecture is designed for on-premise or HIPAA-compliant cloud deployment with patient data kept inside the hospital system and full audit logging — but no HIPAA compliance certification or independent audit has been completed yet. Treat this as the design intent, not a compliance claim, until that verification exists.",
       },
       {
         q: "Can it integrate with existing EHR systems?",
-        a: "Built for HL7/FHIR interfaces with major EHR platforms (Epic, Cerner, Medidata). Integration typically takes 4-8 weeks depending on IT infrastructure.",
+        a: "It's being built for HL7/FHIR interfaces to work with major EHR platforms. No production integration with a named EHR vendor has been completed yet, so specific integration timelines aren't published until a real deployment validates them.",
       },
     ],
     closingNote:
-      "Domain and functional scope confirmed at 4,500+ APIs — the live healthhub.cintent.tech domain isn't public yet, so treat specifics above as the MVP direction pending final sign-off.",
+      "Domain and functional scope confirmed at 4,500+ APIs — the live healthhub.cintent.tech domain isn't public yet, so treat specifics above as the MVP direction pending final sign-off. Clinician testimonials will be published here once real, permissioned feedback is on file.",
   },
 
   cwos: {
@@ -590,12 +535,7 @@ export const productContent: Record<string, ProductContent> = {
       "CINTENT WealthOS™ (CWOS) is India's first AI-native investment intelligence platform for every investor — replacing manual research with cognitive AI, quant signal generation, and autonomous research automation. Explainable. Governed. Always on.",
     heroImage:
       "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?w=1400&q=80&auto=format&fit=crop",
-    stats: [
-      { value: "10M+", label: "Assets Analyzed Daily" },
-      { value: "100K+", label: "Strategies Backtested" },
-      { value: "1B+", label: "Data Points Processed" },
-      { value: "24/7", label: "AI-Powered Monitoring" },
-    ],
+    stats: [{ value: "24/7", label: "AI-Powered Monitoring" }],
     features: [
       {
         icon: "Sparkles",
@@ -610,7 +550,7 @@ export const productContent: Record<string, ProductContent> = {
       {
         icon: "LineChart",
         title: "Quant strategy engine",
-        desc: "Discovers, backtests, and ranks 100,000+ strategies across market regimes automatically.",
+        desc: "Discovers, backtests, and ranks quant strategies across market regimes automatically.",
       },
       {
         icon: "Wallet",

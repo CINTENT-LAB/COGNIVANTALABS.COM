@@ -50,7 +50,7 @@ const loopSteps = [
   {
     tag: "ACT",
     title: "A structured, governed output.",
-    desc: 'Example: "Approve · Path A" at 87% confidence, low risk, 4 constraints evaluated, routed for human approval — then executed into workflows across healthcare, finance, autonomy, robotics and infrastructure, with outcomes learned back into the loop.',
+    desc: 'Illustrative example: "Approve · Path A", low risk, constraints evaluated, routed for human approval — then executed into workflows across healthcare, finance, autonomy, robotics and infrastructure, with outcomes learned back into the loop.',
   },
 ];
 

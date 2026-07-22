@@ -13,6 +13,22 @@ const capabilities = [
   "Voice Input",
 ];
 
+// CR-Ask-COGNI preset scenarios — real Cognivanta domains/products, not the
+// generic "Healthcare Triage / Financial Fraud Check / Supply Chain Delay"
+// placeholders suggested in -CR-SCOPE.md, since those don't match this
+// company's actual pilot set. Deliberately no confidence-score meter here:
+// this panel hands off to the external playground rather than running
+// inference itself (see the component doc comment below), so there is no
+// real signal to attach a percentage to — displaying one would be exactly
+// the fabricated-precision pattern already flagged and removed elsewhere on
+// this site. See docs/CLAIMS_REGISTER.md for the full note.
+const presetScenarios = [
+  { label: "Legal case research (NyayNetra)", q: "How would CINTENT help research a legal case?" },
+  { label: "Hospital care pathway (Health Hub)", q: "How does CINTENT reason across a patient's medical history?" },
+  { label: "Aerial mission tasking (CHAXU)", q: "How does CINTENT coordinate a drone fleet mission?" },
+  { label: "Investment research (CWOS)", q: "How does CINTENT generate explainable investment research?" },
+];
+
 type SpeechResultEvent = {
   results?: ArrayLike<ArrayLike<{ transcript: string }>>;
 };
@@ -137,6 +153,23 @@ export function CogniLauncher() {
                 </span>
               ))}
             </div>
+            <div className="mt-3">
+              <div className="mb-1.5 text-[10px] uppercase tracking-widest text-muted-foreground">
+                Try a scenario
+              </div>
+              <div className="flex flex-col gap-1">
+                {presetScenarios.map((s) => (
+                  <button
+                    key={s.label}
+                    type="button"
+                    onClick={() => setMessage(s.q)}
+                    className="rounded-lg border border-white/10 bg-white/5 px-2.5 py-1.5 text-left text-[11px] text-muted-foreground transition-colors hover:border-electric/30 hover:text-electric-soft"
+                  >
+                    {s.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col gap-1 border-t border-white/10 p-2">
@@ -171,6 +204,20 @@ export function CogniLauncher() {
                   Document intelligence (in draft)
                 </span>
               </span>
+            </Link>
+            <Link
+              to="/developers"
+              className="flex items-center gap-3 rounded-xl p-2.5 text-xs text-muted-foreground transition-colors hover:bg-white/5 hover:text-electric-soft"
+              onClick={() => setOpen(false)}
+            >
+              Request API access →
+            </Link>
+            <Link
+              to="/contact"
+              className="flex items-center gap-3 rounded-xl p-2.5 text-xs text-muted-foreground transition-colors hover:bg-white/5 hover:text-electric-soft"
+              onClick={() => setOpen(false)}
+            >
+              Integrate CINTENT into your product →
             </Link>
           </div>
 
