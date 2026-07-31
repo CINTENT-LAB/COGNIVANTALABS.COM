@@ -35,6 +35,7 @@ const redirectMap = new Map([
   ["/privacy-policy.html", "/privacy"],
   ["/terms-conditions.html", "/terms"],
   ["/pricing-plan.html", "/pricing"],
+  ["/faq.html", "/research#faqs"],
   ["/posts-by-author.html", "/blog"],
   ["/posts-by-category.html", "/blog"],
   ["/posts-by-date.html", "/blog"],

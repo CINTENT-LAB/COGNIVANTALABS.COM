@@ -17,6 +17,7 @@ RedirectMatch 301 ^/contact\.html$ /contact
 RedirectMatch 301 ^/privacy-policy\.html$ /privacy
 RedirectMatch 301 ^/terms-conditions\.html$ /terms
 RedirectMatch 301 ^/pricing-plan\.html$ /pricing
+RedirectMatch 301 ^/faq\.html$ /research#faqs
 RedirectMatch 301 ^/posts-by-author\.html$ /blog
 RedirectMatch 301 ^/posts-by-category\.html$ /blog
 RedirectMatch 301 ^/posts-by-date\.html$ /blog
