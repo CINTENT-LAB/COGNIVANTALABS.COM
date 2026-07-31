@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-31T10:50:40.587Z",
+  "generatedAt": "2026-07-31T17:25:58.175Z",
   "auditDate": "2026-07-31",
   "origin": "https://cognivantalabs.com",
   "source": {
     "branch": "master",
-    "commit": "2fbe9cc86ef320ae320a533c8429ca634aac7e8b",
-    "remoteMaster": "2fbe9cc86ef320ae320a533c8429ca634aac7e8b",
+    "commit": "bc33b570c290e2a9b6f99819784c987a3e88c854",
+    "remoteMaster": "bc33b570c290e2a9b6f99819784c987a3e88c854",
     "framework": "TanStack Start + TanStack Router + React 19 + Vite",
     "buildOutput": "dist/client",
     "deployment": "Hostinger static artifact branch hostinger-production"
@@ -954,7 +954,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:44 GMT",
         "etag": "\"2955e-6a6c7cb8-d9a910f6f02d6d0;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -967,11 +967,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "d6e0c350ab90c774dcb77cb81186a302-mum-edge8",
-        "x-hcdn-upstream-rt": "0.242"
+        "x-hcdn-request-id": "d1502f30c46f1343c72eaa7f6f6c2507-mum-edge4",
+        "x-hcdn-upstream-rt": "0.251"
       },
       "size": 169310,
-      "responseTimeMs": 364
+      "responseTimeMs": 399
     },
     {
       "route": "/platform",
@@ -1124,7 +1124,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:44 GMT",
         "etag": "\"150ad-6a6c7cb8-c615998531659781;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -1137,11 +1137,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "9fbd71e522607c229f55976c97e0987e-mum-edge6",
-        "x-hcdn-upstream-rt": "0.236"
+        "x-hcdn-request-id": "db42cbc515a9ab304ab3682336dd3d7d-mum-edge7",
+        "x-hcdn-upstream-rt": "0.258"
       },
       "size": 86189,
-      "responseTimeMs": 353
+      "responseTimeMs": 390
     },
     {
       "route": "/applications",
@@ -1284,7 +1284,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"de49-6a6c7cb8-875b417b79d4035;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -1297,11 +1297,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "73feacb60b543f07ede9468146cd4282-mum-edge9",
-        "x-hcdn-upstream-rt": "0.236"
+        "x-hcdn-request-id": "7087ae974771e9989f0b144f6d2bf7a6-mum-edge7",
+        "x-hcdn-upstream-rt": "0.244"
       },
       "size": 56905,
-      "responseTimeMs": 377
+      "responseTimeMs": 871
     },
     {
       "route": "/research",
@@ -1456,7 +1456,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:44 GMT",
         "etag": "\"17ba5-6a6c7cb8-271013393fd79502;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -1469,11 +1469,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "a7d79fb97015cd8b795a0dfd3928c0a3-mum-edge7",
-        "x-hcdn-upstream-rt": "0.240"
+        "x-hcdn-request-id": "91676dcb3fd93f377c6761bccca3c931-mum-edge8",
+        "x-hcdn-upstream-rt": "0.246"
       },
       "size": 97189,
-      "responseTimeMs": 351
+      "responseTimeMs": 342
     },
     {
       "route": "/developers",
@@ -1618,7 +1618,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:44 GMT",
         "etag": "\"108e9-6a6c7cb8-ec70ab5f250b6a9;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -1631,11 +1631,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "500c9c170b0d7b5250b255e8907c1735-mum-edge8",
-        "x-hcdn-upstream-rt": "0.249"
+        "x-hcdn-request-id": "06cf9d3e62e8796a27f78beefe263adf-mum-edge6",
+        "x-hcdn-upstream-rt": "0.255"
       },
       "size": 67817,
-      "responseTimeMs": 378
+      "responseTimeMs": 347
     },
     {
       "route": "/architecture",
@@ -1770,7 +1770,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:44 GMT",
         "etag": "\"a620-6a6c7cb8-4ff05c819dc52310;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -1783,11 +1783,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "2b16c3673981ebbe9edb656b09983389-mum-edge6",
-        "x-hcdn-upstream-rt": "0.238"
+        "x-hcdn-request-id": "fb6c092a03f024179df3717f7039961a-mum-edge8",
+        "x-hcdn-upstream-rt": "0.248"
       },
       "size": 42528,
-      "responseTimeMs": 353
+      "responseTimeMs": 339
     },
     {
       "route": "/products",
@@ -1960,7 +1960,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"f40e-6a6c7cb8-ab7cafe419c04936;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -1973,11 +1973,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "9a9daab5997b55166ebad28005bbcb5b-mum-edge7",
-        "x-hcdn-upstream-rt": "0.240"
+        "x-hcdn-request-id": "81a94b716f08c30eb131217e23238177-mum-edge5",
+        "x-hcdn-upstream-rt": "0.264"
       },
       "size": 62478,
-      "responseTimeMs": 349
+      "responseTimeMs": 367
     },
     {
       "route": "/products/askcogni",
@@ -2133,7 +2133,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:44 GMT",
         "etag": "\"a870-6a6c7cb8-9698082b9bb82cbd;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -2146,11 +2146,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "c8fd3fd47282c3f8e92c3b538b5d7432-mum-edge7",
-        "x-hcdn-upstream-rt": "0.245"
+        "x-hcdn-request-id": "d787037542f497df8bba26a022389d24-mum-edge6",
+        "x-hcdn-upstream-rt": "0.244"
       },
       "size": 43120,
-      "responseTimeMs": 352
+      "responseTimeMs": 331
     },
     {
       "route": "/products/awcs",
@@ -2308,7 +2308,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"ace5-6a6c7cb8-81bc35e2f7d01114;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -2321,11 +2321,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "e5933ff853fb8c466f69082def31ae01-mum-edge7",
-        "x-hcdn-upstream-rt": "0.259"
+        "x-hcdn-request-id": "8e8baa3e41854790bb0ceed2b809749f-mum-edge9",
+        "x-hcdn-upstream-rt": "0.260"
       },
       "size": 44261,
-      "responseTimeMs": 293
+      "responseTimeMs": 348
     },
     {
       "route": "/products/blisstrail",
@@ -2482,7 +2482,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:44 GMT",
         "etag": "\"bd3e-6a6c7cb8-93cb10ba4da5d992;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -2495,11 +2495,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "0bcae3b60592dbf82ec610c836adcecb-mum-edge6",
-        "x-hcdn-upstream-rt": "0.253"
+        "x-hcdn-request-id": "779a3a7c5160748261020e4e8fcb36ba-mum-edge6",
+        "x-hcdn-upstream-rt": "0.246"
       },
       "size": 48446,
-      "responseTimeMs": 377
+      "responseTimeMs": 275
     },
     {
       "route": "/products/chaxu",
@@ -2668,7 +2668,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"d78b-6a6c7cb8-bde52a68ea628fea;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -2681,11 +2681,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "d7f04a61bcd2facd1006ba30b44b4c1a-mum-edge5",
-        "x-hcdn-upstream-rt": "0.251"
+        "x-hcdn-request-id": "21b73c1acc96fa778542665b533dde05-mum-edge6",
+        "x-hcdn-upstream-rt": "0.247"
       },
       "size": 55179,
-      "responseTimeMs": 362
+      "responseTimeMs": 357
     },
     {
       "route": "/products/cobots",
@@ -2839,7 +2839,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"97f7-6a6c7cb8-e7cf66ed0a7b450;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -2852,11 +2852,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "3e9c2ae6ddcce8f96adf6367c4573172-mum-edge9",
-        "x-hcdn-upstream-rt": "0.237"
+        "x-hcdn-request-id": "563c581c63dfc35afeca7c7d2d85f73e-mum-edge6",
+        "x-hcdn-upstream-rt": "0.243"
       },
       "size": 38903,
-      "responseTimeMs": 341
+      "responseTimeMs": 272
     },
     {
       "route": "/products/cogni-doc",
@@ -3010,7 +3010,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"94a7-6a6c7cb8-e5cd0e34041accf7;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -3023,11 +3023,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "bc64408404f4005fc61cd022f6325d2a-mum-edge8",
-        "x-hcdn-upstream-rt": "0.237"
+        "x-hcdn-request-id": "c123da2ad8ba7c659eacd166b78b13e4-mum-edge8",
+        "x-hcdn-upstream-rt": "0.248"
       },
       "size": 38055,
-      "responseTimeMs": 412
+      "responseTimeMs": 337
     },
     {
       "route": "/products/cwos",
@@ -3187,7 +3187,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"e9e8-6a6c7cb8-20b2a8948785a154;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -3200,11 +3200,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "9c2baaf89288cd4db86f09635c668467-mum-edge7",
-        "x-hcdn-upstream-rt": "0.261"
+        "x-hcdn-request-id": "7c00e5d54313da486a9d4a041d34de68-mum-edge9",
+        "x-hcdn-upstream-rt": "0.249"
       },
       "size": 59880,
-      "responseTimeMs": 296
+      "responseTimeMs": 279
     },
     {
       "route": "/products/externovate",
@@ -3370,7 +3370,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"bba0-6a6c7cb8-764aa87769170709;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -3383,11 +3383,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "c5e83b1ffce2d0f7737c6af62724c987-mum-edge5",
-        "x-hcdn-upstream-rt": "0.245"
+        "x-hcdn-request-id": "1bd57f619944095da6c07d88ba9ca631-mum-edge6",
+        "x-hcdn-upstream-rt": "0.246"
       },
       "size": 48032,
-      "responseTimeMs": 348
+      "responseTimeMs": 274
     },
     {
       "route": "/products/health-hub",
@@ -3543,7 +3543,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:27 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"c0d7-6a6c7cb8-423f0cc932931935;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -3556,11 +3556,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "bfc569d66b6c1491931c16c374a5ff8e-mum-edge5",
-        "x-hcdn-upstream-rt": "0.242"
+        "x-hcdn-request-id": "4ca052527ca6d50e9eae4ac3bbe94d5a-mum-edge8",
+        "x-hcdn-upstream-rt": "0.241"
       },
       "size": 49367,
-      "responseTimeMs": 279
+      "responseTimeMs": 269
     },
     {
       "route": "/products/ikshana",
@@ -3721,7 +3721,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"bd6e-6a6c7cb8-5c4db9e5ef835669;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -3734,11 +3734,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "d4435fa0951b3bce47685379b85d0880-mum-edge10",
-        "x-hcdn-upstream-rt": "0.246"
+        "x-hcdn-request-id": "76ecd9d3d43c83dc0d6d4ac278904d8a-mum-edge6",
+        "x-hcdn-upstream-rt": "0.245"
       },
       "size": 48494,
-      "responseTimeMs": 332
+      "responseTimeMs": 275
     },
     {
       "route": "/products/nyaynetra",
@@ -3897,7 +3897,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"a65f-6a6c7cb8-e9178120466c6343;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -3910,11 +3910,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "0b8b3e869b7ba43f650ba03b27ed6763-mum-edge9",
-        "x-hcdn-upstream-rt": "0.237"
+        "x-hcdn-request-id": "cd10304c8cf6fff77b673bf2ef0c5aef-mum-edge9",
+        "x-hcdn-upstream-rt": "0.263"
       },
       "size": 42591,
-      "responseTimeMs": 271
+      "responseTimeMs": 349
     },
     {
       "route": "/products/shunyai",
@@ -4073,7 +4073,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"c7eb-6a6c7cb8-6c03040b017c542f;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -4086,11 +4086,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "f032fadcbd6a3f705a111ccc09320bf3-mum-edge7",
-        "x-hcdn-upstream-rt": "0.239"
+        "x-hcdn-request-id": "3bfba817431b719229d13ee380a01cac-mum-edge9",
+        "x-hcdn-upstream-rt": "0.248"
       },
       "size": 51179,
-      "responseTimeMs": 276
+      "responseTimeMs": 278
     },
     {
       "route": "/pilots",
@@ -4246,7 +4246,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"c07c-6a6c7cb8-6f8b7ea2d3f1197;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -4259,11 +4259,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "b70a49730979c3a4042fd120cc421939-mum-edge4",
-        "x-hcdn-upstream-rt": "0.236"
+        "x-hcdn-request-id": "6a8c74e3e1979c82854eea496369f4f9-mum-edge6",
+        "x-hcdn-upstream-rt": "0.249"
       },
       "size": 49276,
-      "responseTimeMs": 341
+      "responseTimeMs": 277
     },
     {
       "route": "/pricing",
@@ -4399,7 +4399,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"a1d3-6a6c7cb8-fe51cfbc45f91a4f;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -4412,11 +4412,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "e04aa0c95ca9035e7f456966006a61e6-mum-edge7",
-        "x-hcdn-upstream-rt": "0.261"
+        "x-hcdn-request-id": "4dab12ffee12f0197b8c4950ef42daa2-mum-edge8",
+        "x-hcdn-upstream-rt": "0.468"
       },
       "size": 41427,
-      "responseTimeMs": 395
+      "responseTimeMs": 497
     },
     {
       "route": "/about",
@@ -4570,7 +4570,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"b668-6a6c7cb8-c67b17f90c8415ba;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -4583,11 +4583,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "93fcf2ac10d28da96e4ad50c3b0a42ff-mum-edge5",
-        "x-hcdn-upstream-rt": "0.582"
+        "x-hcdn-request-id": "a79f339da172c7cd715236e061a5cb37-mum-edge7",
+        "x-hcdn-upstream-rt": "0.244"
       },
       "size": 46696,
-      "responseTimeMs": 615
+      "responseTimeMs": 467
     },
     {
       "route": "/careers",
@@ -4723,7 +4723,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:45 GMT",
         "etag": "\"7729-6a6c7cb8-f94323204ca30f66;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -4736,11 +4736,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "e70d7d2179095d3c2038dce3512ec51f-mum-edge9",
-        "x-hcdn-upstream-rt": "0.238"
+        "x-hcdn-request-id": "62319d216c1a1fb9bf89c8f563a4fb01-mum-edge6",
+        "x-hcdn-upstream-rt": "0.244"
       },
       "size": 30505,
-      "responseTimeMs": 320
+      "responseTimeMs": 274
     },
     {
       "route": "/investors",
@@ -4897,7 +4897,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:46 GMT",
         "etag": "\"be99-6a6c7cb8-a2714054820e4b70;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -4910,11 +4910,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "1a7e849ce5ff9c32a92c9e52d4bb954f-mum-edge7",
-        "x-hcdn-upstream-rt": "0.243"
+        "x-hcdn-request-id": "58f12cfc45f66af87c2b908fa593984c-mum-edge4",
+        "x-hcdn-upstream-rt": "0.250"
       },
       "size": 48793,
-      "responseTimeMs": 278
+      "responseTimeMs": 369
     },
     {
       "route": "/media",
@@ -5077,7 +5077,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:46 GMT",
         "etag": "\"a63d-6a6c7cb8-4fa5db07e6cca7e3;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -5090,11 +5090,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "4cd4de435fb26269fe56d54ef918e89b-mum-edge4",
-        "x-hcdn-upstream-rt": "0.239"
+        "x-hcdn-request-id": "b8cc77ea12c9a2bbd6dad16a72a2a205-mum-edge9",
+        "x-hcdn-upstream-rt": "0.245"
       },
       "size": 42557,
-      "responseTimeMs": 359
+      "responseTimeMs": 774
     },
     {
       "route": "/roadmap",
@@ -5228,7 +5228,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:46 GMT",
         "etag": "\"87d2-6a6c7cb8-eb4df3f81598d8aa;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -5241,11 +5241,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "580484956e39ae3df4a2b2d5cbf03b0f-mum-edge10",
-        "x-hcdn-upstream-rt": "0.243"
+        "x-hcdn-request-id": "6f36342f567ae7709ea0130538986336-mum-edge10",
+        "x-hcdn-upstream-rt": "0.247"
       },
       "size": 34770,
-      "responseTimeMs": 363
+      "responseTimeMs": 869
     },
     {
       "route": "/cognites",
@@ -5383,7 +5383,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:28 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:46 GMT",
         "etag": "\"78b6-6a6c7cb8-8a74e844d30f0782;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -5396,11 +5396,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "ef09461a348d4b5a840af7732275c20f-mum-edge7",
-        "x-hcdn-upstream-rt": "0.242"
+        "x-hcdn-request-id": "2c395b543ecc4111a140473c18969d76-mum-edge6",
+        "x-hcdn-upstream-rt": "0.244"
       },
       "size": 30902,
-      "responseTimeMs": 288
+      "responseTimeMs": 271
     },
     {
       "route": "/blog",
@@ -5554,7 +5554,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:29 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:46 GMT",
         "etag": "\"13bf0-6a6c7cb8-3e6162ac25c8b5ea;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -5567,11 +5567,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "91fd6ded4aa6aa494349e16714bfc40a-mum-edge7",
-        "x-hcdn-upstream-rt": "0.570"
+        "x-hcdn-request-id": "fc1d8b0b59f660199d2302600a19af95-mum-edge4",
+        "x-hcdn-upstream-rt": "0.239"
       },
       "size": 80880,
-      "responseTimeMs": 606
+      "responseTimeMs": 321
     },
     {
       "route": "/contact",
@@ -5707,7 +5707,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:29 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:46 GMT",
         "etag": "\"7633-6a6c7cb8-a1f9c600838a1daa;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -5720,11 +5720,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "659e71cbe99c39623fc3652d50422fa2-mum-edge7",
-        "x-hcdn-upstream-rt": "0.242"
+        "x-hcdn-request-id": "e9783d9433ce530f5e5c49087bf91f19-mum-edge6",
+        "x-hcdn-upstream-rt": "0.244"
       },
       "size": 30259,
-      "responseTimeMs": 392
+      "responseTimeMs": 330
     },
     {
       "route": "/privacy",
@@ -5857,7 +5857,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:29 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:46 GMT",
         "etag": "\"73c2-6a6c7cb8-e137f5a4d532bd2e;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -5870,11 +5870,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "378d776fd50bce9f86135319bd01a043-mum-edge7",
-        "x-hcdn-upstream-rt": "0.238"
+        "x-hcdn-request-id": "089871c2071ffd7c63f238d2ae7eec80-mum-edge8",
+        "x-hcdn-upstream-rt": "0.240"
       },
       "size": 29634,
-      "responseTimeMs": 282
+      "responseTimeMs": 267
     },
     {
       "route": "/terms",
@@ -6007,7 +6007,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:29 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:46 GMT",
         "etag": "\"754b-6a6c7cb8-ab74eb8e95cf6072;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -6020,11 +6020,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "b2cf5428a8cc5fa447e5e0c7801972f4-mum-edge4",
-        "x-hcdn-upstream-rt": "0.237"
+        "x-hcdn-request-id": "5f6698781870e3ed69a4241a008eb876-mum-edge8",
+        "x-hcdn-upstream-rt": "0.251"
       },
       "size": 30027,
-      "responseTimeMs": 275
+      "responseTimeMs": 365
     },
     {
       "route": "/enterprise",
@@ -6162,7 +6162,7 @@
         "content-type": "text/html",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-origin",
-        "date": "Fri, 31 Jul 2026 10:50:29 GMT",
+        "date": "Fri, 31 Jul 2026 17:25:46 GMT",
         "etag": "\"c5b6-6a6c7cb8-c238a4b3a83ee27d;br\"",
         "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
         "panel": "hpanel",
@@ -6175,11 +6175,11 @@
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "x-hcdn-cache-status": "DYNAMIC",
-        "x-hcdn-request-id": "5c3713af07810be70f6b2644fbfad488-mum-edge7",
-        "x-hcdn-upstream-rt": "0.337"
+        "x-hcdn-request-id": "7bd08c471948cf0484ded55eb1218461-mum-edge10",
+        "x-hcdn-upstream-rt": "0.249"
       },
       "size": 50614,
-      "responseTimeMs": 448
+      "responseTimeMs": 354
     }
   ],
   "utilityRoutes": [
@@ -6203,7 +6203,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:29 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:47 GMT",
           "etag": "\"7077-6a6c7cb8-8c702b4ebf0e8ec9;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -6216,11 +6216,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "ba0b2e69f3bd30c2dcbf275bee80bc38-mum-edge6",
-          "x-hcdn-upstream-rt": "0.238"
+          "x-hcdn-request-id": "a84a9e80865a96a97b5992ad23b73afd-mum-edge10",
+          "x-hcdn-upstream-rt": "0.254"
         },
         "size": 28791,
-        "responseTimeMs": 355,
+        "responseTimeMs": 370,
         "metadata": {
           "title": "Partner &amp; Customer Login — Cognivanta Labs",
           "description": "Sign in as a Cognivanta Labs partner or customer.",
@@ -6368,22 +6368,22 @@
         "contentType": "text/html; charset=utf-8",
         "headers": {
           "cache-control": "no-cache, no-store, must-revalidate",
-          "cf-ray": "a23c0ae02b15595a-DEL",
+          "cf-ray": "a23e4deb180d7f23-DEL",
           "connection": "keep-alive",
           "content-encoding": "gzip",
           "content-type": "text/html; charset=utf-8",
-          "date": "Fri, 31 Jul 2026 10:50:32 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:49 GMT",
           "expires": "0",
           "pragma": "no-cache",
           "referrer-policy": "strict-origin-when-cross-origin",
           "server": "cloudflare",
-          "set-cookie": "__emg_sid=5bf7a72b-34a7-487f-bfdc-1a0cbb52889e; Max-Age=1800; Path=/; HttpOnly; Secure; SameSite=Lax",
+          "set-cookie": "__emg_sid=bf90188c-66b0-4299-b1d0-aebe823be988; Max-Age=1800; Path=/; HttpOnly; Secure; SameSite=Lax",
           "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
           "transfer-encoding": "chunked",
           "x-content-type-options": "nosniff"
         },
         "size": 3040,
-        "responseTimeMs": 2608,
+        "responseTimeMs": 2557,
         "metadata": {
           "title": "Emergent | Fullstack App",
           "description": "A product of emergent.sh",
@@ -6433,7 +6433,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:29 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:47 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -6446,11 +6446,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "58de47c757ddb1fc943e814fea3f9c79-mum-edge4",
-          "x-hcdn-upstream-rt": "0.247"
+          "x-hcdn-request-id": "522f2269fd3a7a9bc36e575e706a7c83-mum-edge9",
+          "x-hcdn-upstream-rt": "0.249"
         },
         "size": 1949,
-        "responseTimeMs": 285,
+        "responseTimeMs": 361,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -6520,7 +6520,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:32 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"b668-6a6c7cb8-c67b17f90c8415ba;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -6533,11 +6533,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "2d282104543a0a45d4ae7bdac9ae23e7-mum-edge10",
-          "x-hcdn-upstream-rt": "0.240"
+          "x-hcdn-request-id": "4ce5c2a8f2f9da11542bac05d8112b06-mum-edge10",
+          "x-hcdn-upstream-rt": "0.249"
         },
         "size": 46696,
-        "responseTimeMs": 382,
+        "responseTimeMs": 289,
         "metadata": {
           "title": "About — Cognivanta Labs",
           "description": "Indigenous Indian Cognitive AI platform. CINTENT™ MVP complete, platform-first architecture, multi-domain ecosystem, strong IP strategy, global vision.",
@@ -6711,7 +6711,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:32 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"7633-6a6c7cb8-a1f9c600838a1daa;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -6724,11 +6724,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "51540663e140f1448d01a986cd57577a-mum-edge4",
-          "x-hcdn-upstream-rt": "0.244"
+          "x-hcdn-request-id": "a0db79c2481abd446288b6de5242a1bb-mum-edge9",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 30259,
-        "responseTimeMs": 285,
+        "responseTimeMs": 286,
         "metadata": {
           "title": "Contact — Cognivanta Labs",
           "description": "Get API access, propose a pilot, or post your use case for CINTENT™ and the Cognivanta ecosystem.",
@@ -6884,7 +6884,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:32 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"73c2-6a6c7cb8-e137f5a4d532bd2e;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -6897,11 +6897,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "6a2cf81e1fd8e4e53faf994d8a8508da-mum-edge6",
-          "x-hcdn-upstream-rt": "0.349"
+          "x-hcdn-request-id": "f69306990ad2c10c544ef65e744547b2-mum-edge8",
+          "x-hcdn-upstream-rt": "0.248"
         },
         "size": 29634,
-        "responseTimeMs": 386,
+        "responseTimeMs": 285,
         "metadata": {
           "title": "Privacy Policy (Draft) — Cognivanta Labs",
           "description": "Draft privacy policy for Cognivanta Labs, pending legal review.",
@@ -7054,7 +7054,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:32 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"754b-6a6c7cb8-ab74eb8e95cf6072;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -7067,11 +7067,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "4ccfa027ec436bf5cb0ee05c9165144a-mum-edge9",
-          "x-hcdn-upstream-rt": "0.236"
+          "x-hcdn-request-id": "239fff2c7d9c8b10d3dfcb83c665c810-mum-edge10",
+          "x-hcdn-upstream-rt": "0.248"
         },
         "size": 30027,
-        "responseTimeMs": 281,
+        "responseTimeMs": 285,
         "metadata": {
           "title": "Terms of Service (Draft) — Cognivanta Labs",
           "description": "Draft terms of service for Cognivanta Labs, pending legal review.",
@@ -7224,7 +7224,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:32 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"a1d3-6a6c7cb8-fe51cfbc45f91a4f;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -7237,11 +7237,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "15e5a781143ee652f5992e2f05a020d5-mum-edge8",
-          "x-hcdn-upstream-rt": "0.240"
+          "x-hcdn-request-id": "bcb8f5c655c9ae5942e169c5f4e0b4b1-mum-edge10",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 41427,
-        "responseTimeMs": 289,
+        "responseTimeMs": 333,
         "metadata": {
           "title": "Pricing — Cognivanta Labs",
           "description": "Plans for building on CINTENT™ — from a free sandbox to governed enterprise deployment.",
@@ -7397,7 +7397,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:32 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"17ba5-6a6c7cb8-271013393fd79502;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -7410,11 +7410,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "9ff3cc65c78eed82380abf5a739f06ed-mum-edge7",
-          "x-hcdn-upstream-rt": "0.257"
+          "x-hcdn-request-id": "c495693d09af9afa221eadddd4a96e55-mum-edge10",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 97189,
-        "responseTimeMs": 293,
+        "responseTimeMs": 284,
         "metadata": {
           "title": "Research - Cognivanta Labs",
           "description": "Applied research into cognitive intelligence, context, reasoning, governance, autonomy, and human-AI collaboration.",
@@ -7589,7 +7589,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:32 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"13bf0-6a6c7cb8-3e6162ac25c8b5ea;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -7602,11 +7602,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "d7b32d293ebdda950a2552524090fc76-mum-edge4",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "46097bd8607b3782032b2abac42f5ce2-mum-edge8",
+          "x-hcdn-upstream-rt": "0.244"
         },
         "size": 80880,
-        "responseTimeMs": 280,
+        "responseTimeMs": 770,
         "metadata": {
           "title": "Blog and publications - Cognivanta Labs",
           "description": "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
@@ -7780,7 +7780,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"13bf0-6a6c7cb8-3e6162ac25c8b5ea;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -7793,11 +7793,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "e55f5bded403b0a207fdc23e32025068-mum-edge10",
-          "x-hcdn-upstream-rt": "0.249"
+          "x-hcdn-request-id": "e6483ec7a12b56696ceb9468069149de-mum-edge8",
+          "x-hcdn-upstream-rt": "0.240"
         },
         "size": 80880,
-        "responseTimeMs": 297,
+        "responseTimeMs": 279,
         "metadata": {
           "title": "Blog and publications - Cognivanta Labs",
           "description": "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
@@ -7971,7 +7971,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"13bf0-6a6c7cb8-3e6162ac25c8b5ea;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -7984,11 +7984,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "8c42a39241c88b440c3b64047739044c-mum-edge4",
-          "x-hcdn-upstream-rt": "0.244"
+          "x-hcdn-request-id": "ff91dbadbd106eb6fbf0822d9dcef3cf-mum-edge9",
+          "x-hcdn-upstream-rt": "0.259"
         },
         "size": 80880,
-        "responseTimeMs": 285,
+        "responseTimeMs": 300,
         "metadata": {
           "title": "Blog and publications - Cognivanta Labs",
           "description": "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
@@ -8162,7 +8162,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"13bf0-6a6c7cb8-3e6162ac25c8b5ea;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8175,11 +8175,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "4118317426ca0ccde9345f4a68a06538-mum-edge4",
-          "x-hcdn-upstream-rt": "0.234"
+          "x-hcdn-request-id": "bb2e113c5d2c5c2875c3f23904221a66-mum-edge10",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 80880,
-        "responseTimeMs": 774,
+        "responseTimeMs": 283,
         "metadata": {
           "title": "Blog and publications - Cognivanta Labs",
           "description": "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
@@ -8347,7 +8347,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8358,10 +8358,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "9b910e29abcfcb703db04d584adf766e-mum-edge9"
+          "x-hcdn-request-id": "957b98fa77d0dd3b9fbffd907d14e4b5-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 300,
+        "responseTimeMs": 283,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -8418,7 +8418,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8429,10 +8429,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "9bae35811e14681197a7fce519e382bc-mum-edge8"
+          "x-hcdn-request-id": "5744036bbc0afbd074a7dd6814c8c14b-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 298,
+        "responseTimeMs": 284,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -8489,7 +8489,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8500,10 +8500,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "3efd9644caf0dbf40ef567c34f4e1dc1-mum-edge7"
+          "x-hcdn-request-id": "234a33fde5d2e35de99adb9fe43621ba-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 277,
+        "responseTimeMs": 285,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -8560,7 +8560,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8571,10 +8571,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "9c4eb52022bc5dc18ac480e8b28ae20f-mum-edge6"
+          "x-hcdn-request-id": "0a5ae193f6bc16b0cb1c0fcfb98c60ad-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 277,
+        "responseTimeMs": 282,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -8631,7 +8631,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8642,10 +8642,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "2c2a33db2c52f462c744e27dc34dd001-mum-edge9"
+          "x-hcdn-request-id": "fb28b8c5adccd6871e9e1a3e9e00f6a0-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 340,
+        "responseTimeMs": 289,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -8702,7 +8702,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8713,10 +8713,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "57f3bdcc11b472b8752f65837f406b0a-mum-edge7"
+          "x-hcdn-request-id": "53c05a9450a102ace15b858ed9c4e3b4-mum-edge9"
         },
         "size": 1949,
-        "responseTimeMs": 275,
+        "responseTimeMs": 295,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -8773,7 +8773,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8784,10 +8784,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "d587645aa7b8010fa5300dbb770352b6-mum-edge8"
+          "x-hcdn-request-id": "b2602f98ed9159378395df38be5f8a50-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 287,
+        "responseTimeMs": 283,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -8844,7 +8844,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8855,10 +8855,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "242a88bf2bb7732966adb45afa2626c0-mum-edge4"
+          "x-hcdn-request-id": "ffbddce295f743a70397409d1a3a8eb9-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 277,
+        "responseTimeMs": 281,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -8915,7 +8915,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8926,10 +8926,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "b13f92e3f3b31f0640988a8b54cfba98-mum-edge6"
+          "x-hcdn-request-id": "cd744d81a1696bd00449f9e788a3891c-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 274,
+        "responseTimeMs": 285,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -8986,7 +8986,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:33 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -8997,10 +8997,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "209592b3eac9922087bf20c44b604b06-mum-edge9"
+          "x-hcdn-request-id": "ed68a40baf6947ff3f4befa3e8ae9480-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 282,
+        "responseTimeMs": 285,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -9056,7 +9056,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -9067,10 +9067,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "5ffae1250829e044bbd3c72c986d2fd3-mum-edge6"
+          "x-hcdn-request-id": "64d3e6c79f2e00e04db5fd1942540a8a-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 290,
+        "responseTimeMs": 288,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -9124,7 +9124,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -9135,10 +9135,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "ff8c435e9d2003899197e6b99a3cb223-mum-edge9"
+          "x-hcdn-request-id": "98b099293bd85d463c7e909441866954-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 279,
+        "responseTimeMs": 287,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -9192,7 +9192,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -9203,10 +9203,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "334dfb30016d9759de7545f0f3b7e06e-mum-edge4"
+          "x-hcdn-request-id": "09d696d004d7925b57ca3e2722a9fc8e-mum-edge9"
         },
         "size": 1949,
-        "responseTimeMs": 273,
+        "responseTimeMs": 282,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -9260,7 +9260,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -9271,10 +9271,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "68f2d70178b75f2e1c49f8a3b79808d9-mum-edge8"
+          "x-hcdn-request-id": "be7420fee94714d95e79a1072e82f2fa-mum-edge8"
         },
         "size": 1949,
-        "responseTimeMs": 289,
+        "responseTimeMs": 276,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -9328,7 +9328,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -9339,10 +9339,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "617845c452d83846c4317121e319495d-mum-edge7"
+          "x-hcdn-request-id": "85f59116bff103e5c5f133af5f6ef165-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 276,
+        "responseTimeMs": 286,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -9396,7 +9396,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:51 GMT",
           "etag": "\"79d-6a6c7cb8-98c23d3b49bd2cc3;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -9407,10 +9407,10 @@
           "strict-transport-security": "max-age=31536000",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-hcdn-request-id": "92dc0204bb061bd08fcfa0c25f5fd13f-mum-edge4"
+          "x-hcdn-request-id": "3c38e168415a5098edb484b6b5dd8f6e-mum-edge10"
         },
         "size": 1949,
-        "responseTimeMs": 288,
+        "responseTimeMs": 289,
         "metadata": {
           "title": "Page not found | Cognivanta Labs",
           "description": null,
@@ -9471,7 +9471,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:52 GMT",
           "etag": "\"2955e-6a6c7cb8-d9a910f6f02d6d0;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -9484,11 +9484,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "8efb19c77df02519dc8a4889f61ca9cd-mum-edge4",
-          "x-hcdn-upstream-rt": "0.244"
+          "x-hcdn-request-id": "bf8145585ef2a44e5c42f86f00b1c214-mum-edge10",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 169310,
-        "responseTimeMs": 286,
+        "responseTimeMs": 282,
         "metadata": {
           "title": "Cognivanta Labs — CINTENT understands intent before AI decides or acts",
           "description": "Cognivanta Labs develops CINTENT™, a governed cognitive intelligence platform that understands intent, interprets context, reasons across knowledge and constraints, makes accountable decisions, and enables purposeful action.",
@@ -9726,7 +9726,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:52 GMT",
           "etag": "\"b668-6a6c7cb8-c67b17f90c8415ba;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -9739,11 +9739,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "448bd8514b0b2923e73d9930a7d24a16-mum-edge6",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "a862bd997eada60e31bbed9f93e82dac-mum-edge10",
+          "x-hcdn-upstream-rt": "0.249"
         },
         "size": 46696,
-        "responseTimeMs": 275,
+        "responseTimeMs": 289,
         "metadata": {
           "title": "About — Cognivanta Labs",
           "description": "Indigenous Indian Cognitive AI platform. CINTENT™ MVP complete, platform-first architecture, multi-domain ecosystem, strong IP strategy, global vision.",
@@ -9913,7 +9913,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:52 GMT",
           "etag": "\"13bf0-6a6c7cb8-3e6162ac25c8b5ea;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -9926,11 +9926,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "39d0f7c0315a31e254bc1117a6c39160-mum-edge7",
-          "x-hcdn-upstream-rt": "0.256"
+          "x-hcdn-request-id": "78f097ca7d22556a9a048c80ca088bca-mum-edge10",
+          "x-hcdn-upstream-rt": "0.251"
         },
         "size": 80880,
-        "responseTimeMs": 291,
+        "responseTimeMs": 286,
         "metadata": {
           "title": "Blog and publications - Cognivanta Labs",
           "description": "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
@@ -10100,7 +10100,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:52 GMT",
           "etag": "\"a1d3-6a6c7cb8-fe51cfbc45f91a4f;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -10113,11 +10113,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "14608b5e7f58c50c1112659db7852c62-mum-edge8",
-          "x-hcdn-upstream-rt": "0.247"
+          "x-hcdn-request-id": "1af710a3e79429eeedc1badb7e5acb31-mum-edge10",
+          "x-hcdn-upstream-rt": "0.248"
         },
         "size": 41427,
-        "responseTimeMs": 297,
+        "responseTimeMs": 286,
         "metadata": {
           "title": "Pricing — Cognivanta Labs",
           "description": "Plans for building on CINTENT™ — from a free sandbox to governed enterprise deployment.",
@@ -10269,7 +10269,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:52 GMT",
           "etag": "\"e9e8-6a6c7cb8-20b2a8948785a154;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -10282,11 +10282,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "4ece886ad2616ff432174e5fa1f6b4ea-mum-edge9",
-          "x-hcdn-upstream-rt": "0.236"
+          "x-hcdn-request-id": "5564e11ed9619f86e447f6f3fdaa6a6f-mum-edge9",
+          "x-hcdn-upstream-rt": "0.246"
         },
         "size": 59880,
-        "responseTimeMs": 283,
+        "responseTimeMs": 285,
         "metadata": {
           "title": "CWOS™ — Cognivanta Labs",
           "description": "India&#x27;s first AI-native investment intelligence platform: cognitive research automation, quant signal generation, portfolio optimization and explainable, human-governed recommendations for retail investors, advisors, PMS/AIF managers, family offices and institutions.",
@@ -10462,7 +10462,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:34 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:52 GMT",
           "etag": "\"17ba5-6a6c7cb8-271013393fd79502;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -10475,11 +10475,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "c979fc432ceb1054111257167db56d37-mum-edge4",
-          "x-hcdn-upstream-rt": "0.236"
+          "x-hcdn-request-id": "6637f60efe7b429499959f7e6cdeb504-mum-edge8",
+          "x-hcdn-upstream-rt": "0.246"
         },
         "size": 97189,
-        "responseTimeMs": 274,
+        "responseTimeMs": 273,
         "metadata": {
           "title": "Research - Cognivanta Labs",
           "description": "Applied research into cognitive intelligence, context, reasoning, governance, autonomy, and human-AI collaboration.",
@@ -10655,7 +10655,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:53 GMT",
           "etag": "\"2955e-6a6c7cb8-d9a910f6f02d6d0;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -10668,11 +10668,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "50906a35b9515b8a885f845de29107a4-mum-edge4",
-          "x-hcdn-upstream-rt": "0.244"
+          "x-hcdn-request-id": "afda4f184aa21e6555b2d0bf42471a72-mum-edge10",
+          "x-hcdn-upstream-rt": "0.250"
         },
         "size": 169310,
-        "responseTimeMs": 281,
+        "responseTimeMs": 288,
         "metadata": {
           "title": "Cognivanta Labs — CINTENT understands intent before AI decides or acts",
           "description": "Cognivanta Labs develops CINTENT™, a governed cognitive intelligence platform that understands intent, interprets context, reasons across knowledge and constraints, makes accountable decisions, and enables purposeful action.",
@@ -10915,7 +10915,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:53 GMT",
           "etag": "\"b668-6a6c7cb8-c67b17f90c8415ba;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -10928,11 +10928,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "0ce2198999b5c833338215916989a8eb-mum-edge9",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "eac82692f7fe1e9cd8658af5dcaf4137-mum-edge10",
+          "x-hcdn-upstream-rt": "0.250"
         },
         "size": 46696,
-        "responseTimeMs": 283,
+        "responseTimeMs": 285,
         "metadata": {
           "title": "About — Cognivanta Labs",
           "description": "Indigenous Indian Cognitive AI platform. CINTENT™ MVP complete, platform-first architecture, multi-domain ecosystem, strong IP strategy, global vision.",
@@ -11107,7 +11107,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:53 GMT",
           "etag": "\"13bf0-6a6c7cb8-3e6162ac25c8b5ea;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -11120,11 +11120,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "91e8cec0835f1485c9a99a55cd6fa963-mum-edge6",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "4e19dc7c7b505d391b627f608c7d095c-mum-edge10",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 80880,
-        "responseTimeMs": 276,
+        "responseTimeMs": 282,
         "metadata": {
           "title": "Blog and publications - Cognivanta Labs",
           "description": "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
@@ -11299,7 +11299,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:53 GMT",
           "etag": "\"a1d3-6a6c7cb8-fe51cfbc45f91a4f;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -11312,11 +11312,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "8f4bc72062628656a62517a008dcaffe-mum-edge8",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "465ee3b65917667a2168e177e722c7a8-mum-edge10",
+          "x-hcdn-upstream-rt": "0.255"
         },
         "size": 41427,
-        "responseTimeMs": 285,
+        "responseTimeMs": 295,
         "metadata": {
           "title": "Pricing — Cognivanta Labs",
           "description": "Plans for building on CINTENT™ — from a free sandbox to governed enterprise deployment.",
@@ -11473,7 +11473,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:53 GMT",
           "etag": "\"e9e8-6a6c7cb8-20b2a8948785a154;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -11486,11 +11486,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "3849e767662190aa2f620ec8612fa19b-mum-edge6",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "cb832bd9df6bc66e1a7ae6262d38619a-mum-edge8",
+          "x-hcdn-upstream-rt": "0.244"
         },
         "size": 59880,
-        "responseTimeMs": 275,
+        "responseTimeMs": 271,
         "metadata": {
           "title": "CWOS™ — Cognivanta Labs",
           "description": "India&#x27;s first AI-native investment intelligence platform: cognitive research automation, quant signal generation, portfolio optimization and explainable, human-governed recommendations for retail investors, advisors, PMS/AIF managers, family offices and institutions.",
@@ -11671,7 +11671,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:53 GMT",
           "etag": "\"17ba5-6a6c7cb8-271013393fd79502;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -11684,11 +11684,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "b96871435d80e8472498f22904186098-mum-edge4",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "25074eca288121d85c4b06d410175583-mum-edge9",
+          "x-hcdn-upstream-rt": "0.245"
         },
         "size": 97189,
-        "responseTimeMs": 275,
+        "responseTimeMs": 286,
         "metadata": {
           "title": "Research - Cognivanta Labs",
           "description": "Applied research into cognitive intelligence, context, reasoning, governance, autonomy, and human-AI collaboration.",
@@ -11859,7 +11859,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"2955e-6a6c7cb8-d9a910f6f02d6d0;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -11872,11 +11872,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "5c3d6d477f468e4a82ba662a921217c6-mum-edge7",
-          "x-hcdn-upstream-rt": "0.241"
+          "x-hcdn-request-id": "6c553c40edb8742aa5f0a284a4c89957-mum-edge10",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 169310,
-        "responseTimeMs": 276,
+        "responseTimeMs": 283,
         "metadata": {
           "title": "Cognivanta Labs — CINTENT understands intent before AI decides or acts",
           "description": "Cognivanta Labs develops CINTENT™, a governed cognitive intelligence platform that understands intent, interprets context, reasons across knowledge and constraints, makes accountable decisions, and enables purposeful action.",
@@ -12114,7 +12114,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"b668-6a6c7cb8-c67b17f90c8415ba;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -12127,11 +12127,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "502e297008179e2d959010106e4d3b89-mum-edge7",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "62a63d92b166312f428692aa0f5e4c7b-mum-edge9",
+          "x-hcdn-upstream-rt": "0.259"
         },
         "size": 46696,
-        "responseTimeMs": 272,
+        "responseTimeMs": 295,
         "metadata": {
           "title": "About — Cognivanta Labs",
           "description": "Indigenous Indian Cognitive AI platform. CINTENT™ MVP complete, platform-first architecture, multi-domain ecosystem, strong IP strategy, global vision.",
@@ -12301,7 +12301,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"13bf0-6a6c7cb8-3e6162ac25c8b5ea;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -12314,11 +12314,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "dd467b41c164a348c7d7d6c2c03d3190-mum-edge9",
-          "x-hcdn-upstream-rt": "0.236"
+          "x-hcdn-request-id": "6974b981babafb44e122ae118babf442-mum-edge8",
+          "x-hcdn-upstream-rt": "0.248"
         },
         "size": 80880,
-        "responseTimeMs": 282,
+        "responseTimeMs": 275,
         "metadata": {
           "title": "Blog and publications - Cognivanta Labs",
           "description": "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
@@ -12488,7 +12488,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:53 GMT",
           "etag": "\"a1d3-6a6c7cb8-fe51cfbc45f91a4f;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -12501,11 +12501,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "080c98b7f7ae1ae7daff9497c8593fb2-mum-edge8",
-          "x-hcdn-upstream-rt": "0.239"
+          "x-hcdn-request-id": "1d03f7e6b9571801bd79dd72a5aad08b-mum-edge10",
+          "x-hcdn-upstream-rt": "0.246"
         },
         "size": 41427,
-        "responseTimeMs": 287,
+        "responseTimeMs": 284,
         "metadata": {
           "title": "Pricing — Cognivanta Labs",
           "description": "Plans for building on CINTENT™ — from a free sandbox to governed enterprise deployment.",
@@ -12657,7 +12657,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"e9e8-6a6c7cb8-20b2a8948785a154;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -12670,11 +12670,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "382a4ec6dea29896c161e12c1842f282-mum-edge6",
-          "x-hcdn-upstream-rt": "0.233"
+          "x-hcdn-request-id": "952b4c2a9fecbed3ba0db9929d41bf79-mum-edge10",
+          "x-hcdn-upstream-rt": "0.245"
         },
         "size": 59880,
-        "responseTimeMs": 270,
+        "responseTimeMs": 280,
         "metadata": {
           "title": "CWOS™ — Cognivanta Labs",
           "description": "India&#x27;s first AI-native investment intelligence platform: cognitive research automation, quant signal generation, portfolio optimization and explainable, human-governed recommendations for retail investors, advisors, PMS/AIF managers, family offices and institutions.",
@@ -12850,7 +12850,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:36 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"17ba5-6a6c7cb8-271013393fd79502;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -12863,11 +12863,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "8c52a332ef1556299f7d7c24fc353d9f-mum-edge4",
-          "x-hcdn-upstream-rt": "0.235"
+          "x-hcdn-request-id": "425187b586ff457071eac6f11a7c5c96-mum-edge10",
+          "x-hcdn-upstream-rt": "0.245"
         },
         "size": 97189,
-        "responseTimeMs": 1277,
+        "responseTimeMs": 283,
         "metadata": {
           "title": "Research - Cognivanta Labs",
           "description": "Applied research into cognitive intelligence, context, reasoning, governance, autonomy, and human-AI collaboration.",
@@ -13032,7 +13032,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"2955e-6a6c7cb8-d9a910f6f02d6d0;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -13045,11 +13045,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "cf552832365e8483db0cf859aae750fd-mum-edge9",
-          "x-hcdn-upstream-rt": "0.236"
+          "x-hcdn-request-id": "2357a7e3a2b550e8a48f6f52fcb22c86-mum-edge10",
+          "x-hcdn-upstream-rt": "0.248"
         },
         "size": 169310,
-        "responseTimeMs": 283,
+        "responseTimeMs": 786,
         "metadata": {
           "title": "Cognivanta Labs — CINTENT understands intent before AI decides or acts",
           "description": "Cognivanta Labs develops CINTENT™, a governed cognitive intelligence platform that understands intent, interprets context, reasons across knowledge and constraints, makes accountable decisions, and enables purposeful action.",
@@ -13281,7 +13281,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"b668-6a6c7cb8-c67b17f90c8415ba;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -13294,11 +13294,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "4c3ffa29b902781d52fdcdef1dd3a8e6-mum-edge4",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "e3e9f5e252572f25e3e3269f76428c8c-mum-edge8",
+          "x-hcdn-upstream-rt": "0.243"
         },
         "size": 46696,
-        "responseTimeMs": 276,
+        "responseTimeMs": 271,
         "metadata": {
           "title": "About — Cognivanta Labs",
           "description": "Indigenous Indian Cognitive AI platform. CINTENT™ MVP complete, platform-first architecture, multi-domain ecosystem, strong IP strategy, global vision.",
@@ -13462,7 +13462,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"13bf0-6a6c7cb8-3e6162ac25c8b5ea;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -13475,11 +13475,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "6ff0784b0e157ea6d59cf3c7175ce511-mum-edge8",
-          "x-hcdn-upstream-rt": "0.237"
+          "x-hcdn-request-id": "7a7d52f430eb56da82733d05217ba422-mum-edge10",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 80880,
-        "responseTimeMs": 285,
+        "responseTimeMs": 281,
         "metadata": {
           "title": "Blog and publications - Cognivanta Labs",
           "description": "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
@@ -13643,7 +13643,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:35 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"a1d3-6a6c7cb8-fe51cfbc45f91a4f;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -13656,11 +13656,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "60addaf4e7e9cdff5ca246f466a44e6e-mum-edge6",
-          "x-hcdn-upstream-rt": "0.238"
+          "x-hcdn-request-id": "94a52c8e2dc2d0ebb8d72b3315f37bbe-mum-edge9",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 41427,
-        "responseTimeMs": 277,
+        "responseTimeMs": 284,
         "metadata": {
           "title": "Pricing — Cognivanta Labs",
           "description": "Plans for building on CINTENT™ — from a free sandbox to governed enterprise deployment.",
@@ -13806,7 +13806,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:36 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"e9e8-6a6c7cb8-20b2a8948785a154;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -13819,11 +13819,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "1353ebf76b68b8ca2d8e769537e0a9f5-mum-edge7",
-          "x-hcdn-upstream-rt": "0.257"
+          "x-hcdn-request-id": "f40f4d49354d18b251e7de62883e9955-mum-edge10",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 59880,
-        "responseTimeMs": 293,
+        "responseTimeMs": 281,
         "metadata": {
           "title": "CWOS™ — Cognivanta Labs",
           "description": "India&#x27;s first AI-native investment intelligence platform: cognitive research automation, quant signal generation, portfolio optimization and explainable, human-governed recommendations for retail investors, advisors, PMS/AIF managers, family offices and institutions.",
@@ -13993,7 +13993,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:36 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:54 GMT",
           "etag": "\"17ba5-6a6c7cb8-271013393fd79502;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -14006,11 +14006,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "04d6889953f415d0ade043e71087dffe-mum-edge4",
-          "x-hcdn-upstream-rt": "0.244"
+          "x-hcdn-request-id": "decf5b4c739cc9547fd9813c19415e55-mum-edge10",
+          "x-hcdn-upstream-rt": "0.248"
         },
         "size": 97189,
-        "responseTimeMs": 283,
+        "responseTimeMs": 287,
         "metadata": {
           "title": "Research - Cognivanta Labs",
           "description": "Applied research into cognitive intelligence, context, reasoning, governance, autonomy, and human-AI collaboration.",
@@ -20626,7 +20626,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/index-9EwUQZzM.js",
       "contentType": "application/x-javascript",
       "size": 1044366,
-      "responseTimeMs": 281
+      "responseTimeMs": 290
     },
     {
       "url": "https://cognivantalabs.com/brand/cognivanta-labs-logo-compact-dark.png",
@@ -20634,7 +20634,7 @@
       "finalUrl": "https://cognivantalabs.com/brand/cognivanta-labs-logo-compact-dark.png",
       "contentType": "image/png",
       "size": 77150,
-      "responseTimeMs": 44
+      "responseTimeMs": 279
     },
     {
       "url": "https://cognivantalabs.com/hero/hero-poster-clean.png",
@@ -20642,7 +20642,7 @@
       "finalUrl": "https://cognivantalabs.com/hero/hero-poster-clean.png",
       "contentType": "image/png",
       "size": 1959241,
-      "responseTimeMs": 39
+      "responseTimeMs": 289
     },
     {
       "url": "https://cognivantalabs.com/logos/cintent-icon.png",
@@ -20650,7 +20650,7 @@
       "finalUrl": "https://cognivantalabs.com/logos/cintent-icon.png",
       "contentType": "image/png",
       "size": 164579,
-      "responseTimeMs": 47
+      "responseTimeMs": 278
     },
     {
       "url": "https://cognivantalabs.com/products/shunya-ai-logo.webp",
@@ -20658,7 +20658,7 @@
       "finalUrl": "https://cognivantalabs.com/products/shunya-ai-logo.webp",
       "contentType": "image/webp",
       "size": 79316,
-      "responseTimeMs": 277
+      "responseTimeMs": 36
     },
     {
       "url": "https://cognivantalabs.com/logos/blisstrail-logo.png",
@@ -20666,7 +20666,7 @@
       "finalUrl": "https://cognivantalabs.com/logos/blisstrail-logo.png",
       "contentType": "image/png",
       "size": 34361,
-      "responseTimeMs": 280
+      "responseTimeMs": 313
     },
     {
       "url": "https://cognivantalabs.com/products/chaxu-logo.webp",
@@ -20674,7 +20674,7 @@
       "finalUrl": "https://cognivantalabs.com/products/chaxu-logo.webp",
       "contentType": "image/webp",
       "size": 43586,
-      "responseTimeMs": 47
+      "responseTimeMs": 38
     },
     {
       "url": "https://cognivantalabs.com/products/ikshana-logo.webp",
@@ -20682,7 +20682,7 @@
       "finalUrl": "https://cognivantalabs.com/products/ikshana-logo.webp",
       "contentType": "image/webp",
       "size": 26932,
-      "responseTimeMs": 110
+      "responseTimeMs": 412
     },
     {
       "url": "https://cognivantalabs.com/products/byobot-logo.png",
@@ -20690,7 +20690,7 @@
       "finalUrl": "https://cognivantalabs.com/products/byobot-logo.png",
       "contentType": "image/png",
       "size": 765865,
-      "responseTimeMs": 109
+      "responseTimeMs": 590
     },
     {
       "url": "https://cognivantalabs.com/assets/styles-D-Shu4aZ.css",
@@ -20698,7 +20698,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/styles-D-Shu4aZ.css",
       "contentType": "text/css",
       "size": 92128,
-      "responseTimeMs": 290
+      "responseTimeMs": 281
     },
     {
       "url": "https://cognivantalabs.com/products/awcs-logo.png",
@@ -20706,7 +20706,7 @@
       "finalUrl": "https://cognivantalabs.com/products/awcs-logo.png",
       "contentType": "image/png",
       "size": 957727,
-      "responseTimeMs": 278
+      "responseTimeMs": 576
     },
     {
       "url": "https://cognivantalabs.com/products/externovate-logo.png",
@@ -20714,7 +20714,7 @@
       "finalUrl": "https://cognivantalabs.com/products/externovate-logo.png",
       "contentType": "image/png",
       "size": 9657,
-      "responseTimeMs": 34
+      "responseTimeMs": 298
     },
     {
       "url": "https://cognivantalabs.com/assets/index-CZRzHIVh.js",
@@ -20722,7 +20722,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/index-CZRzHIVh.js",
       "contentType": "application/x-javascript",
       "size": 45164,
-      "responseTimeMs": 290
+      "responseTimeMs": 288
     },
     {
       "url": "https://cognivantalabs.com/assets/Reveal-Cq7fM9nC.js",
@@ -20730,7 +20730,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/Reveal-Cq7fM9nC.js",
       "contentType": "application/x-javascript",
       "size": 610,
-      "responseTimeMs": 278
+      "responseTimeMs": 267
     },
     {
       "url": "https://cognivantalabs.com/assets/ProductCard-TgqsEW7-.js",
@@ -20738,7 +20738,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/ProductCard-TgqsEW7-.js",
       "contentType": "application/x-javascript",
       "size": 3833,
-      "responseTimeMs": 282
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/assets/CognitiveLoopDiagram--RdXOTHd.js",
@@ -20746,7 +20746,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/CognitiveLoopDiagram--RdXOTHd.js",
       "contentType": "application/x-javascript",
       "size": 13342,
-      "responseTimeMs": 287
+      "responseTimeMs": 275
     },
     {
       "url": "https://cognivantalabs.com/manifest.webmanifest",
@@ -20754,7 +20754,7 @@
       "finalUrl": "https://cognivantalabs.com/manifest.webmanifest",
       "contentType": "text/plain",
       "size": 715,
-      "responseTimeMs": 274
+      "responseTimeMs": 290
     },
     {
       "url": "https://cognivantalabs.com/favicon.ico",
@@ -20762,7 +20762,7 @@
       "finalUrl": "https://cognivantalabs.com/favicon.ico",
       "contentType": "image/x-icon",
       "size": 5299,
-      "responseTimeMs": 292
+      "responseTimeMs": 36
     },
     {
       "url": "https://cognivantalabs.com/brand/favicon-32x32.png",
@@ -20770,7 +20770,7 @@
       "finalUrl": "https://cognivantalabs.com/brand/favicon-32x32.png",
       "contentType": "image/png",
       "size": 1674,
-      "responseTimeMs": 47
+      "responseTimeMs": 272
     },
     {
       "url": "https://cognivantalabs.com/brand/apple-touch-icon.png",
@@ -20778,7 +20778,7 @@
       "finalUrl": "https://cognivantalabs.com/brand/apple-touch-icon.png",
       "contentType": "image/png",
       "size": 22314,
-      "responseTimeMs": 287
+      "responseTimeMs": 315
     },
     {
       "url": "https://cognivantalabs.com/",
@@ -20786,7 +20786,7 @@
       "finalUrl": "https://cognivantalabs.com/",
       "contentType": "text/html",
       "size": 169310,
-      "responseTimeMs": 284
+      "responseTimeMs": 291
     },
     {
       "url": "https://cognivantalabs.com/hero/hero-rocket.png",
@@ -20794,7 +20794,7 @@
       "finalUrl": "https://cognivantalabs.com/hero/hero-rocket.png",
       "contentType": "image/png",
       "size": 2301672,
-      "responseTimeMs": 46
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/assets/platform-Q0MRYy4N.js",
@@ -20802,7 +20802,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/platform-Q0MRYy4N.js",
       "contentType": "application/x-javascript",
       "size": 29700,
-      "responseTimeMs": 277
+      "responseTimeMs": 279
     },
     {
       "url": "https://cognivantalabs.com/assets/CintentCoreDiagram-DppzZ6dy.js",
@@ -20810,7 +20810,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/CintentCoreDiagram-DppzZ6dy.js",
       "contentType": "application/x-javascript",
       "size": 1444,
-      "responseTimeMs": 271
+      "responseTimeMs": 37
     },
     {
       "url": "https://cognivantalabs.com/platform",
@@ -20818,7 +20818,7 @@
       "finalUrl": "https://cognivantalabs.com/platform",
       "contentType": "text/html",
       "size": 86189,
-      "responseTimeMs": 282
+      "responseTimeMs": 284
     },
     {
       "url": "https://cognivantalabs.com/diagrams/cintent-cognitive-loop.svg",
@@ -20826,7 +20826,7 @@
       "finalUrl": "https://cognivantalabs.com/diagrams/cintent-cognitive-loop.svg",
       "contentType": "image/svg+xml",
       "size": 4383,
-      "responseTimeMs": 277
+      "responseTimeMs": 40
     },
     {
       "url": "https://cognivantalabs.com/assets/applications-DQCzeGIA.js",
@@ -20834,7 +20834,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/applications-DQCzeGIA.js",
       "contentType": "application/x-javascript",
       "size": 17234,
-      "responseTimeMs": 275
+      "responseTimeMs": 277
     },
     {
       "url": "https://cognivantalabs.com/applications",
@@ -20842,7 +20842,7 @@
       "finalUrl": "https://cognivantalabs.com/applications",
       "contentType": "text/html",
       "size": 56905,
-      "responseTimeMs": 304
+      "responseTimeMs": 303
     },
     {
       "url": "https://cognivantalabs.com/hero/hero-why-different-2.png",
@@ -20850,7 +20850,7 @@
       "finalUrl": "https://cognivantalabs.com/hero/hero-why-different-2.png",
       "contentType": "image/png",
       "size": 2102181,
-      "responseTimeMs": 895
+      "responseTimeMs": 321
     },
     {
       "url": "https://cognivantalabs.com/assets/research-FN3toe1X.js",
@@ -20858,7 +20858,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/research-FN3toe1X.js",
       "contentType": "application/x-javascript",
       "size": 26018,
-      "responseTimeMs": 329
+      "responseTimeMs": 36
     },
     {
       "url": "https://cognivantalabs.com/research",
@@ -20866,7 +20866,7 @@
       "finalUrl": "https://cognivantalabs.com/research",
       "contentType": "text/html",
       "size": 97189,
-      "responseTimeMs": 323
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/assets/developers-DOoeKcqz.js",
@@ -20874,7 +20874,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/developers-DOoeKcqz.js",
       "contentType": "application/x-javascript",
       "size": 420537,
-      "responseTimeMs": 356
+      "responseTimeMs": 302
     },
     {
       "url": "https://cognivantalabs.com/assets/utils-BDLxV64I.js",
@@ -20882,7 +20882,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/utils-BDLxV64I.js",
       "contentType": "application/x-javascript",
       "size": 36471,
-      "responseTimeMs": 341
+      "responseTimeMs": 296
     },
     {
       "url": "https://cognivantalabs.com/developers",
@@ -20890,7 +20890,7 @@
       "finalUrl": "https://cognivantalabs.com/developers",
       "contentType": "text/html",
       "size": 67817,
-      "responseTimeMs": 357
+      "responseTimeMs": 296
     },
     {
       "url": "https://cognivantalabs.com/assets/architecture-B_nNdgeM.js",
@@ -20898,7 +20898,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/architecture-B_nNdgeM.js",
       "contentType": "application/x-javascript",
       "size": 8664,
-      "responseTimeMs": 333
+      "responseTimeMs": 272
     },
     {
       "url": "https://cognivantalabs.com/architecture",
@@ -20906,7 +20906,7 @@
       "finalUrl": "https://cognivantalabs.com/architecture",
       "contentType": "text/html",
       "size": 42528,
-      "responseTimeMs": 300
+      "responseTimeMs": 288
     },
     {
       "url": "https://cognivantalabs.com/assets/products-X3ureTLB.js",
@@ -20914,7 +20914,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products-X3ureTLB.js",
       "contentType": "application/x-javascript",
       "size": 3643,
-      "responseTimeMs": 276
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/assets/useLocation-BpvTaya0.js",
@@ -20922,7 +20922,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/useLocation-BpvTaya0.js",
       "contentType": "application/x-javascript",
       "size": 134,
-      "responseTimeMs": 284
+      "responseTimeMs": 287
     },
     {
       "url": "https://cognivantalabs.com/products",
@@ -20930,7 +20930,7 @@
       "finalUrl": "https://cognivantalabs.com/products",
       "contentType": "text/html",
       "size": 62478,
-      "responseTimeMs": 282
+      "responseTimeMs": 284
     },
     {
       "url": "https://cognivantalabs.com/assets/products.askcogni-DI5nrveh.js",
@@ -20938,7 +20938,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.askcogni-DI5nrveh.js",
       "contentType": "application/x-javascript",
       "size": 204,
-      "responseTimeMs": 295
+      "responseTimeMs": 286
     },
     {
       "url": "https://cognivantalabs.com/assets/ProductPageLayout-Db7wgNfm.js",
@@ -20946,7 +20946,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/ProductPageLayout-Db7wgNfm.js",
       "contentType": "application/x-javascript",
       "size": 12313,
-      "responseTimeMs": 271
+      "responseTimeMs": 37
     },
     {
       "url": "https://cognivantalabs.com/products/askcogni",
@@ -20954,7 +20954,7 @@
       "finalUrl": "https://cognivantalabs.com/products/askcogni",
       "contentType": "text/html",
       "size": 43120,
-      "responseTimeMs": 291
+      "responseTimeMs": 271
     },
     {
       "url": "https://cognivantalabs.com/assets/products.awcs-C-5c9YXW.js",
@@ -20962,7 +20962,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.awcs-C-5c9YXW.js",
       "contentType": "application/x-javascript",
       "size": 213,
-      "responseTimeMs": 278
+      "responseTimeMs": 296
     },
     {
       "url": "https://cognivantalabs.com/products/awcs",
@@ -20970,7 +20970,7 @@
       "finalUrl": "https://cognivantalabs.com/products/awcs",
       "contentType": "text/html",
       "size": 44261,
-      "responseTimeMs": 279
+      "responseTimeMs": 284
     },
     {
       "url": "https://cognivantalabs.com/products/awcs-architecture.png",
@@ -20978,7 +20978,7 @@
       "finalUrl": "https://cognivantalabs.com/products/awcs-architecture.png",
       "contentType": "image/png",
       "size": 2089521,
-      "responseTimeMs": 48
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/assets/products.blisstrail-CSQQsHyi.js",
@@ -20986,7 +20986,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.blisstrail-CSQQsHyi.js",
       "contentType": "application/x-javascript",
       "size": 219,
-      "responseTimeMs": 285
+      "responseTimeMs": 286
     },
     {
       "url": "https://cognivantalabs.com/products/blisstrail",
@@ -20994,7 +20994,7 @@
       "finalUrl": "https://cognivantalabs.com/products/blisstrail",
       "contentType": "text/html",
       "size": 48446,
-      "responseTimeMs": 276
+      "responseTimeMs": 307
     },
     {
       "url": "https://cognivantalabs.com/assets/products.chaxu-B0BBXTbu.js",
@@ -21002,7 +21002,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.chaxu-B0BBXTbu.js",
       "contentType": "application/x-javascript",
       "size": 214,
-      "responseTimeMs": 278
+      "responseTimeMs": 303
     },
     {
       "url": "https://cognivantalabs.com/products/chaxu",
@@ -21010,7 +21010,7 @@
       "finalUrl": "https://cognivantalabs.com/products/chaxu",
       "contentType": "text/html",
       "size": 55179,
-      "responseTimeMs": 279
+      "responseTimeMs": 288
     },
     {
       "url": "https://cognivantalabs.com/products/chaxu-a2.png",
@@ -21018,7 +21018,7 @@
       "finalUrl": "https://cognivantalabs.com/products/chaxu-a2.png",
       "contentType": "image/png",
       "size": 212199,
-      "responseTimeMs": 38
+      "responseTimeMs": 273
     },
     {
       "url": "https://cognivantalabs.com/products/chaxu-a1.png",
@@ -21026,7 +21026,7 @@
       "finalUrl": "https://cognivantalabs.com/products/chaxu-a1.png",
       "contentType": "image/png",
       "size": 202363,
-      "responseTimeMs": 330
+      "responseTimeMs": 282
     },
     {
       "url": "https://cognivantalabs.com/products/chaxu-docking-station.png",
@@ -21034,7 +21034,7 @@
       "finalUrl": "https://cognivantalabs.com/products/chaxu-docking-station.png",
       "contentType": "image/png",
       "size": 1939193,
-      "responseTimeMs": 742
+      "responseTimeMs": 278
     },
     {
       "url": "https://cognivantalabs.com/products/chaxu-command-overview.png",
@@ -21042,7 +21042,7 @@
       "finalUrl": "https://cognivantalabs.com/products/chaxu-command-overview.png",
       "contentType": "image/png",
       "size": 1860462,
-      "responseTimeMs": 35
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/products/chaxu-deployment-architecture.png",
@@ -21050,7 +21050,7 @@
       "finalUrl": "https://cognivantalabs.com/products/chaxu-deployment-architecture.png",
       "contentType": "image/png",
       "size": 2031681,
-      "responseTimeMs": 286
+      "responseTimeMs": 296
     },
     {
       "url": "https://cognivantalabs.com/assets/products.cobots-DL4MVFRv.js",
@@ -21058,7 +21058,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.cobots-DL4MVFRv.js",
       "contentType": "application/x-javascript",
       "size": 215,
-      "responseTimeMs": 292
+      "responseTimeMs": 287
     },
     {
       "url": "https://cognivantalabs.com/products/cobots",
@@ -21066,7 +21066,7 @@
       "finalUrl": "https://cognivantalabs.com/products/cobots",
       "contentType": "text/html",
       "size": 38903,
-      "responseTimeMs": 279
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/assets/products.cogni-doc-Cl2iBqSD.js",
@@ -21074,7 +21074,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.cogni-doc-Cl2iBqSD.js",
       "contentType": "application/x-javascript",
       "size": 221,
-      "responseTimeMs": 295
+      "responseTimeMs": 36
     },
     {
       "url": "https://cognivantalabs.com/products/cogni-doc",
@@ -21082,7 +21082,7 @@
       "finalUrl": "https://cognivantalabs.com/products/cogni-doc",
       "contentType": "text/html",
       "size": 38055,
-      "responseTimeMs": 275
+      "responseTimeMs": 282
     },
     {
       "url": "https://cognivantalabs.com/assets/products.cwos-BvkfDqP0.js",
@@ -21090,7 +21090,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.cwos-BvkfDqP0.js",
       "contentType": "application/x-javascript",
       "size": 213,
-      "responseTimeMs": 272
+      "responseTimeMs": 278
     },
     {
       "url": "https://cognivantalabs.com/products/cwos",
@@ -21098,7 +21098,7 @@
       "finalUrl": "https://cognivantalabs.com/products/cwos",
       "contentType": "text/html",
       "size": 59880,
-      "responseTimeMs": 285
+      "responseTimeMs": 274
     },
     {
       "url": "https://cognivantalabs.com/assets/products.externovate-xdIExGzc.js",
@@ -21106,7 +21106,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.externovate-xdIExGzc.js",
       "contentType": "application/x-javascript",
       "size": 220,
-      "responseTimeMs": 280
+      "responseTimeMs": 40
     },
     {
       "url": "https://cognivantalabs.com/products/externovate",
@@ -21114,7 +21114,7 @@
       "finalUrl": "https://cognivantalabs.com/products/externovate",
       "contentType": "text/html",
       "size": 48032,
-      "responseTimeMs": 313
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/products/externovate-catalogue.png",
@@ -21122,7 +21122,7 @@
       "finalUrl": "https://cognivantalabs.com/products/externovate-catalogue.png",
       "contentType": "image/png",
       "size": 2331594,
-      "responseTimeMs": 37
+      "responseTimeMs": 294
     },
     {
       "url": "https://cognivantalabs.com/products/externovate-catalogue-alt.png",
@@ -21130,7 +21130,7 @@
       "finalUrl": "https://cognivantalabs.com/products/externovate-catalogue-alt.png",
       "contentType": "image/png",
       "size": 2178925,
-      "responseTimeMs": 329
+      "responseTimeMs": 284
     },
     {
       "url": "https://cognivantalabs.com/products/externovate-catalogue-teasers.png",
@@ -21138,7 +21138,7 @@
       "finalUrl": "https://cognivantalabs.com/products/externovate-catalogue-teasers.png",
       "contentType": "image/png",
       "size": 2153932,
-      "responseTimeMs": 773
+      "responseTimeMs": 761
     },
     {
       "url": "https://cognivantalabs.com/products/externovate-internship-program.jpg",
@@ -21146,7 +21146,7 @@
       "finalUrl": "https://cognivantalabs.com/products/externovate-internship-program.jpg",
       "contentType": "image/jpeg",
       "size": 101591,
-      "responseTimeMs": 37
+      "responseTimeMs": 274
     },
     {
       "url": "https://cognivantalabs.com/assets/products.health-hub-Dm0Cne_8.js",
@@ -21154,7 +21154,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.health-hub-Dm0Cne_8.js",
       "contentType": "application/x-javascript",
       "size": 222,
-      "responseTimeMs": 281
+      "responseTimeMs": 395
     },
     {
       "url": "https://cognivantalabs.com/products/health-hub",
@@ -21162,7 +21162,7 @@
       "finalUrl": "https://cognivantalabs.com/products/health-hub",
       "contentType": "text/html",
       "size": 49367,
-      "responseTimeMs": 285
+      "responseTimeMs": 270
     },
     {
       "url": "https://cognivantalabs.com/assets/products.ikshana-CEnHJFyP.js",
@@ -21170,7 +21170,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.ikshana-CEnHJFyP.js",
       "contentType": "application/x-javascript",
       "size": 216,
-      "responseTimeMs": 278
+      "responseTimeMs": 287
     },
     {
       "url": "https://cognivantalabs.com/products/ikshana",
@@ -21178,7 +21178,7 @@
       "finalUrl": "https://cognivantalabs.com/products/ikshana",
       "contentType": "text/html",
       "size": 48494,
-      "responseTimeMs": 273
+      "responseTimeMs": 271
     },
     {
       "url": "https://cognivantalabs.com/assets/products.nyaynetra-C7JFYUWH.js",
@@ -21186,7 +21186,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.nyaynetra-C7JFYUWH.js",
       "contentType": "application/x-javascript",
       "size": 218,
-      "responseTimeMs": 275
+      "responseTimeMs": 277
     },
     {
       "url": "https://cognivantalabs.com/products/nyaynetra",
@@ -21194,7 +21194,7 @@
       "finalUrl": "https://cognivantalabs.com/products/nyaynetra",
       "contentType": "text/html",
       "size": 42591,
-      "responseTimeMs": 287
+      "responseTimeMs": 284
     },
     {
       "url": "https://cognivantalabs.com/assets/products.shunyai-CASSWzvf.js",
@@ -21202,7 +21202,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/products.shunyai-CASSWzvf.js",
       "contentType": "application/x-javascript",
       "size": 216,
-      "responseTimeMs": 286
+      "responseTimeMs": 284
     },
     {
       "url": "https://cognivantalabs.com/products/shunyai",
@@ -21210,7 +21210,7 @@
       "finalUrl": "https://cognivantalabs.com/products/shunyai",
       "contentType": "text/html",
       "size": 51179,
-      "responseTimeMs": 270
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/assets/pilots-BChQjZ2F.js",
@@ -21218,7 +21218,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/pilots-BChQjZ2F.js",
       "contentType": "application/x-javascript",
       "size": 11015,
-      "responseTimeMs": 294
+      "responseTimeMs": 299
     },
     {
       "url": "https://cognivantalabs.com/pilots",
@@ -21226,7 +21226,7 @@
       "finalUrl": "https://cognivantalabs.com/pilots",
       "contentType": "text/html",
       "size": 49276,
-      "responseTimeMs": 451
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/assets/pricing-Bg0Z_Mo1.js",
@@ -21234,7 +21234,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/pricing-Bg0Z_Mo1.js",
       "contentType": "application/x-javascript",
       "size": 8610,
-      "responseTimeMs": 271
+      "responseTimeMs": 265
     },
     {
       "url": "https://cognivantalabs.com/pricing",
@@ -21242,7 +21242,7 @@
       "finalUrl": "https://cognivantalabs.com/pricing",
       "contentType": "text/html",
       "size": 41427,
-      "responseTimeMs": 280
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/assets/about-7xZP3CQy.js",
@@ -21250,7 +21250,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/about-7xZP3CQy.js",
       "contentType": "application/x-javascript",
       "size": 4307,
-      "responseTimeMs": 289
+      "responseTimeMs": 38
     },
     {
       "url": "https://cognivantalabs.com/assets/team-1AFbGvvr.js",
@@ -21258,7 +21258,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/team-1AFbGvvr.js",
       "contentType": "application/x-javascript",
       "size": 5894,
-      "responseTimeMs": 275
+      "responseTimeMs": 283
     },
     {
       "url": "https://cognivantalabs.com/about",
@@ -21266,7 +21266,7 @@
       "finalUrl": "https://cognivantalabs.com/about",
       "contentType": "text/html",
       "size": 46696,
-      "responseTimeMs": 291
+      "responseTimeMs": 285
     },
     {
       "url": "https://cognivantalabs.com/team/rajesh.png",
@@ -21274,7 +21274,7 @@
       "finalUrl": "https://cognivantalabs.com/team/rajesh.png",
       "contentType": "image/png",
       "size": 73119,
-      "responseTimeMs": 38
+      "responseTimeMs": 318
     },
     {
       "url": "https://cognivantalabs.com/team/kunal.png",
@@ -21282,7 +21282,7 @@
       "finalUrl": "https://cognivantalabs.com/team/kunal.png",
       "contentType": "image/png",
       "size": 86880,
-      "responseTimeMs": 44
+      "responseTimeMs": 294
     },
     {
       "url": "https://cognivantalabs.com/team/rashi.png",
@@ -21290,7 +21290,7 @@
       "finalUrl": "https://cognivantalabs.com/team/rashi.png",
       "contentType": "image/png",
       "size": 155934,
-      "responseTimeMs": 287
+      "responseTimeMs": 326
     },
     {
       "url": "https://cognivantalabs.com/team/srinivas.png",
@@ -21298,7 +21298,7 @@
       "finalUrl": "https://cognivantalabs.com/team/srinivas.png",
       "contentType": "image/png",
       "size": 139403,
-      "responseTimeMs": 34
+      "responseTimeMs": 327
     },
     {
       "url": "https://cognivantalabs.com/team/rupam.png",
@@ -21306,7 +21306,7 @@
       "finalUrl": "https://cognivantalabs.com/team/rupam.png",
       "contentType": "image/png",
       "size": 211022,
-      "responseTimeMs": 273
+      "responseTimeMs": 277
     },
     {
       "url": "https://cognivantalabs.com/team/lakshith.png",
@@ -21314,7 +21314,7 @@
       "finalUrl": "https://cognivantalabs.com/team/lakshith.png",
       "contentType": "image/png",
       "size": 151265,
-      "responseTimeMs": 288
+      "responseTimeMs": 323
     },
     {
       "url": "https://cognivantalabs.com/team/oscar.png",
@@ -21322,7 +21322,7 @@
       "finalUrl": "https://cognivantalabs.com/team/oscar.png",
       "contentType": "image/png",
       "size": 117226,
-      "responseTimeMs": 41
+      "responseTimeMs": 324
     },
     {
       "url": "https://cognivantalabs.com/team/amit.png",
@@ -21330,7 +21330,7 @@
       "finalUrl": "https://cognivantalabs.com/team/amit.png",
       "contentType": "image/png",
       "size": 116874,
-      "responseTimeMs": 292
+      "responseTimeMs": 329
     },
     {
       "url": "https://cognivantalabs.com/team/dr-sridhar.png",
@@ -21338,7 +21338,7 @@
       "finalUrl": "https://cognivantalabs.com/team/dr-sridhar.png",
       "contentType": "image/png",
       "size": 100990,
-      "responseTimeMs": 314
+      "responseTimeMs": 322
     },
     {
       "url": "https://cognivantalabs.com/team/dr-asoke.png",
@@ -21346,7 +21346,7 @@
       "finalUrl": "https://cognivantalabs.com/team/dr-asoke.png",
       "contentType": "image/png",
       "size": 169463,
-      "responseTimeMs": 52
+      "responseTimeMs": 307
     },
     {
       "url": "https://cognivantalabs.com/assets/careers-BeQYaxRA.js",
@@ -21354,7 +21354,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/careers-BeQYaxRA.js",
       "contentType": "application/x-javascript",
       "size": 5799,
-      "responseTimeMs": 281
+      "responseTimeMs": 284
     },
     {
       "url": "https://cognivantalabs.com/careers",
@@ -21362,7 +21362,7 @@
       "finalUrl": "https://cognivantalabs.com/careers",
       "contentType": "text/html",
       "size": 30505,
-      "responseTimeMs": 276
+      "responseTimeMs": 284
     },
     {
       "url": "https://cognivantalabs.com/assets/investors-CmJKZuLN.js",
@@ -21370,7 +21370,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/investors-CmJKZuLN.js",
       "contentType": "application/x-javascript",
       "size": 12619,
-      "responseTimeMs": 288
+      "responseTimeMs": 38
     },
     {
       "url": "https://cognivantalabs.com/investors",
@@ -21378,7 +21378,7 @@
       "finalUrl": "https://cognivantalabs.com/investors",
       "contentType": "text/html",
       "size": 48793,
-      "responseTimeMs": 269
+      "responseTimeMs": 275
     },
     {
       "url": "https://cognivantalabs.com/brand/cognivanta-labs-logo-dark.png",
@@ -21386,7 +21386,7 @@
       "finalUrl": "https://cognivantalabs.com/brand/cognivanta-labs-logo-dark.png",
       "contentType": "image/png",
       "size": 684190,
-      "responseTimeMs": 288
+      "responseTimeMs": 506
     },
     {
       "url": "https://cognivantalabs.com/brand/cognivanta-labs-logo-light.png",
@@ -21394,7 +21394,7 @@
       "finalUrl": "https://cognivantalabs.com/brand/cognivanta-labs-logo-light.png",
       "contentType": "image/png",
       "size": 597207,
-      "responseTimeMs": 46
+      "responseTimeMs": 280
     },
     {
       "url": "https://cognivantalabs.com/brand/cognivanta-symbol.png",
@@ -21402,7 +21402,7 @@
       "finalUrl": "https://cognivantalabs.com/brand/cognivanta-symbol.png",
       "contentType": "image/png",
       "size": 239473,
-      "responseTimeMs": 348
+      "responseTimeMs": 362
     },
     {
       "url": "https://cognivantalabs.com/assets/media-BdKE-V8H.js",
@@ -21410,7 +21410,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/media-BdKE-V8H.js",
       "contentType": "application/x-javascript",
       "size": 9544,
-      "responseTimeMs": 298
+      "responseTimeMs": 289
     },
     {
       "url": "https://cognivantalabs.com/media",
@@ -21418,7 +21418,7 @@
       "finalUrl": "https://cognivantalabs.com/media",
       "contentType": "text/html",
       "size": 42557,
-      "responseTimeMs": 274
+      "responseTimeMs": 279
     },
     {
       "url": "https://cognivantalabs.com/assets/roadmap-BXt92GnF.js",
@@ -21426,7 +21426,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/roadmap-BXt92GnF.js",
       "contentType": "application/x-javascript",
       "size": 5290,
-      "responseTimeMs": 278
+      "responseTimeMs": 303
     },
     {
       "url": "https://cognivantalabs.com/roadmap",
@@ -21434,7 +21434,7 @@
       "finalUrl": "https://cognivantalabs.com/roadmap",
       "contentType": "text/html",
       "size": 34770,
-      "responseTimeMs": 286
+      "responseTimeMs": 284
     },
     {
       "url": "https://cognivantalabs.com/assets/cognites-DlOIniTf.js",
@@ -21442,7 +21442,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/cognites-DlOIniTf.js",
       "contentType": "application/x-javascript",
       "size": 3338,
-      "responseTimeMs": 295
+      "responseTimeMs": 277
     },
     {
       "url": "https://cognivantalabs.com/cognites",
@@ -21458,7 +21458,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/blog-CV9JIwNu.js",
       "contentType": "application/x-javascript",
       "size": 106249,
-      "responseTimeMs": 275
+      "responseTimeMs": 38
     },
     {
       "url": "https://cognivantalabs.com/blog",
@@ -21466,7 +21466,7 @@
       "finalUrl": "https://cognivantalabs.com/blog",
       "contentType": "text/html",
       "size": 80880,
-      "responseTimeMs": 284
+      "responseTimeMs": 272
     },
     {
       "url": "https://cognivantalabs.com/assets/contact-BEzEGjy-.js",
@@ -21474,7 +21474,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/contact-BEzEGjy-.js",
       "contentType": "application/x-javascript",
       "size": 5846,
-      "responseTimeMs": 275
+      "responseTimeMs": 295
     },
     {
       "url": "https://cognivantalabs.com/contact",
@@ -21482,7 +21482,7 @@
       "finalUrl": "https://cognivantalabs.com/contact",
       "contentType": "text/html",
       "size": 30259,
-      "responseTimeMs": 288
+      "responseTimeMs": 281
     },
     {
       "url": "https://cognivantalabs.com/assets/privacy-BH-SPeOv.js",
@@ -21490,7 +21490,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/privacy-BH-SPeOv.js",
       "contentType": "application/x-javascript",
       "size": 3202,
-      "responseTimeMs": 271
+      "responseTimeMs": 282
     },
     {
       "url": "https://cognivantalabs.com/privacy",
@@ -21498,7 +21498,7 @@
       "finalUrl": "https://cognivantalabs.com/privacy",
       "contentType": "text/html",
       "size": 29634,
-      "responseTimeMs": 282
+      "responseTimeMs": 288
     },
     {
       "url": "https://cognivantalabs.com/assets/terms-NfR07PI1.js",
@@ -21506,7 +21506,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/terms-NfR07PI1.js",
       "contentType": "application/x-javascript",
       "size": 3515,
-      "responseTimeMs": 274
+      "responseTimeMs": 287
     },
     {
       "url": "https://cognivantalabs.com/terms",
@@ -21514,7 +21514,7 @@
       "finalUrl": "https://cognivantalabs.com/terms",
       "contentType": "text/html",
       "size": 30027,
-      "responseTimeMs": 292
+      "responseTimeMs": 278
     },
     {
       "url": "https://cognivantalabs.com/assets/enterprise-BhtyrZ5B.js",
@@ -21522,7 +21522,7 @@
       "finalUrl": "https://cognivantalabs.com/assets/enterprise-BhtyrZ5B.js",
       "contentType": "application/x-javascript",
       "size": 5816,
-      "responseTimeMs": 286
+      "responseTimeMs": 287
     },
     {
       "url": "https://cognivantalabs.com/enterprise",
@@ -21530,7 +21530,7 @@
       "finalUrl": "https://cognivantalabs.com/enterprise",
       "contentType": "text/html",
       "size": 50614,
-      "responseTimeMs": 286
+      "responseTimeMs": 266
     }
   ],
   "securityHeaders": [
@@ -21574,13 +21574,13 @@
       "contentType": "text/plain",
       "headers": {
         "strict-transport-security": "max-age=31536000",
-        "content-security-policy": "upgrade-insecure-requests",
+        "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; script-src-attr 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; img-src 'self' data: blob: https://assets.zyrosite.com https://cwos.cognivantalabs.com https://shunya-ai.space https://images.unsplash.com https://blogger.googleusercontent.com https://miro.medium.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self'; frame-src 'none'; media-src 'self' https: data:; manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests",
         "x-content-type-options": "nosniff",
         "referrer-policy": "strict-origin-when-cross-origin",
         "permissions-policy": "camera=(), microphone=(), geolocation=()",
         "x-frame-options": "DENY",
         "x-robots-tag": null,
-        "cache-control": null,
+        "cache-control": "no-cache",
         "content-encoding": "br",
         "server": "hcdn"
       }
@@ -21614,7 +21614,7 @@
         "permissions-policy": null,
         "x-frame-options": null,
         "x-robots-tag": null,
-        "cache-control": "public, max-age=604800",
+        "cache-control": "public, max-age=31536000, immutable",
         "content-encoding": null,
         "server": "hcdn"
       }
@@ -21856,7 +21856,7 @@
           "content-type": "text/html",
           "cross-origin-opener-policy": "same-origin",
           "cross-origin-resource-policy": "same-origin",
-          "date": "Fri, 31 Jul 2026 10:50:32 GMT",
+          "date": "Fri, 31 Jul 2026 17:25:50 GMT",
           "etag": "\"17ba5-6a6c7cb8-271013393fd79502;br\"",
           "last-modified": "Fri, 31 Jul 2026 10:45:12 GMT",
           "panel": "hpanel",
@@ -21869,11 +21869,11 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-hcdn-cache-status": "DYNAMIC",
-          "x-hcdn-request-id": "9ff3cc65c78eed82380abf5a739f06ed-mum-edge7",
-          "x-hcdn-upstream-rt": "0.257"
+          "x-hcdn-request-id": "c495693d09af9afa221eadddd4a96e55-mum-edge10",
+          "x-hcdn-upstream-rt": "0.247"
         },
         "size": 97189,
-        "responseTimeMs": 293,
+        "responseTimeMs": 284,
         "metadata": {
           "title": "Research - Cognivanta Labs",
           "description": "Applied research into cognitive intelligence, context, reasoning, governance, autonomy, and human-AI collaboration.",
