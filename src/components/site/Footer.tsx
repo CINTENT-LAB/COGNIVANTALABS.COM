@@ -262,7 +262,8 @@ export function Footer() {
                 alt="Cognivanta Labs"
                 width={1040}
                 height={280}
-                className="h-10 w-auto object-contain"
+                className="protected-visual h-10 w-auto object-contain"
+                draggable={false}
               />
             </div>
             <p className="mt-5 max-w-sm text-sm text-muted-foreground">

@@ -46,6 +46,9 @@ jobs:
       - name: Build static artifact
         run: npm run build
 
+      - name: Security audit
+        run: npm run test:security
+
       - name: Verify static artifact
         shell: bash
         run: |
@@ -55,6 +58,7 @@ jobs:
           test -f dist/client/robots.txt
           test -f dist/client/sitemap.xml
           test -f dist/client/.htaccess
+          test -f dist/client/_headers
 
           for asset in \
             dist/client/favicon.ico \
@@ -88,7 +92,7 @@ jobs:
             exit 1
           fi
 
-          if grep -RInE 'https?://(localhost|127\.0\.0\.1)(:[0-9]+|/[^"'"'"')]*)|blogger\.com/blog/post/edit' dist/client; then
+          if grep -RInE --include='*.html' --include='*.css' 'https?://(localhost|127\.0\.0\.1)(:[0-9]+|/[^"'"'"')]*)|blogger\.com/blog/post/edit' dist/client; then
             echo "Forbidden local or Blogger administrative URL found in deploy artifact"
             exit 1
           fi

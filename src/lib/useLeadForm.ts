@@ -43,8 +43,7 @@ export function useLeadForm(formType: LeadFormType): UseLeadFormResult {
       setTicketId(result.ticketId ?? null);
       setRouted(Boolean(result.routed));
       setStatus(result.duplicate ? "duplicate" : "success");
-    } catch (err) {
-      console.error("[useLeadForm] submission failed", err);
+    } catch {
       setStatus("error");
       setError("We couldn't reach the server. Check your connection and try again.");
     }

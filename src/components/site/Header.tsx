@@ -131,7 +131,8 @@ export function Header() {
             alt="Cognivanta Labs"
             width={1040}
             height={280}
-            className="h-9 w-auto object-contain"
+            className="protected-visual h-9 w-auto object-contain"
+            draggable={false}
           />
         </Link>
 

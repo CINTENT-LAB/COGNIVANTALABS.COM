@@ -16,6 +16,12 @@ dist-ssr
 .nitro
 *.local
 
+# Environment files must never enter source control. Keep an explicitly
+# reviewed .env.example unignored if one is added later.
+.env
+.env.*
+!.env.example
+
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars

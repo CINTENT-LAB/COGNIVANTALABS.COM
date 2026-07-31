@@ -10,9 +10,11 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
+    "test": "node --test scripts/validate-publications.test.mjs scripts/publications-ui.test.mjs",
     "sync:publications": "node scripts/sync-publications.mjs",
     "test:publications": "node --test scripts/validate-publications.test.mjs scripts/publications-ui.test.mjs",
     "test:seo": "node scripts/seo-audit.mjs",
+    "test:security": "node scripts/security-audit.mjs",
     "test:e2e:production": "node scripts/e2e-production-audit.mjs",
     "report:seo": "node scripts/seo-audit.mjs --write-reports"
   },

@@ -9,6 +9,10 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 // the same plugin set (TanStack Start + React + Tailwind v4 + tsconfig
 // paths) directly so the app builds standalone.
 export default defineConfig({
+  build: {
+    // Static production output must never publish source maps.
+    sourcemap: false,
+  },
   plugins: [
     tsconfigPaths(),
     tailwindcss(),

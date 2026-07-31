@@ -38,6 +38,10 @@ const sections = [
     body: "Specific commercial terms for pilots, API usage, and pricing are agreed separately with each customer and are not established by this page. See Pricing for current published rate cards, where available.",
   },
   {
+    title: "Permitted use and permissions",
+    body: "You may view and share ordinary links to this website for lawful informational purposes. No licence or other right to reproduce, republish, scrape, train a model on, or commercially exploit website content, marks, logos, diagrams, or media is granted by implication. Written permission requests may be sent through Contact.",
+  },
+  {
     title: "Disclaimers",
     body: "Information on this site, including product capabilities, roadmap items, and illustrative examples, is provided for informational purposes and is not a guarantee of specific outcomes, accuracy, or availability.",
   },

@@ -11,9 +11,9 @@ import { createServerFn } from "@tanstack/react-start";
  *
  * Known limitation (documented, not hidden): rate-limit and de-dup state is
  * kept in-memory in this server process. It resets on redeploy/restart and is
- * not shared across multiple server instances. That's acceptable for the
- * current single-instance Hostinger Node deployment; if the app is ever
- * horizontally scaled, this should move to a shared store (Redis, D1, etc.).
+ * not shared across multiple server instances. A static Hostinger artifact
+ * does not include this server runtime; an approved server deployment is
+ * required before public forms can be routed.
  */
 
 export type LeadFormType =
@@ -56,12 +56,114 @@ export interface LeadResult {
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT_MAX = 5;
 const DEDUP_WINDOW_MS = 5 * 60 * 1000;
+const MAX_FIELD_LENGTHS = {
+  name: 120,
+  email: 320,
+  organization: 200,
+  interest: 160,
+  message: 4000,
+  honeypot: 200,
+  sourcePath: 200,
+} as const;
+const ALLOWED_FORM_TYPES = new Set<LeadFormType>([
+  "contact",
+  "demo",
+  "investor",
+  "press",
+  "research",
+  "partner",
+  "customer",
+  "api-access",
+  "newsletter",
+  "pilot",
+  "careers",
+]);
+const ALLOWED_FIELDS = new Set([
+  "formType",
+  "name",
+  "email",
+  "organization",
+  "interest",
+  "message",
+  "consent",
+  "honeypot",
+  "sourcePath",
+]);
 
 const rateLimitStore = new Map<string, number[]>();
 const dedupStore = new Map<string, number>();
 
 function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function boundedText(value: unknown, maxLength: number, required = false): string | undefined {
+  if (value === undefined && !required) return undefined;
+  if (typeof value !== "string") return undefined;
+  const normalized = value.trim();
+  if (required && !normalized) return undefined;
+  if (normalized.length > maxLength) return undefined;
+  return normalized || undefined;
+}
+
+function validateSubmission(input: unknown): { data?: LeadSubmission; error?: string } {
+  if (!input || typeof input !== "object" || Array.isArray(input)) {
+    return { error: "Invalid form submission." };
+  }
+
+  const record = input as Record<string, unknown>;
+  if (Object.keys(record).some((key) => !ALLOWED_FIELDS.has(key))) {
+    return { error: "Invalid form submission." };
+  }
+
+  const formType = record.formType;
+  if (typeof formType !== "string" || !ALLOWED_FORM_TYPES.has(formType as LeadFormType)) {
+    return { error: "Invalid form submission." };
+  }
+
+  const name = boundedText(record.name, MAX_FIELD_LENGTHS.name, true);
+  const email = boundedText(record.email, MAX_FIELD_LENGTHS.email, true);
+  if (!name || !email) return { error: "Name and email are required." };
+  if (!isValidEmail(email)) return { error: "Enter a valid email address." };
+  if (record.consent !== true) {
+    return { error: "Please confirm you agree to be contacted about this request." };
+  }
+
+  const organization = boundedText(record.organization, MAX_FIELD_LENGTHS.organization);
+  const interest = boundedText(record.interest, MAX_FIELD_LENGTHS.interest);
+  const message = boundedText(record.message, MAX_FIELD_LENGTHS.message);
+  const honeypot = boundedText(record.honeypot, MAX_FIELD_LENGTHS.honeypot);
+  const sourcePath = boundedText(record.sourcePath, MAX_FIELD_LENGTHS.sourcePath);
+
+  const optionalValues: Array<[unknown, number]> = [
+    [record.organization, MAX_FIELD_LENGTHS.organization],
+    [record.interest, MAX_FIELD_LENGTHS.interest],
+    [record.message, MAX_FIELD_LENGTHS.message],
+    [record.honeypot, MAX_FIELD_LENGTHS.honeypot],
+    [record.sourcePath, MAX_FIELD_LENGTHS.sourcePath],
+  ];
+  if (
+    optionalValues.some(
+      ([value, maxLength]) => value !== undefined && !boundedText(value, maxLength) && value !== "",
+    )
+  ) {
+    return { error: "Invalid form submission." };
+  }
+  if (sourcePath && !sourcePath.startsWith("/")) return { error: "Invalid form submission." };
+
+  return {
+    data: {
+      formType: formType as LeadFormType,
+      name,
+      email,
+      ...(organization ? { organization } : {}),
+      ...(interest ? { interest } : {}),
+      ...(message ? { message } : {}),
+      consent: true,
+      ...(honeypot ? { honeypot } : {}),
+      ...(sourcePath ? { sourcePath } : {}),
+    },
+  };
 }
 
 function checkRateLimit(key: string): boolean {
@@ -89,10 +191,10 @@ function isDuplicateSubmission(key: string): boolean {
  *
  * Set LEAD_WEBHOOK_URL on the server (Hostinger environment variables, never
  * committed to the repo) to point at a real inbox/CRM webhook (e.g. a Zapier,
- * n8n, HubSpot, or internal endpoint). Until that's set, submissions are still
- * accepted and always written to the server log with an audit timestamp — so
- * nothing is silently dropped — but `routed` comes back false and the UI must
- * say so honestly rather than promising a team will follow up.
+ * n8n, HubSpot, or internal endpoint). Until that's set, submissions are
+ * accepted only in the server runtime and operational metadata is logged
+ * without personal data; `routed` comes back false and the UI must say so
+ * honestly rather than promising a team will follow up.
  */
 async function routeLead(payload: LeadSubmission, ticketId: string): Promise<boolean> {
   const record = {
@@ -108,48 +210,70 @@ async function routeLead(payload: LeadSubmission, ticketId: string): Promise<boo
     sourcePath: payload.sourcePath,
   };
 
-  const webhookUrl = process.env.LEAD_WEBHOOK_URL;
+  const configuredWebhook = process.env.LEAD_WEBHOOK_URL?.trim();
+  let webhookUrl: URL | undefined;
+  if (configuredWebhook) {
+    try {
+      const parsed = new URL(configuredWebhook);
+      if (parsed.protocol === "https:") webhookUrl = parsed;
+    } catch {
+      webhookUrl = undefined;
+    }
+  }
+
+  if (configuredWebhook && !webhookUrl) {
+    console.error("[leadCapture] webhook rejected: HTTPS URL required");
+  }
+
   if (webhookUrl) {
     try {
       const res = await fetch(webhookUrl, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(record),
+        signal: AbortSignal.timeout(8_000),
       });
-      if (res.ok) return true;
-      console.error(`[leadCapture] webhook responded with status ${res.status}`);
-    } catch (err) {
-      console.error("[leadCapture] webhook delivery failed", err);
+      if (res.ok) {
+        console.info("[leadCapture] webhook delivered", { ticketId, formType: payload.formType });
+        return true;
+      }
+      console.error("[leadCapture] webhook rejected submission", {
+        ticketId,
+        formType: payload.formType,
+        status: res.status,
+      });
+    } catch {
+      console.error("[leadCapture] webhook delivery failed", {
+        ticketId,
+        formType: payload.formType,
+      });
     }
   }
 
-  // Always log server-side, even without a webhook, so submissions are
-  // never silently lost while the routing provider is being set up.
-  console.log("[leadCapture] lead received", record);
+  // Record only operational metadata. Never place names, emails, messages or
+  // the webhook payload in application logs.
+  console.info("[leadCapture] lead accepted without routing", {
+    ticketId,
+    formType: payload.formType,
+  });
   return false;
 }
 
 export const submitLead = createServerFn({ method: "POST" })
-  .validator((data: LeadSubmission) => data)
+  .validator((data: unknown) => data)
   .handler(async ({ data }): Promise<LeadResult> => {
+    const validated = validateSubmission(data);
+    if (!validated.data) return { ok: false, error: validated.error };
+
+    const submission = validated.data;
     // Bot protection: a real visitor never fills the hidden honeypot field.
-    if (data.honeypot) {
+    if (submission.honeypot) {
       return { ok: true, ticketId: "n/a", routed: false };
     }
 
-    if (!data.name?.trim() || !data.email?.trim()) {
-      return { ok: false, error: "Name and email are required." };
-    }
-    if (!isValidEmail(data.email)) {
-      return { ok: false, error: "Enter a valid email address." };
-    }
-    if (!data.consent) {
-      return { ok: false, error: "Please confirm you agree to be contacted about this request." };
-    }
+    const normalizedEmail = submission.email.toLowerCase();
 
-    const normalizedEmail = data.email.trim().toLowerCase();
-
-    if (!checkRateLimit(`${data.formType}:${normalizedEmail}`)) {
+    if (!checkRateLimit(`${submission.formType}:${normalizedEmail}`)) {
       return {
         ok: false,
         error: "Too many submissions from this address recently. Please try again later.",
@@ -157,12 +281,12 @@ export const submitLead = createServerFn({ method: "POST" })
     }
 
     const ticketId = `LEAD-${Date.now().toString(36).toUpperCase()}`;
-    const dedupKey = `${data.formType}:${normalizedEmail}:${data.message ?? ""}`;
+    const dedupKey = `${submission.formType}:${normalizedEmail}:${submission.message ?? ""}`;
 
     if (isDuplicateSubmission(dedupKey)) {
       return { ok: true, ticketId, duplicate: true, routed: false };
     }
 
-    const routed = await routeLead(data, ticketId);
+    const routed = await routeLead(submission, ticketId);
     return { ok: true, ticketId, routed };
   });

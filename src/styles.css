@@ -606,6 +606,15 @@ html {
   }
 }
 
+/* Scoped visual-copy deterrence. Body text, legal content, forms and code
+ * remain selectable and keyboard-accessible. */
+.protected-visual,
+.protected-visual img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
 @utility input {
   width: 100%;
   border-radius: 0.5rem;
