@@ -1,0 +1,1 @@
+import{j as o,al as t,aC as n}from"./index-9EwUQZzM.js";import{P as s}from"./ProductPageLayout-Db7wgNfm.js";import"./Reveal-Cq7fM9nC.js";const a=t.shunyai,c=()=>o.jsx(s,{product:n,content:a});export{c as component};

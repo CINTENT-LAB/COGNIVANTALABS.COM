@@ -1,0 +1,1 @@
+import{j as o,al as t,aK as n}from"./index-9EwUQZzM.js";import{P as a}from"./ProductPageLayout-Db7wgNfm.js";import"./Reveal-Cq7fM9nC.js";const p=t.chaxu,m=()=>o.jsx(a,{product:n,content:p});export{m as component};

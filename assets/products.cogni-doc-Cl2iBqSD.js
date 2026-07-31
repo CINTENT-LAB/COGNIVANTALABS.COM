@@ -1,0 +1,1 @@
+import{j as o,al as t,aI as n}from"./index-9EwUQZzM.js";import{P as p}from"./ProductPageLayout-Db7wgNfm.js";import"./Reveal-Cq7fM9nC.js";const r=t["cogni-doc"],m=()=>o.jsx(p,{product:n,content:r});export{m as component};
