@@ -2,6 +2,14 @@ Options -Indexes
 
 RewriteEngine On
 
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set X-Frame-Options "DENY"
+  Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
+
 # Keep the public hostname canonical. Hostinger terminates TLS before Apache;
 # the HTTPS condition remains valid for direct Apache requests as well.
 RewriteCond %{HTTPS} !=on [OR]

@@ -1,1 +1,0 @@
-import{j as o,al as t,aC as n}from"./index-DUne1vtS.js";import{P as s}from"./ProductPageLayout-CW0oOwwB.js";import"./Reveal-C1QgJOPA.js";const a=t.shunyai,c=()=>o.jsx(s,{product:n,content:a});export{c as component};

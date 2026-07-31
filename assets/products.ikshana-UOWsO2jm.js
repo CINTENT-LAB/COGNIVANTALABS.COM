@@ -1,1 +1,0 @@
-import{j as o,al as t,aE as n}from"./index-DUne1vtS.js";import{P as a}from"./ProductPageLayout-CW0oOwwB.js";import"./Reveal-C1QgJOPA.js";const s=t.ikshana,c=()=>o.jsx(a,{product:n,content:s});export{c as component};
