@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { MessageSquareCode, FileSearch, X, Sparkles, Send, Mic, MicOff } from "lucide-react";
 
-const ASKCOGNI_URL = "https://cognivantalabs.com/askcogni/index.html";
+const ASKCOGNI_URL = "/products/askcogni";
 
 // Capability tags as described on the real AskCOGNI surface.
 const capabilities = [

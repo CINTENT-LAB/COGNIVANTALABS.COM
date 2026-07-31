@@ -12,7 +12,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { products, type Product } from "@/data/products";
 import { getLucideIcon } from "@/lib/lucideIcon";
 
-const ASKCOGNI_URL = "https://cognivantalabs.com/askcogni/index.html";
+const ASKCOGNI_URL = "/products/askcogni";
 
 const apiPlatformFeatures = [
   {

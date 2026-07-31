@@ -235,7 +235,7 @@ function EmergentHeroSection() {
               Ask for Early Access
             </Link>
             <a
-              href="https://cognivantalabs.com/askcogni/index.html"
+              href="/products/askcogni"
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2 rounded-full bg-[var(--gradient-violet)] px-6 py-3.5 text-sm font-semibold text-white shadow-[var(--shadow-glow-violet)] transition-transform hover:scale-[1.02]"

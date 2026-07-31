@@ -166,7 +166,7 @@ export const products: Product[] = [
     accent: "electric",
     icon: "MessageSquareCode",
     href: "/products/askcogni",
-    liveUrl: "https://cognivantalabs.com/askcogni/index.html",
+    liveUrl: "/products/askcogni",
     cta: "Open preview",
   },
   {

@@ -828,7 +828,7 @@ function AskCogniCallout() {
             </p>
           </div>
           <a
-            href="https://cognivantalabs.com/askcogni/index.html"
+            href="/products/askcogni"
             target="_blank"
             rel="noreferrer noopener"
             className="btn-electric inline-flex shrink-0 items-center gap-2 rounded-md px-5 py-3 text-sm font-semibold"

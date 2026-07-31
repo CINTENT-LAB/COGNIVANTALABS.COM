@@ -324,9 +324,7 @@ function PlatformPage() {
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="https://cognivantalabs.com/pages/cognitive-brain.html"
-            target="_blank"
-            rel="noreferrer noopener"
+            href="/architecture"
             className="btn-ghost-glow inline-flex items-center gap-2 rounded-md px-5 py-3 text-sm font-semibold"
           >
             Open Cognitive Brain <ArrowUpRight className="h-4 w-4" />
@@ -474,7 +472,7 @@ function PlatformPage() {
               </h2>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <a
-                  href="https://cognivantalabs.com/askcogni/index.html"
+                  href="/products/askcogni"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="btn-electric rounded-md px-5 py-3 text-sm font-semibold"
