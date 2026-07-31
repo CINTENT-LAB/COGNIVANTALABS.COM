@@ -2,8 +2,30 @@ Options -Indexes
 
 RewriteEngine On
 
+# Keep the public hostname canonical. Hostinger terminates TLS before Apache;
+# the HTTPS condition remains valid for direct Apache requests as well.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.cognivantalabs\.com$ [NC]
+RewriteRule ^ https://cognivantalabs.com%{REQUEST_URI} [R=301,L,NE]
+
+# The MyCogni handoff is an external application, so keep it server-side.
+RedirectMatch 302 ^/cognites/mycogni/?$ https://hcm.cognivantalabs.com/app/mycogni
+
+# Verified legacy equivalents. Query strings are preserved by Apache.
+RedirectMatch 301 ^/about-us\.html$ /about
+RedirectMatch 301 ^/contact\.html$ /contact
+RedirectMatch 301 ^/privacy-policy\.html$ /privacy
+RedirectMatch 301 ^/terms-conditions\.html$ /terms
+RedirectMatch 301 ^/pricing-plan\.html$ /pricing
+RedirectMatch 301 ^/posts-by-author\.html$ /blog
+RedirectMatch 301 ^/posts-by-category\.html$ /blog
+RedirectMatch 301 ^/posts-by-date\.html$ /blog
+RedirectMatch 301 ^/posts-by-tag\.html$ /blog
+
+# Existing files and prerendered route directories are served directly.
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-RewriteRule ^ index.html [L]
+# No SPA catch-all: unknown paths must remain genuine 404 responses.
+ErrorDocument 404 /404.html

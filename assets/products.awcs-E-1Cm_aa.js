@@ -1,0 +1,1 @@
+import{j as o,al as t,aM as n}from"./index-DUne1vtS.js";import{P as s}from"./ProductPageLayout-CW0oOwwB.js";import"./Reveal-C1QgJOPA.js";const a=t.awcs,m=()=>o.jsx(s,{product:n,content:a});export{m as component};
