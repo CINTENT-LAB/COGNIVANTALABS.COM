@@ -446,7 +446,7 @@ const securityUrls = [
   "/brand/cognivanta-symbol.png",
 ];
 const securityResults = await mapLimit(securityUrls, 4, async (route) => {
-  const get = await fetchWithRedirects(`${origin}${route}`, "GET");
+  const get = await fetchWithRedirects(`${origin}${route}?audit=${auditDate}`, "GET");
   const headers = get.headers;
   return {
     route,
@@ -558,6 +558,32 @@ for (const result of unknownResults)
   if (result.actual.status !== 404)
     failures.push(`${result.route}: expected genuine 404, got ${result.actual.status}`);
 
+const liveNoindexRoutes = utilityResults
+  .filter((result) => result.get.metadata?.robots?.toLowerCase().includes("noindex"))
+  .map((result) => result.route);
+const artifactNoindexRoutes = utilityRoutes
+  .filter((route) => fs.existsSync(localHtmlPath(route)))
+  .filter((route) =>
+    parseHtml(read(localHtmlPath(route)))
+      .robots?.toLowerCase()
+      .includes("noindex"),
+  );
+const noindexRoutes = unique([...liveNoindexRoutes, ...artifactNoindexRoutes]);
+const redirectingInternalLinks = internalLinkAudits.filter((link) => (link.redirects || 0) > 0);
+for (const item of securityResults.filter(
+  (result) => result.route !== "/brand/cognivanta-symbol.png",
+)) {
+  for (const header of [
+    "strict-transport-security",
+    "x-content-type-options",
+    "referrer-policy",
+    "permissions-policy",
+    "x-frame-options",
+  ]) {
+    if (!item.headers[header]) failures.push(`${item.route}: missing security header ${header}`);
+  }
+}
+
 const results = {
   generatedAt: new Date().toISOString(),
   auditDate,
@@ -579,6 +605,7 @@ const results = {
   routes: routeInventory,
   pages: allPageMetadata,
   utilityRoutes: utilityResults,
+  noindexRoutes,
   legacyRoutes: legacyResults,
   unknownRoutes: unknownResults,
   normalization: normalizationResults,
@@ -638,6 +665,7 @@ ${sitemapPaths.map(formatRouteRow).join("\n")}
 - Legacy HTML URLs: ${sitemapAudit.legacyHtmlUrls.length ? sitemapAudit.legacyHtmlUrls.join(", ") : "none"}
 - External URLs: ${sitemapAudit.externalUrls.length ? sitemapAudit.externalUrls.join(", ") : "none"}
 - Robots: HTTP ${robotsResponse.status}; sitemap reference is present: ${robotsResponse.body.includes(origin + "/sitemap.xml") ? "yes" : "no"}.
+- Redirecting internal links: ${redirectingInternalLinks.length ? redirectingInternalLinks.map((link) => `${link.from} -> ${link.href}`).join(", ") : "none"}.
 
 ## Legacy and Unknown Routes
 
@@ -693,6 +721,8 @@ ${securityResults.map((item) => "- " + item.route + ": HTTP " + item.status + ";
 ## Accessibility, Responsive, and Performance Scope
 
 - Static metadata checks: title, description, H1, canonical, robots, visible text, asset references, and FAQ anchor were captured above.
+- Noindex routes verified in production: ${noindexRoutes.length ? noindexRoutes.join(", ") : "none"}.
+- Security header probes use a cache-busting query; binary asset header behavior is recorded but is not treated as a document security failure.
 - Browser automation, Lighthouse, and axe are not installed in this repository; viewport rendering, keyboard interaction, console errors, and Core Web Vitals therefore remain manual verification items.
 
 ## Search Console Readiness
@@ -700,7 +730,7 @@ ${securityResults.map((item) => "- " + item.route + ": HTTP " + item.status + ";
 | Category | Repository/live evidence | Technical state | Google action |
 | --- | --- | --- | --- |
 | Alternate page with proper canonical | Public routes self-canonicalize | Remediated in code/live sample | Revalidate after recrawl |
-| Excluded by noindex | Utility routes only: /cognites/login, /cognites/mycogni | Intentional | Do not request indexing |
+| Excluded by noindex | ${noindexRoutes.length ? noindexRoutes.join(", ") : "none"} | Intentional | Do not request indexing |
 | Duplicate without user-selected canonical | No duplicate canonical tags found in sitemap routes | No repository evidence | Revalidate after recrawl |
 | Page with redirect | Legacy equivalents and /faq.html | Intentional one-hop redirects | Do not submit redirect URLs |
 | Discovered - currently not indexed | Not observable from repository/live HTTP | Pending Google data | Use URL Inspection selectively |

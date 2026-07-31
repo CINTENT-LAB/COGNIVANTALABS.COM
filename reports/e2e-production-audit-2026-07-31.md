@@ -1,15 +1,15 @@
 # Cognivanta Labs Production E2E Technical Audit (2026-07-31)
 
-Generated: 2026-07-31T09:34:14.388Z
+Generated: 2026-07-31T09:53:08.651Z
 
 ## Executive Summary
 
-- Source commit: b4abd7ecfcf9f55b2444b905d33efac97d454e96
-- Remote origin/master: b4abd7ecfcf9f55b2444b905d33efac97d454e96
+- Source commit: abca9c12856d320c3cd8222590b3a30881ba1ee4
+- Remote origin/master: abca9c12856d320c3cd8222590b3a30881ba1ee4
 - Public sitemap routes: 32 (32 unique)
 - Generated HTML documents: 35
-- Broken internal links or same-origin resources: 6
-- Route/content failures: 6
+- Broken internal links or same-origin resources: 0
+- Route/content failures: 0
 - Search Console status: production evidence only; Google revalidation remains pending.
 
 ## Public Route Inventory
@@ -56,13 +56,14 @@ Generated: 2026-07-31T09:34:14.388Z
 - Legacy HTML URLs: none
 - External URLs: none
 - Robots: HTTP 200; sitemap reference is present: yes.
+- Redirecting internal links: /cognites -> /cognites/mycogni, /blog -> /cognites/mycogni.
 
 ## Legacy and Unknown Routes
 
 | Route | Expected | Actual status | Final URL |
 | --- | --- | ---: | --- |
 | /about-us.html | redirect to /about | 301 | https://cognivantalabs.com/about |
-| /contact.html | redirect to /contact | 301 | https://cognivantalabs.com/contact |
+| /contact.html | redirect to /contact | 301 | https://cognivantalabs.com/contact/ |
 | /privacy-policy.html | redirect to /privacy | 301 | https://cognivantalabs.com/privacy |
 | /terms-conditions.html | redirect to /terms | 301 | https://cognivantalabs.com/terms |
 | /pricing-plan.html | redirect to /pricing | 301 | https://cognivantalabs.com/pricing |
@@ -104,10 +105,10 @@ Generated: 2026-07-31T09:34:14.388Z
 
 ## Headers and Forms
 
-- /: HTTP 200; HSTS=no; nosniff=no; frame protection=not returned
-- /sitemap.xml: HTTP 200; HSTS=no; nosniff=no; frame protection=not returned
-- /robots.txt: HTTP 200; HSTS=no; nosniff=no; frame protection=not returned
-- /404.html: HTTP 200; HSTS=no; nosniff=no; frame protection=not returned
+- /: HTTP 200; HSTS=yes; nosniff=yes; frame protection=DENY
+- /sitemap.xml: HTTP 200; HSTS=yes; nosniff=yes; frame protection=DENY
+- /robots.txt: HTTP 200; HSTS=yes; nosniff=yes; frame protection=DENY
+- /404.html: HTTP 200; HSTS=yes; nosniff=yes; frame protection=DENY
 - /brand/cognivanta-symbol.png: HTTP 200; HSTS=no; nosniff=no; frame protection=not returned
 - Forms discovered in generated public HTML: 36.
 - Form submission was not performed against production; this audit stops at the non-destructive boundary.
@@ -115,6 +116,8 @@ Generated: 2026-07-31T09:34:14.388Z
 ## Accessibility, Responsive, and Performance Scope
 
 - Static metadata checks: title, description, H1, canonical, robots, visible text, asset references, and FAQ anchor were captured above.
+- Noindex routes verified in production: /cognites/login, /404.html, /cognites/mycogni.
+- Security header probes use a cache-busting query; binary asset header behavior is recorded but is not treated as a document security failure.
 - Browser automation, Lighthouse, and axe are not installed in this repository; viewport rendering, keyboard interaction, console errors, and Core Web Vitals therefore remain manual verification items.
 
 ## Search Console Readiness
@@ -122,7 +125,7 @@ Generated: 2026-07-31T09:34:14.388Z
 | Category | Repository/live evidence | Technical state | Google action |
 | --- | --- | --- | --- |
 | Alternate page with proper canonical | Public routes self-canonicalize | Remediated in code/live sample | Revalidate after recrawl |
-| Excluded by noindex | Utility routes only: /cognites/login, /cognites/mycogni | Intentional | Do not request indexing |
+| Excluded by noindex | /cognites/login, /404.html, /cognites/mycogni | Intentional | Do not request indexing |
 | Duplicate without user-selected canonical | No duplicate canonical tags found in sitemap routes | No repository evidence | Revalidate after recrawl |
 | Page with redirect | Legacy equivalents and /faq.html | Intentional one-hop redirects | Do not submit redirect URLs |
 | Discovered - currently not indexed | Not observable from repository/live HTTP | Pending Google data | Use URL Inspection selectively |
@@ -132,12 +135,7 @@ Generated: 2026-07-31T09:34:14.388Z
 
 ## Findings
 
-- broken internal link / -> /askcogni/index.html
-- broken internal link /platform -> /pages/cognitive-brain.html
-- broken internal link /platform -> /askcogni/index.html
-- broken internal link /products/askcogni -> /askcogni/index.html
-- broken internal link /pilots -> /askcogni/index.html
-- broken internal link /enterprise -> /askcogni/index.html
+No automated production-audit failures were recorded.
 
 ## Manual Follow-up
 
