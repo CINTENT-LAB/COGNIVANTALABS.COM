@@ -20,15 +20,15 @@ does not claim that Google Search Console is cleared.
 
 ## Release Identity
 
-| Item | Value |
-| --- | --- |
-| Source branch | `master` |
-| Source commit before final evidence refresh | `bc33b570c290e2a9b6f99819784c987a3e88c854` |
-| Security implementation commit | `9038272` - `fix(security): harden production access and public assets` |
-| Final source commit | `9f11fb79cc3972f1c37ad0916b1d1e648597f58b` |
-| Hostinger artifact commit | `5dedb627070beeb84a0a22cfb549668093a0b961` |
-| Working tree | Clean |
-| GitHub `origin/master` | Matches final source commit |
+| Item                                        | Value                                                                   |
+| ------------------------------------------- | ----------------------------------------------------------------------- |
+| Source branch                               | `master`                                                                |
+| Source commit before final evidence refresh | `bc33b570c290e2a9b6f99819784c987a3e88c854`                              |
+| Security implementation commit              | `9038272` - `fix(security): harden production access and public assets` |
+| Final source commit                         | `9f11fb79cc3972f1c37ad0916b1d1e648597f58b`                              |
+| Hostinger artifact commit                   | `5dedb627070beeb84a0a22cfb549668093a0b961`                              |
+| Working tree                                | Clean                                                                   |
+| GitHub `origin/master`                      | Matches final source commit                                             |
 
 ## Production Evidence
 
@@ -74,18 +74,18 @@ performed and no live delivery claim is made.
 
 ## Validation Record
 
-| Check | Result |
-| --- | --- |
-| Production build | Passed; 34 prerendered pages |
-| Typecheck | Passed |
-| Lint | Passed; 0 errors, 2 existing Fast Refresh warnings |
-| Unit/publication tests | Passed; 13 tests |
-| SEO audit | Passed; 32 sitemap routes |
-| Local security audit | Passed |
-| Production security audit | Passed; 0 failures |
-| Production E2E audit | Passed; 32 routes, 114 resources |
-| Dependency audit | Passed; 0 vulnerabilities |
-| Scoped formatting check | Passed |
+| Check                     | Result                                             |
+| ------------------------- | -------------------------------------------------- |
+| Production build          | Passed; 34 prerendered pages                       |
+| Typecheck                 | Passed                                             |
+| Lint                      | Passed; 0 errors, 2 existing Fast Refresh warnings |
+| Unit/publication tests    | Passed; 13 tests                                   |
+| SEO audit                 | Passed; 32 sitemap routes                          |
+| Local security audit      | Passed                                             |
+| Production security audit | Passed; 0 failures                                 |
+| Production E2E audit      | Passed; 32 routes, 114 resources                   |
+| Dependency audit          | Passed; 0 vulnerabilities                          |
+| Scoped formatting check   | Passed                                             |
 
 Browser automation, Lighthouse, and axe were not available in the repository.
 Manual visual, keyboard, screen-reader, and Core Web Vitals review remains an
