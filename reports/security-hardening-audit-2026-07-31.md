@@ -19,18 +19,18 @@ remain pending with Google.
 
 ## Baseline Before Editing
 
-| Item | Baseline |
-| --- | --- |
-| Source commit before work | `e948d19b13b210baaf08d02f24ffa013743b1155` |
-| Branch | `master` |
-| Framework | TanStack Start/Router, React 19, Vite 7, Tailwind CSS v4 |
-| Runtime mode | Static prerendered client artifact for Hostinger; `dist/server` is not published |
-| Public output | `dist/client` |
-| Existing backend | `src/server/leadCapture.ts` exists in source, but no server runtime is included in the static Hostinger artifact |
-| Authentication | `/cognites/login` is a static noindex shell; MyCogni is an external HCM handoff |
-| Existing deployment | Manual GitHub Actions workflow publishing `dist/client` to `hostinger-production` |
-| Baseline dependency audit | `npm audit --omit=dev`: 0 vulnerabilities |
-| Baseline gaps | No enforced CSP, and `/_headers` was publicly reachable before this work |
+| Item                      | Baseline                                                                                                         |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Source commit before work | `e948d19b13b210baaf08d02f24ffa013743b1155`                                                                       |
+| Branch                    | `master`                                                                                                         |
+| Framework                 | TanStack Start/Router, React 19, Vite 7, Tailwind CSS v4                                                         |
+| Runtime mode              | Static prerendered client artifact for Hostinger; `dist/server` is not published                                 |
+| Public output             | `dist/client`                                                                                                    |
+| Existing backend          | `src/server/leadCapture.ts` exists in source, but no server runtime is included in the static Hostinger artifact |
+| Authentication            | `/cognites/login` is a static noindex shell; MyCogni is an external HCM handoff                                  |
+| Existing deployment       | Manual GitHub Actions workflow publishing `dist/client` to `hostinger-production`                                |
+| Baseline dependency audit | `npm audit --omit=dev`: 0 vulnerabilities                                                                        |
+| Baseline gaps             | No enforced CSP, and `/_headers` was publicly reachable before this work                                         |
 
 ## Threat Model and Scope
 
@@ -52,11 +52,11 @@ boundary rather than represented as an active backend on the static site.
 
 ## Source and Artifact Commits
 
-| Artifact | Commit |
-| --- | --- |
-| Source hardening commit | `9038272` - `fix(security): harden production access and public assets` |
-| Source follow-up audit-test commit | `2fbe9cc86ef320ae320a533c8429ca634aac7e8b` |
-| Hostinger static artifact | `5dedb627070beeb84a0a22cfb549668093a0b961` |
+| Artifact                           | Commit                                                                  |
+| ---------------------------------- | ----------------------------------------------------------------------- |
+| Source hardening commit            | `9038272` - `fix(security): harden production access and public assets` |
+| Source follow-up audit-test commit | `2fbe9cc86ef320ae320a533c8429ca634aac7e8b`                              |
+| Hostinger static artifact          | `5dedb627070beeb84a0a22cfb549668093a0b961`                              |
 
 The exact requested hardening commit is `9038272`. The follow-up source commit
 only made the production audit correctly verify Hostinger's observed two-step
@@ -81,10 +81,10 @@ only made the production audit correctly verify Hostinger's observed two-step
 There is no deployed first-party API in the Hostinger static artifact. The
 source inventory found the following server-side lead handler boundary:
 
-| Endpoint/boundary | Method | Public/auth | Input controls | Rate limit | CSRF/session | Output exposure |
-| --- | --- | --- | --- | --- | --- | --- |
+| Endpoint/boundary                           | Method                                                         | Public/auth                                                 | Input controls                                                                                                            | Rate limit                                                          | CSRF/session                                                                                           | Output exposure                                                         |
+| ------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
 | `src/server/leadCapture.ts` server function | POST-style handler when a supported server runtime is deployed | Public form submission; no authenticated session is trusted | Form-type and field allow-list, type checks, email format, consent, root-relative source path, per-field limits, honeypot | In-memory email plus form-type window; not a distributed/IP limiter | No cookie-authenticated state mutation is present in the static artifact; no local session is accepted | Safe user-facing errors; operational logs contain ticket/form type only |
-| External HCM handoff `/cognites/mycogni` | GET redirect | External application boundary | No user payload accepted by the static site | Hostinger/static boundary | Local site does not create or accept sessions | 302 to the approved external HCM application |
+| External HCM handoff `/cognites/mycogni`    | GET redirect                                                   | External application boundary                               | No user payload accepted by the static site                                                                               | Hostinger/static boundary                                           | Local site does not create or accept sessions                                                          | 302 to the approved external HCM application                            |
 
 The lead handler additionally rejects unknown fields and unsupported form types,
 deduplicates recent submissions, accepts only HTTPS webhook URLs, and applies an
@@ -148,24 +148,24 @@ authenticated session controls.
 
 Live sensitive-path evidence after deployment:
 
-| Path | Production status | Result |
-| --- | ---: | --- |
-| `/.git/HEAD` | 403 | blocked |
-| `/.env` | 403 | blocked |
-| `/.env.production` | 403 | blocked |
-| `/package.json` | 403 | blocked |
-| `/package-lock.json` | 403 | blocked |
-| `/README.md` | 403 | blocked |
-| `/vite.config.ts` | 403 | blocked |
-| `/src/` | 404 | absent |
-| `/reports/` | 404 | absent |
-| `/assets/index.js.map` | 403 | blocked |
-| `/backup.zip` | 403 | blocked |
-| `/database.sql` | 403 | blocked |
-| `/error.log` | 403 | blocked |
-| `/access.log` | 403 | blocked |
-| `/_headers` | 403 | blocked |
-| `/security-audit-invalid-route` | 404 | genuine 404 |
+| Path                            | Production status | Result      |
+| ------------------------------- | ----------------: | ----------- |
+| `/.git/HEAD`                    |               403 | blocked     |
+| `/.env`                         |               403 | blocked     |
+| `/.env.production`              |               403 | blocked     |
+| `/package.json`                 |               403 | blocked     |
+| `/package-lock.json`            |               403 | blocked     |
+| `/README.md`                    |               403 | blocked     |
+| `/vite.config.ts`               |               403 | blocked     |
+| `/src/`                         |               404 | absent      |
+| `/reports/`                     |               404 | absent      |
+| `/assets/index.js.map`          |               403 | blocked     |
+| `/backup.zip`                   |               403 | blocked     |
+| `/database.sql`                 |               403 | blocked     |
+| `/error.log`                    |               403 | blocked     |
+| `/access.log`                   |               403 | blocked     |
+| `/_headers`                     |               403 | blocked     |
+| `/security-audit-invalid-route` |               404 | genuine 404 |
 
 No directory listing was observed.
 
@@ -243,20 +243,20 @@ No dependency upgrade was introduced for this hardening pass.
 
 ## Validation Results
 
-| Check | Result |
-| --- | --- |
-| Prettier check | Pass |
-| `git diff --check` | Pass |
-| `npm run lint` | Pass; 2 pre-existing Fast Refresh warnings in `badge.tsx` and `button.tsx`, 0 errors |
-| `npx tsc --noEmit --pretty false` | Pass |
-| `npm test` | Pass; 13 tests |
-| `npm run test:seo` | Pass; 32 sitemap routes, 35 HTML files, 3 noindex routes |
-| `npm run test:publications` | Pass; 13 tests |
-| `npm run test:security` | Pass; local artifact, 0 failures |
-| `npm run test:security -- --production` | Pass; live production, 0 failures |
-| `npm run build` | Pass; 34 prerendered pages, `dist/client` output |
-| `npm run test:e2e:production` | Pass; 32 routes, 114 resources, 0 failures |
-| `npm audit --omit=dev` | Pass; 0 vulnerabilities |
+| Check                                   | Result                                                                               |
+| --------------------------------------- | ------------------------------------------------------------------------------------ |
+| Prettier check                          | Pass                                                                                 |
+| `git diff --check`                      | Pass                                                                                 |
+| `npm run lint`                          | Pass; 2 pre-existing Fast Refresh warnings in `badge.tsx` and `button.tsx`, 0 errors |
+| `npx tsc --noEmit --pretty false`       | Pass                                                                                 |
+| `npm test`                              | Pass; 13 tests                                                                       |
+| `npm run test:seo`                      | Pass; 32 sitemap routes, 35 HTML files, 3 noindex routes                             |
+| `npm run test:publications`             | Pass; 13 tests                                                                       |
+| `npm run test:security`                 | Pass; local artifact, 0 failures                                                     |
+| `npm run test:security -- --production` | Pass; live production, 0 failures                                                    |
+| `npm run build`                         | Pass; 34 prerendered pages, `dist/client` output                                     |
+| `npm run test:e2e:production`           | Pass; 32 routes, 114 resources, 0 failures                                           |
+| `npm audit --omit=dev`                  | Pass; 0 vulnerabilities                                                              |
 
 Browser automation, Lighthouse, and axe are not installed in this repository.
 The production E2E audit is HTTP/static and non-destructive; visual viewport,
@@ -275,17 +275,17 @@ resources with zero failures.
 
 Representative live routes after deployment:
 
-| URL | Status | Notes |
-| --- | ---: | --- |
-| `/` | 200 | canonical public home |
-| `/platform` | 200 | public route |
-| `/products` | 200 | public route |
-| `/research` | 200 | public route with FAQ anchor |
-| `/contact` | 200 | form shell; no production submission performed |
-| `/cognites/login` | 200 | intentional noindex static shell |
-| `/cognites/mycogni` | 302 | external HCM handoff |
-| `/faq.html` | 301 | redirects to `/research#faqs` |
-| `/security-audit-invalid-route` | 404 | genuine unknown-route response |
+| URL                             | Status | Notes                                          |
+| ------------------------------- | -----: | ---------------------------------------------- |
+| `/`                             |    200 | canonical public home                          |
+| `/platform`                     |    200 | public route                                   |
+| `/products`                     |    200 | public route                                   |
+| `/research`                     |    200 | public route with FAQ anchor                   |
+| `/contact`                      |    200 | form shell; no production submission performed |
+| `/cognites/login`               |    200 | intentional noindex static shell               |
+| `/cognites/mycogni`             |    302 | external HCM handoff                           |
+| `/faq.html`                     |    301 | redirects to `/research#faqs`                  |
+| `/security-audit-invalid-route` |    404 | genuine unknown-route response                 |
 
 ## Manual Hostinger Actions
 
@@ -321,4 +321,3 @@ Production security hardening is verified. Public-content copy controls remain d
 
 Google Search Console status is not asserted as cleared. Google revalidation
 and recrawling remain pending.
-
