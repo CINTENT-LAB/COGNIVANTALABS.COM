@@ -16,7 +16,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Cognivanta Labs" },
       { property: "og:description", content: "Human + AI. India-built for the world." },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/about" }],
   }),
   component: AboutPage,
 });

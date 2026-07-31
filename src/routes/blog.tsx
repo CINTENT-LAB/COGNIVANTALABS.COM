@@ -40,7 +40,7 @@ export const Route = createFileRoute("/blog")({
       },
       { property: "og:title", content: "Blog and publications - Cognivanta Labs" },
     ],
-    links: [{ rel: "canonical", href: "/blog" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/blog" }],
   }),
   component: BlogPage,
 });

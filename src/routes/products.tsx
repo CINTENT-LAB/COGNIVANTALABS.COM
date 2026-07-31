@@ -21,7 +21,7 @@ export const Route = createFileRoute("/products")({
     ],
     links:
       matches.at(-1)?.pathname === "/products" || matches.at(-1)?.pathname === "/products/"
-        ? [{ rel: "canonical", href: "/products" }]
+        ? [{ rel: "canonical", href: "https://cognivantalabs.com/products" }]
         : [],
   }),
   component: ProductsRoute,

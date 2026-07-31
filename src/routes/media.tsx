@@ -1,14 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import {
-  AlertCircle,
-  CheckCircle2,
-  Download,
-  FileText,
-  Loader2,
-  Mail,
-  Send,
-} from "lucide-react";
+import { AlertCircle, CheckCircle2, Download, FileText, Loader2, Mail, Send } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { TeamCard } from "@/components/site/TeamCard";
 import { publishedTeam } from "@/data/team";
@@ -29,7 +21,7 @@ export const Route = createFileRoute("/media")({
         content: "Approved assets and a direct line to the team for press and media requests.",
       },
     ],
-    links: [{ rel: "canonical", href: "/media" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/media" }],
   }),
   component: MediaPage,
 });
@@ -248,11 +240,7 @@ function MediaContact() {
                     placeholder="you@publication.com"
                   />
                 </div>
-                <input
-                  name="organization"
-                  className="input"
-                  placeholder="Publication / outlet"
-                />
+                <input name="organization" className="input" placeholder="Publication / outlet" />
                 <textarea
                   name="message"
                   required
@@ -262,7 +250,12 @@ function MediaContact() {
                 />
 
                 <div className="hidden" aria-hidden="true">
-                  <input name="company_website" tabIndex={-1} autoComplete="off" className="input" />
+                  <input
+                    name="company_website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    className="input"
+                  />
                 </div>
 
                 <label className="flex items-start gap-2 text-xs text-muted-foreground">

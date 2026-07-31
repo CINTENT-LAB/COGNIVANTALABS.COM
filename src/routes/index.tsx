@@ -46,11 +46,10 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:description",
-        content:
-          "Intent → Context → Reason → Decide → Act → Learn → Refined Intent Understanding.",
+        content: "Intent → Context → Reason → Decide → Act → Learn → Refined Intent Understanding.",
       },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/" }],
   }),
   component: Home,
 });
@@ -81,11 +80,23 @@ function Home() {
 // — no invented model architecture (e.g. no "Graph-Neural Network" claim).
 const lifecycleStages = [
   { stage: "Intent", detail: "Resolve what the user or system is actually trying to accomplish." },
-  { stage: "Context", detail: "Assemble the current world state — actors, constraints, recent events." },
+  {
+    stage: "Context",
+    detail: "Assemble the current world state — actors, constraints, recent events.",
+  },
   { stage: "Reason", detail: "Produce an explainable decision trace grounded in active memory." },
-  { stage: "Decide", detail: "Arbitrate goals, constraints, and confidence into a ranked recommendation." },
-  { stage: "Act", detail: "Execute workflows or actions through orchestration, with monitored feedback." },
-  { stage: "Learn", detail: "Improve from outcomes while preserving a full, auditable decision trace." },
+  {
+    stage: "Decide",
+    detail: "Arbitrate goals, constraints, and confidence into a ranked recommendation.",
+  },
+  {
+    stage: "Act",
+    detail: "Execute workflows or actions through orchestration, with monitored feedback.",
+  },
+  {
+    stage: "Learn",
+    detail: "Improve from outcomes while preserving a full, auditable decision trace.",
+  },
   {
     stage: "Refined Intent Understanding",
     detail: "Outcomes feed back into how the next Intent is understood — the loop closes.",
@@ -551,8 +562,8 @@ function RealDecisionExample() {
           assessment.
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          A representative supply-agreement scenario with multiple risk factors and a
-          time-sensitive decision. Same input, two very different styles of output.
+          A representative supply-agreement scenario with multiple risk factors and a time-sensitive
+          decision. Same input, two very different styles of output.
         </p>
       </Reveal>
 

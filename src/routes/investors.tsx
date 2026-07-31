@@ -33,7 +33,7 @@ export const Route = createFileRoute("/investors")({
         content: "CINTENT's moat, roadmap, leadership, and a controlled path to request materials.",
       },
     ],
-    links: [{ rel: "canonical", href: "/investors" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/investors" }],
   }),
   component: InvestorsPage,
 });
@@ -305,11 +305,7 @@ function RequestMaterials() {
                     placeholder="you@fund.com"
                   />
                 </div>
-                <input
-                  name="organization"
-                  className="input"
-                  placeholder="Fund / firm"
-                />
+                <input name="organization" className="input" placeholder="Fund / firm" />
                 <select name="interest" className="input" defaultValue="materials">
                   <option value="materials">Request the investor deck</option>
                   <option value="financials">Request financial model</option>
@@ -323,7 +319,12 @@ function RequestMaterials() {
                 />
 
                 <div className="hidden" aria-hidden="true">
-                  <input name="company_website" tabIndex={-1} autoComplete="off" className="input" />
+                  <input
+                    name="company_website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    className="input"
+                  />
                 </div>
 
                 <label className="flex items-start gap-2 text-xs text-muted-foreground">

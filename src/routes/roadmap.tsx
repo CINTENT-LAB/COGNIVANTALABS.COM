@@ -17,7 +17,7 @@ export const Route = createFileRoute("/roadmap")({
         content: "Where CINTENT is today, and where it's headed.",
       },
     ],
-    links: [{ rel: "canonical", href: "/roadmap" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/roadmap" }],
   }),
   component: RoadmapPage,
 });
@@ -80,7 +80,8 @@ function RoadmapPage() {
           <Reveal>
             <div className="kicker">Roadmap</div>
             <h1 className="mt-4 max-w-3xl font-display text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
-              Where CINTENT is today, and where it's <span className="text-gradient-aurora">headed</span>.
+              Where CINTENT is today, and where it's{" "}
+              <span className="text-gradient-aurora">headed</span>.
             </h1>
             <p className="mt-6 max-w-2xl text-muted-foreground md:text-lg">
               Directional milestones toward 2030 — not investor commitments to specific dates or

@@ -11,7 +11,9 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "sync:publications": "node scripts/sync-publications.mjs",
-    "test:publications": "node --test scripts/validate-publications.test.mjs scripts/publications-ui.test.mjs"
+    "test:publications": "node --test scripts/validate-publications.test.mjs scripts/publications-ui.test.mjs",
+    "test:seo": "node scripts/seo-audit.mjs",
+    "report:seo": "node scripts/seo-audit.mjs --write-reports"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",

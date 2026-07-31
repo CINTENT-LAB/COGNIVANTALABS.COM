@@ -10,9 +10,8 @@ export const Route = createFileRoute("/privacy")({
         name: "description",
         content: "Draft privacy policy for Cognivanta Labs, pending legal review.",
       },
-      { name: "robots", content: "noindex, nofollow" },
     ],
-    links: [{ rel: "canonical", href: "/privacy" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/privacy" }],
   }),
   component: PrivacyPage,
 });

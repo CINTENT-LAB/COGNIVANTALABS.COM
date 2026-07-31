@@ -16,7 +16,7 @@ export const Route = createFileRoute("/research")({
         content: "Research that turns cognitive AI primitives into useful, governed systems.",
       },
     ],
-    links: [{ rel: "canonical", href: "/research" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/research" }],
   }),
   component: ResearchRoutePage,
 });

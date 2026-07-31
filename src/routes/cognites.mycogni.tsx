@@ -15,7 +15,7 @@ export const Route = createFileRoute("/cognites/mycogni")({
       },
       { name: "robots", content: "noindex, nofollow" },
     ],
-    links: [{ rel: "canonical", href: "/cognites/mycogni" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/cognites/mycogni" }],
   }),
   component: MyCogniHandoff,
 });

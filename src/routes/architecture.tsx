@@ -19,7 +19,7 @@ export const Route = createFileRoute("/architecture")({
         content: "The real system, not a diagram of a generic AI brain.",
       },
     ],
-    links: [{ rel: "canonical", href: "/architecture" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/architecture" }],
   }),
   component: ArchitecturePage,
 });
@@ -32,7 +32,8 @@ export const Route = createFileRoute("/architecture")({
 const lifecycleStages = [
   {
     stage: "Intent",
-    detail: "Resolve what the user or system is actually trying to accomplish, before anything else runs.",
+    detail:
+      "Resolve what the user or system is actually trying to accomplish, before anything else runs.",
     endpoint: "/intent",
   },
   {
@@ -42,27 +43,32 @@ const lifecycleStages = [
   },
   {
     stage: "Reason",
-    detail: "Produce an explainable decision trace grounded in active memory and current signals, not a static prompt.",
+    detail:
+      "Produce an explainable decision trace grounded in active memory and current signals, not a static prompt.",
     endpoint: "/reason",
   },
   {
     stage: "Decide",
-    detail: "Arbitrate goals, constraints, confidence, and control policy into a ranked, structured recommendation.",
+    detail:
+      "Arbitrate goals, constraints, confidence, and control policy into a ranked, structured recommendation.",
     endpoint: null,
   },
   {
     stage: "Act",
-    detail: "Execute workflows, commands, or physical actions through orchestration, with monitored feedback and provenance.",
+    detail:
+      "Execute workflows, commands, or physical actions through orchestration, with monitored feedback and provenance.",
     endpoint: "/orchestrate",
   },
   {
     stage: "Learn",
-    detail: "Improve from outcomes and feedback while preserving a full, auditable trace of why each decision was made.",
+    detail:
+      "Improve from outcomes and feedback while preserving a full, auditable trace of why each decision was made.",
     endpoint: "/govern",
   },
   {
     stage: "Refined Intent Understanding",
-    detail: "Outcomes feed back into how the next Intent is understood — the loop closes rather than resetting to zero.",
+    detail:
+      "Outcomes feed back into how the next Intent is understood — the loop closes rather than resetting to zero.",
     endpoint: null,
   },
 ];
@@ -97,9 +103,15 @@ const apiSurface = [
 
 const deploymentSurfaces = [
   ["Edge", "Run local fusion, memory and action policies near devices and operators."],
-  ["Cloud", "Use centralized supervision for analytics, fleet learning and large-scale orchestration."],
+  [
+    "Cloud",
+    "Use centralized supervision for analytics, fleet learning and large-scale orchestration.",
+  ],
   ["Hybrid", "Split cognition between local control and remote strategic oversight."],
-  ["Embedded", "Integrate lightweight cognitive loops into constrained hardware for motion-critical systems."],
+  [
+    "Embedded",
+    "Integrate lightweight cognitive loops into constrained hardware for motion-critical systems.",
+  ],
 ] as const;
 
 function ArchitecturePage() {
@@ -116,9 +128,9 @@ function ArchitecturePage() {
               How CINTENT is actually <span className="text-gradient-aurora">built</span>.
             </h1>
             <p className="mt-6 max-w-2xl text-muted-foreground md:text-lg">
-              Written for engineers evaluating the platform, not for a pitch deck. Real layers,
-              real API surface, real deployment options — no invented model architecture or
-              unverified benchmark comparisons.
+              Written for engineers evaluating the platform, not for a pitch deck. Real layers, real
+              API surface, real deployment options — no invented model architecture or unverified
+              benchmark comparisons.
             </p>
           </Reveal>
         </div>
@@ -143,7 +155,9 @@ function ArchitecturePage() {
                 <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground sm:w-8">
                   {i + 1}
                 </div>
-                <div className="font-display text-base font-bold sm:w-56 sm:shrink-0">{s.stage}</div>
+                <div className="font-display text-base font-bold sm:w-56 sm:shrink-0">
+                  {s.stage}
+                </div>
                 <div className="flex-1 text-sm text-muted-foreground">{s.detail}</div>
                 {s.endpoint && (
                   <span className="shrink-0 rounded-full border border-electric/30 bg-electric/10 px-2.5 py-1 font-mono text-[10px] text-electric-soft">

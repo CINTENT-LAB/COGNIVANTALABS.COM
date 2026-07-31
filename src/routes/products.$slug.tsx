@@ -25,7 +25,7 @@ export const Route = createFileRoute("/products/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
       ],
-      links: [{ rel: "canonical", href: `/products/${params.slug}` }],
+      links: [{ rel: "canonical", href: `https://cognivantalabs.com/products/${params.slug}` }],
     };
   },
   component: ProductPage,

@@ -25,7 +25,7 @@ export const Route = createFileRoute("/enterprise")({
           "A cognitive loop that goes Ask → Decide → Act, with governance and human oversight built in.",
       },
     ],
-    links: [{ rel: "canonical", href: "/enterprise" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/enterprise" }],
   }),
   component: EnterprisePage,
 });

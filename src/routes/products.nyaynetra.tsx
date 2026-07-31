@@ -14,7 +14,7 @@ export const Route = createFileRoute("/products/nyaynetra")({
       { property: "og:title", content: `${product.name} — Cognivanta Labs` },
       { property: "og:description", content: product.description },
     ],
-    links: [{ rel: "canonical", href: "/products/nyaynetra" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/products/nyaynetra" }],
   }),
   component: () => <ProductPageLayout product={product} content={content} />,
 });

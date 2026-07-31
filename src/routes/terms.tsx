@@ -10,9 +10,8 @@ export const Route = createFileRoute("/terms")({
         name: "description",
         content: "Draft terms of service for Cognivanta Labs, pending legal review.",
       },
-      { name: "robots", content: "noindex, nofollow" },
     ],
-    links: [{ rel: "canonical", href: "/terms" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/terms" }],
   }),
   component: TermsPage,
 });

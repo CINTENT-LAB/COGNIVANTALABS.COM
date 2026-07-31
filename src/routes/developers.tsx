@@ -50,7 +50,7 @@ export const Route = createFileRoute("/developers")({
       },
       { property: "og:title", content: "Developer Platform - Cognivanta Labs" },
     ],
-    links: [{ rel: "canonical", href: "/developers" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/developers" }],
   }),
   component: DevelopersPage,
 });

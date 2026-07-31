@@ -14,7 +14,7 @@ export const Route = createFileRoute("/cognites")({
     ],
     links:
       matches.at(-1)?.pathname === "/cognites" || matches.at(-1)?.pathname === "/cognites/"
-        ? [{ rel: "canonical", href: "/cognites" }]
+        ? [{ rel: "canonical", href: "https://cognivantalabs.com/cognites" }]
         : [],
   }),
   component: CognitesPage,

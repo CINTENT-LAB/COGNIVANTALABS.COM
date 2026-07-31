@@ -19,7 +19,7 @@ export const Route = createFileRoute("/careers")({
         content: "Human + AI. India-built for the world.",
       },
     ],
-    links: [{ rel: "canonical", href: "/careers" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/careers" }],
   }),
   component: CareersPage,
 });
@@ -56,13 +56,14 @@ function CareersPage() {
           <Reveal>
             <div className="kicker">Careers</div>
             <h1 className="mt-4 max-w-3xl font-display text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
-              Human + AI, built by people who care how it's <span className="text-gradient-aurora">built</span>.
+              Human + AI, built by people who care how it's{" "}
+              <span className="text-gradient-aurora">built</span>.
             </h1>
             <p className="mt-6 max-w-2xl text-muted-foreground md:text-lg">
               Cognivanta Labs is building CINTENT, an indigenous Indian cognitive AI platform,
               India-built for a global market. We're a small, early-stage team — there's no public
-              job board today, but we're always glad to hear from people who want to build this
-              with us.
+              job board today, but we're always glad to hear from people who want to build this with
+              us.
             </p>
           </Reveal>
         </div>
@@ -137,7 +138,12 @@ function CareersPage() {
               <div className="hidden" aria-hidden="true">
                 <label>
                   Website
-                  <input name="company_website" tabIndex={-1} autoComplete="off" className="input" />
+                  <input
+                    name="company_website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    className="input"
+                  />
                 </label>
               </div>
 

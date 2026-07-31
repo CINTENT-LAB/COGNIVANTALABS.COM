@@ -32,7 +32,7 @@ export const Route = createFileRoute("/applications")({
         content: "Cognitive AI applied where context, memory, and control matter.",
       },
     ],
-    links: [{ rel: "canonical", href: "/applications" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/applications" }],
   }),
   component: ApplicationsPage,
 });
@@ -277,8 +277,8 @@ function ApplicationsPage() {
           </h2>
           <p className="mt-3 max-w-3xl text-sm text-muted-foreground md:text-base">
             Most application domains are still research-stage. These three are the ones with the
-            most deployment-pilot mileage today — aerial autonomy, robotics, and assistive
-            mobility — so they're worth a closer look before you scope a proof of concept.
+            most deployment-pilot mileage today — aerial autonomy, robotics, and assistive mobility
+            — so they're worth a closer look before you scope a proof of concept.
           </p>
         </Reveal>
 
@@ -357,9 +357,9 @@ function ApplicationsPage() {
             <p className="mt-2 text-sm text-muted-foreground">
               We don't publish a savings calculator or a "% reduction" figure for these pilots yet.
               We don't have enough real, measured pilot outcomes across enough deployments to
-              calibrate one honestly, and a calculator built on assumptions would just be a
-              guess wearing a UI. A proof-of-concept workshop is the fastest way to get a
-              value estimate specific to your operating environment — not a generic one.
+              calibrate one honestly, and a calculator built on assumptions would just be a guess
+              wearing a UI. A proof-of-concept workshop is the fastest way to get a value estimate
+              specific to your operating environment — not a generic one.
             </p>
           </div>
         </Reveal>

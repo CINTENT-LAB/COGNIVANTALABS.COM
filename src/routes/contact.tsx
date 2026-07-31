@@ -16,7 +16,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact Cognivanta Labs" },
       { property: "og:description", content: "Get API access. Propose a pilot. Post a use case." },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/contact" }],
   }),
   component: ContactPage,
 });

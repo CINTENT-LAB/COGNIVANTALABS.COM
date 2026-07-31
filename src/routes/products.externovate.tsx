@@ -14,7 +14,7 @@ export const Route = createFileRoute("/products/externovate")({
       { property: "og:title", content: `${product.name} — Cognivanta Labs` },
       { property: "og:description", content: product.description },
     ],
-    links: [{ rel: "canonical", href: "/products/externovate" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/products/externovate" }],
   }),
   component: () => <ProductPageLayout product={product} content={content} />,
 });

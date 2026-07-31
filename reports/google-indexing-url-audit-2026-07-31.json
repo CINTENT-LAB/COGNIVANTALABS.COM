@@ -1,0 +1,537 @@
+{
+  "generatedAt": "2026-07-31T05:53:00.394Z",
+  "siteOrigin": "https://cognivantalabs.com",
+  "buildDirectory": "dist/client",
+  "sitemap": {
+    "url": "https://cognivantalabs.com/sitemap.xml",
+    "count": 32,
+    "errors": []
+  },
+  "noindexRoutes": [
+    "/404.html",
+    "/cognites/login",
+    "/cognites/mycogni"
+  ],
+  "legacyRoutes": [
+    {
+      "source": "/shop-left-sidebar.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/projects.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/pricing-plan.html",
+      "expectedStatus": 301,
+      "destination": "/pricing"
+    },
+    {
+      "source": "/faq.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/services.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/login.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/contact.html",
+      "expectedStatus": 301,
+      "destination": "/contact"
+    },
+    {
+      "source": "/index-2.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/posts-by-author.html",
+      "expectedStatus": 301,
+      "destination": "/blog"
+    },
+    {
+      "source": "/posts-by-category.html",
+      "expectedStatus": 301,
+      "destination": "/blog"
+    },
+    {
+      "source": "/posts-by-date.html",
+      "expectedStatus": 301,
+      "destination": "/blog"
+    },
+    {
+      "source": "/register.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/shop-grid.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/product-single.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/posts-by-tag.html",
+      "expectedStatus": 301,
+      "destination": "/blog"
+    },
+    {
+      "source": "/wishlist.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/privacy-policy.html",
+      "expectedStatus": 301,
+      "destination": "/privacy"
+    },
+    {
+      "source": "/blog-single-left-sidebar.html",
+      "expectedStatus": 404,
+      "destination": null
+    },
+    {
+      "source": "/about-us.html",
+      "expectedStatus": 301,
+      "destination": "/about"
+    },
+    {
+      "source": "/terms-conditions.html",
+      "expectedStatus": 301,
+      "destination": "/terms"
+    }
+  ],
+  "routes": [
+    {
+      "url": "https://cognivantalabs.com/",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/",
+      "title": "Cognivanta Labs — CINTENT understands intent before AI decides or acts",
+      "description": "Cognivanta Labs develops CINTENT™, a governed cognitive intelligence platform that understands intent, interprets context, reasons across knowledge and constraints, makes accountable decisions, and enables purposeful action.",
+      "canonical": "https://cognivantalabs.com/",
+      "robots": null,
+      "h1": "CINTENT understands what people and enterprises intend — before AI decides or acts.",
+      "contentLength": 168915,
+      "internalLinkCount": 128,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/platform",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/platform",
+      "title": "Platform — CINTENT™ Cognitive Intent Platform",
+      "description": "CINTENT™ is an API-first cognitive operating system fusing intent, context, memory, reasoning, orchestration, governance and decision intelligence.",
+      "canonical": "https://cognivantalabs.com/platform",
+      "robots": null,
+      "h1": "CINTENT™ — the Cognitive Intent Platform.",
+      "contentLength": 85951,
+      "internalLinkCount": 66,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/applications",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/applications",
+      "title": "Applications — Cognivanta Labs",
+      "description": "Application domains for Cognivanta Labs: autonomous systems, enterprise intelligence, cybersecurity, finance, legal intelligence, and smart infrastructure.",
+      "canonical": "https://cognivantalabs.com/applications",
+      "robots": null,
+      "h1": "Cognitive AI applied where context, memory, and control matter.",
+      "contentLength": 56561,
+      "internalLinkCount": 65,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/research",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/research",
+      "title": "Research - Cognivanta Labs",
+      "description": "Applied research into cognitive intelligence, context, reasoning, governance, autonomy, and human-AI collaboration.",
+      "canonical": "https://cognivantalabs.com/research",
+      "robots": null,
+      "h1": "Research that moves intelligence from models to real-world systems.",
+      "contentLength": 96887,
+      "internalLinkCount": 61,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/developers",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/developers",
+      "title": "Developer Platform - Cognivanta Labs",
+      "description": "Build governed cognitive applications with CINTENT APIs, reference flows, and production-minded controls.",
+      "canonical": "https://cognivantalabs.com/developers",
+      "robots": null,
+      "h1": "Build applications that move from intent to governed action.",
+      "contentLength": 67513,
+      "internalLinkCount": 63,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/architecture",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/architecture",
+      "title": "Architecture — CINTENT™ Technical Deep Dive",
+      "description": "How CINTENT is actually built: the four-layer cognitive pipeline, the Intent-to-Refined-Intent-Understanding loop, the real API surface, and deployment surfaces — written for engineering evaluators.",
+      "canonical": "https://cognivantalabs.com/architecture",
+      "robots": null,
+      "h1": "How CINTENT is actually built.",
+      "contentLength": 42194,
+      "internalLinkCount": 57,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products",
+      "title": "Products — Cognivanta Labs",
+      "description": "The Cognivanta ecosystem: CINTENT™, Shunya AI™, NyayNetra™, CHAXU™, BlissTrail™, IKSHANA™, CWOS™, Health Hub, AskCOGNI, Cognitive Cobots, AWCS, Externovate.",
+      "canonical": "https://cognivantalabs.com/products",
+      "robots": null,
+      "h1": "One shared cognitive core. A multi-domain ecosystem.",
+      "contentLength": 62108,
+      "internalLinkCount": 79,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/askcogni",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/askcogni",
+      "title": "AskCOGNI — Cognivanta Labs",
+      "description": "AskCOGNI is a provider-neutral interactive preview for exploring CINTENT&#x27;s intent, context and decision concepts. The production AI backend is not active in this preview; it is an experience and information surface for reviewing the cognitive workflow.",
+      "canonical": "https://cognivantalabs.com/products/askcogni",
+      "robots": null,
+      "h1": "AskCOGNI",
+      "contentLength": 42856,
+      "internalLinkCount": 72,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/awcs",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/awcs",
+      "title": "Autonomous Wheelchair (AWCS) — Cognivanta Labs",
+      "description": "Assistive mobility with safe navigation, human override and intelligent context under constrained, real-world conditions.",
+      "canonical": "https://cognivantalabs.com/products/awcs",
+      "robots": null,
+      "h1": "Autonomous Wheelchair (AWCS)",
+      "contentLength": 43933,
+      "internalLinkCount": 74,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/blisstrail",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/blisstrail",
+      "title": "BlissTrail™ — Cognivanta Labs",
+      "description": "AI-powered trip planning that scores destinations with a TDIS (Book / Wait / Avoid) signal from real-time cost, weather, crowd and safety data across 500+ destinations, plus group planning and a 6-layer CINTENT reasoning engine.",
+      "canonical": "https://cognivantalabs.com/products/blisstrail",
+      "robots": null,
+      "h1": "BlissTrail™",
+      "contentLength": 48104,
+      "internalLinkCount": 73,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/chaxu",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/chaxu",
+      "title": "CHAXU™ — Cognivanta Labs",
+      "description": "Flagship autonomous aerial intelligence for drone and UAV OEMs: mission command, sensor fusion, edge AI, fleet coordination, replay, and governed operational APIs powered by CINTENT.",
+      "canonical": "https://cognivantalabs.com/products/chaxu",
+      "robots": null,
+      "h1": "CHAXU™",
+      "contentLength": 54840,
+      "internalLinkCount": 78,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/cobots",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/cobots",
+      "title": "Cognitive Cobots — Cognivanta Labs",
+      "description": "Collaborative machines combining situational awareness, task memory and adaptive assistance for human-alongside industrial and service settings.",
+      "canonical": "https://cognivantalabs.com/products/cobots",
+      "robots": null,
+      "h1": "Cognitive Cobots",
+      "contentLength": 38573,
+      "internalLinkCount": 72,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/cogni-doc",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/cogni-doc",
+      "title": "COGNI Doc — Cognivanta Labs",
+      "description": "CINTENT-powered document reasoning — contract analysis, risk extraction and structured, explainable summaries for legal, compliance and enterprise document workflows.",
+      "canonical": "https://cognivantalabs.com/products/cogni-doc",
+      "robots": null,
+      "h1": "COGNI Doc",
+      "contentLength": 37717,
+      "internalLinkCount": 72,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/cwos",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/cwos",
+      "title": "CWOS™ — Cognivanta Labs",
+      "description": "India&#x27;s first AI-native investment intelligence platform: cognitive research automation, quant signal generation, portfolio optimization and explainable, human-governed recommendations for retail investors, advisors, PMS/AIF managers, family offices and institutions.",
+      "canonical": "https://cognivantalabs.com/products/cwos",
+      "robots": null,
+      "h1": "CWOS™",
+      "contentLength": 59530,
+      "internalLinkCount": 72,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/externovate",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/externovate",
+      "title": "Externovate — Cognivanta Labs",
+      "description": "A global talent platform connecting students, researchers, universities and enterprises across 15+ countries — AI-matched (via CINTENT™) internships and research placements, from discovery to a verified Digital Career Passport™.",
+      "canonical": "https://cognivantalabs.com/products/externovate",
+      "robots": null,
+      "h1": "Externovate",
+      "contentLength": 47676,
+      "internalLinkCount": 77,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/health-hub",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/health-hub",
+      "title": "Health Hub — Cognivanta Labs",
+      "description": "Healthcare intelligence platform integrating 4500+ healthcare APIs for clinical decision support, patient data integration and care-pathway optimization.",
+      "canonical": "https://cognivantalabs.com/products/health-hub",
+      "robots": null,
+      "h1": "Health Hub",
+      "contentLength": 49041,
+      "internalLinkCount": 72,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/ikshana",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/ikshana",
+      "title": "IKSHANA™ — Cognivanta Labs",
+      "description": "A governed marketplace and product-design ecosystem for drones, UAVs, robots and cobots — connecting OEMs, vendors, service partners and buyers through compliance-first procurement (DGCA/FAA/EASA/NDAA), vendor trust, and an engineering workspace for designing and simulating autonomous products. Part of the CHAXU stack; also reachable at byobot.store.",
+      "canonical": "https://cognivantalabs.com/products/ikshana",
+      "robots": null,
+      "h1": "IKSHANA™",
+      "contentLength": 48139,
+      "internalLinkCount": 74,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/nyaynetra",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/nyaynetra",
+      "title": "NyayNetra™ — Cognivanta Labs",
+      "description": "AI-driven legal assistance covering FIR interpretation, case search, legal draft generation and case insights — built to make justice faster and more accessible for citizens and legal professionals.",
+      "canonical": "https://cognivantalabs.com/products/nyaynetra",
+      "robots": null,
+      "h1": "NyayNetra™",
+      "contentLength": 42251,
+      "internalLinkCount": 74,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/products/shunyai",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/products/shunyai",
+      "title": "Shunya AI™ — Cognivanta Labs",
+      "description": "Real-time cognitive speech translation, transcription and transformation across 42 Indian languages — built for calls, conferencing, courtrooms, healthcare and broadcast, with over 95% contextual accuracy. Backed by 250+ APIs.",
+      "canonical": "https://cognivantalabs.com/products/shunyai",
+      "robots": null,
+      "h1": "Shunya AI™",
+      "contentLength": 50837,
+      "internalLinkCount": 73,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/pilots",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/pilots",
+      "title": "Pilot Platforms — Cognivanta Labs",
+      "description": "Applied programs built on the CINTENT core — research, deployment and enterprise pilots testing the cognitive architecture under real-world constraints.",
+      "canonical": "https://cognivantalabs.com/pilots",
+      "robots": null,
+      "h1": "Applied programs built on the CINTENT™ core.",
+      "contentLength": 48964,
+      "internalLinkCount": 72,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/pricing",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/pricing",
+      "title": "Pricing — Cognivanta Labs",
+      "description": "Plans for building on CINTENT™ — from a free sandbox to governed enterprise deployment.",
+      "canonical": "https://cognivantalabs.com/pricing",
+      "robots": null,
+      "h1": "Plans built for every stage of building on CINTENT™.",
+      "contentLength": 41104,
+      "internalLinkCount": 59,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/about",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/about",
+      "title": "About — Cognivanta Labs",
+      "description": "Indigenous Indian Cognitive AI platform. CINTENT™ MVP complete, platform-first architecture, multi-domain ecosystem, strong IP strategy, global vision.",
+      "canonical": "https://cognivantalabs.com/about",
+      "robots": null,
+      "h1": "Human + AI. India-built for the world.",
+      "contentLength": 46371,
+      "internalLinkCount": 67,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/careers",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/careers",
+      "title": "Careers — Cognivanta Labs",
+      "description": "Join the team building CINTENT, an indigenous Indian cognitive AI platform. No open roles listed today — register your interest and we&#x27;ll reach out when there&#x27;s a fit.",
+      "canonical": "https://cognivantalabs.com/careers",
+      "robots": null,
+      "h1": "Human + AI, built by people who care how it&#x27;s built.",
+      "contentLength": 30195,
+      "internalLinkCount": 55,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/investors",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/investors",
+      "title": "Investor Relations — Cognivanta Labs",
+      "description": "Investment thesis, market opportunity, leadership, and how to request Cognivanta Labs / CINTENT investor materials.",
+      "canonical": "https://cognivantalabs.com/investors",
+      "robots": null,
+      "h1": "Backing the shift from responses to real decisions.",
+      "contentLength": 48467,
+      "internalLinkCount": 67,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/media",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/media",
+      "title": "Media &amp; Press — Cognivanta Labs",
+      "description": "Fact sheets, approved logos, executive profiles, and a media contact for Cognivanta Labs and CINTENT™ coverage.",
+      "canonical": "https://cognivantalabs.com/media",
+      "robots": null,
+      "h1": "Reporting on Cognivanta Labs?",
+      "contentLength": 39911,
+      "internalLinkCount": 68,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/roadmap",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/roadmap",
+      "title": "Roadmap — Cognivanta Labs",
+      "description": "Cognivanta Labs&#x27; technology roadmap: where CINTENT and its pilots stand today, and the direction the platform is heading through 2030.",
+      "canonical": "https://cognivantalabs.com/roadmap",
+      "robots": null,
+      "h1": "Where CINTENT is today, and where it&#x27;s headed.",
+      "contentLength": 34448,
+      "internalLinkCount": 57,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/cognites",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/cognites",
+      "title": "Cognites — Cognivanta Labs",
+      "description": "Cognites — sign-in hub for Cognivanta Labs partners, customers, and employees.",
+      "canonical": "https://cognivantalabs.com/cognites",
+      "robots": null,
+      "h1": "One door in, for everyone at Cognivanta.",
+      "contentLength": 30586,
+      "internalLinkCount": 58,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/blog",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/blog",
+      "title": "Blog and publications - Cognivanta Labs",
+      "description": "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
+      "canonical": "https://cognivantalabs.com/blog",
+      "robots": null,
+      "h1": "Signals from the team building CINTENT.",
+      "contentLength": 80520,
+      "internalLinkCount": 57,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/contact",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/contact",
+      "title": "Contact — Cognivanta Labs",
+      "description": "Get API access, propose a pilot, or post your use case for CINTENT™ and the Cognivanta ecosystem.",
+      "canonical": "https://cognivantalabs.com/contact",
+      "robots": null,
+      "h1": "Build on CINTENT™.",
+      "contentLength": 29945,
+      "internalLinkCount": 55,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/privacy",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/privacy",
+      "title": "Privacy Policy (Draft) — Cognivanta Labs",
+      "description": "Draft privacy policy for Cognivanta Labs, pending legal review.",
+      "canonical": "https://cognivantalabs.com/privacy",
+      "robots": null,
+      "h1": "Privacy Policy (Draft)",
+      "contentLength": 29321,
+      "internalLinkCount": 56,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/terms",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/terms",
+      "title": "Terms of Service (Draft) — Cognivanta Labs",
+      "description": "Draft terms of service for Cognivanta Labs, pending legal review.",
+      "canonical": "https://cognivantalabs.com/terms",
+      "robots": null,
+      "h1": "Terms of Service (Draft)",
+      "contentLength": 29229,
+      "internalLinkCount": 56,
+      "sitemap": true
+    },
+    {
+      "url": "https://cognivantalabs.com/enterprise",
+      "expectedStatus": 200,
+      "finalUrl": "https://cognivantalabs.com/enterprise",
+      "title": "Enterprise AI — From Responses to Real-World Decisions | Cognivanta Labs",
+      "description": "CINTENT™ turns text, voice, documents, data and sensor signals into governed, structured decisions — ready for human approval or real-world execution.",
+      "canonical": "https://cognivantalabs.com/enterprise",
+      "robots": null,
+      "h1": "From Responses to Real-World Decisions.",
+      "contentLength": 50308,
+      "internalLinkCount": 60,
+      "sitemap": true
+    }
+  ],
+  "internalLinkErrors": [],
+  "status": "PASS"
+}

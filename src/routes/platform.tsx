@@ -35,7 +35,7 @@ export const Route = createFileRoute("/platform")({
         content: "Perception → Cognitive → Decision → Action, bound by a shared memory spine.",
       },
     ],
-    links: [{ rel: "canonical", href: "/platform" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/platform" }],
   }),
   component: PlatformPage,
 });
@@ -213,8 +213,8 @@ function PlatformPage() {
             A text answer vs. a decision you can act on.
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Illustrative example: a supply agreement with multiple risk factors and a
-            time-sensitive call.
+            Illustrative example: a supply agreement with multiple risk factors and a time-sensitive
+            call.
           </p>
         </Reveal>
         <div className="mt-10 grid gap-5 lg:grid-cols-2">

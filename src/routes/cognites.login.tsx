@@ -10,7 +10,7 @@ export const Route = createFileRoute("/cognites/login")({
       { name: "description", content: "Sign in as a Cognivanta Labs partner or customer." },
       { name: "robots", content: "noindex, nofollow" },
     ],
-    links: [{ rel: "canonical", href: "/cognites/login" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/cognites/login" }],
   }),
   component: LoginPage,
 });

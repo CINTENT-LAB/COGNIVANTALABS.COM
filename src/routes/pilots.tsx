@@ -76,7 +76,7 @@ export const Route = createFileRoute("/pilots")({
       },
       { property: "og:title", content: "Pilot Platforms — Cognivanta Labs" },
     ],
-    links: [{ rel: "canonical", href: "/pilots" }],
+    links: [{ rel: "canonical", href: "https://cognivantalabs.com/pilots" }],
   }),
   component: PilotsPage,
 });
