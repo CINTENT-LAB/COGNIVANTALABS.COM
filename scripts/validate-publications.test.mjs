@@ -20,7 +20,8 @@ const publications = generated.publications;
 
 const byId = new Map(publications.map((publication) => [publication.id, publication]));
 const publishedPublications = publications.filter(
-  (publication) => publication.ownerApproved === true && publication.publicationStatus === "Published",
+  (publication) =>
+    publication.ownerApproved === true && publication.publicationStatus === "Published",
 );
 
 test("the generated registry file has the expected shape", () => {
@@ -47,8 +48,14 @@ test("exactly one 'Cognitive AI Platforms' entry exists", () => {
 });
 
 test("no political-consulting publication is present", () => {
-  const matches = publications.filter((publication) => /political consulting/i.test(publication.title));
-  assert.equal(matches.length, 0, "political-consulting publication must not be synced to this site");
+  const matches = publications.filter((publication) =>
+    /political consulting/i.test(publication.title),
+  );
+  assert.equal(
+    matches.length,
+    0,
+    "political-consulting publication must not be synced to this site",
+  );
 });
 
 test("no Blogger administration URLs appear anywhere in the synced registry", () => {
@@ -78,7 +85,10 @@ test("exactly 4 publications are featured", () => {
 test("related-publication mapping is valid and the criminal-profiling pair is linked", () => {
   for (const publication of publications) {
     for (const relatedId of publication.relatedPublicationIds) {
-      assert.ok(byId.has(relatedId), `${publication.id} references missing relatedPublicationId "${relatedId}"`);
+      assert.ok(
+        byId.has(relatedId),
+        `${publication.id} references missing relatedPublicationId "${relatedId}"`,
+      );
     }
   }
   const linkedInProfiling = byId.get("cognitive-ai-criminal-profiling");

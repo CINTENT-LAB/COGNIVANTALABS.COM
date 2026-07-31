@@ -152,7 +152,9 @@ if (featured.length !== 4) {
 for (const publication of publications) {
   for (const relatedId of publication.relatedPublicationIds) {
     if (!byId.has(relatedId)) {
-      errors.push(`${publication.id} references a relatedPublicationId "${relatedId}" that does not exist`);
+      errors.push(
+        `${publication.id} references a relatedPublicationId "${relatedId}" that does not exist`,
+      );
     }
   }
 }
