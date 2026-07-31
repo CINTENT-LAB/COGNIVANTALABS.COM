@@ -38,6 +38,11 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: SEO and publication checks
+        run: |
+          npm run test:seo
+          npm run test:publications
+
       - name: Build static artifact
         run: npm run build
 
@@ -50,6 +55,25 @@ jobs:
           test -f dist/client/robots.txt
           test -f dist/client/sitemap.xml
           test -f dist/client/.htaccess
+
+          for asset in \
+            dist/client/favicon.ico \
+            dist/client/brand/cognivanta-labs-logo-dark.png \
+            dist/client/brand/cognivanta-labs-logo-light.png \
+            dist/client/brand/cognivanta-labs-logo-compact-dark.png \
+            dist/client/brand/cognivanta-labs-logo-compact-light.png \
+            dist/client/brand/cognivanta-symbol.png \
+            dist/client/brand/favicon-16x16.png \
+            dist/client/brand/favicon-32x32.png \
+            dist/client/brand/favicon-48x48.png \
+            dist/client/brand/apple-touch-icon.png \
+            dist/client/brand/icon-192.png \
+            dist/client/brand/icon-512.png \
+            dist/client/brand/icon-maskable.png \
+            dist/client/brand/og-cognivanta-labs.png
+          do
+            test -f "$asset"
+          done
 
           html_count="$(find dist/client -type f -name 'index.html' | wc -l)"
           test "$html_count" -ge 25
@@ -66,6 +90,11 @@ jobs:
 
           if grep -RInE 'https?://(localhost|127\.0\.0\.1)(:[0-9]+|/[^"'"'"')]*)|blogger\.com/blog/post/edit' dist/client; then
             echo "Forbidden local or Blogger administrative URL found in deploy artifact"
+            exit 1
+          fi
+
+          if grep -RInE 'cognivanta-logo-white|cognivanta-favicon' dist/client --exclude='*.png' --exclude='*.webp'; then
+            echo "Obsolete Cognivanta brand path found in deploy artifact"
             exit 1
           fi
 

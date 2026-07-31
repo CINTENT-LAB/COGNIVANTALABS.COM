@@ -16,6 +16,11 @@ import { Footer } from "@/components/site/Footer";
 import { CogniLauncher } from "@/components/site/CogniLauncher";
 
 const SITE_URL = "https://cognivantalabs.com";
+const BRAND = {
+  fullLogoDark: `${SITE_URL}/brand/cognivanta-labs-logo-dark.png`,
+  symbol: `${SITE_URL}/brand/cognivanta-symbol.png`,
+  socialImage: `${SITE_URL}/brand/og-cognivanta-labs.png`,
+} as const;
 
 const organizationStructuredData = {
   "@context": "https://schema.org",
@@ -26,7 +31,7 @@ const organizationStructuredData = {
       name: "Cognivanta Labs",
       alternateName: "Cognivanta Labs Pvt. Ltd.",
       url: "https://cognivantalabs.com/",
-      logo: "https://cognivantalabs.com/logos/cognivanta-favicon.png",
+      logo: BRAND.fullLogoDark,
       sameAs: [
         "https://www.linkedin.com/in/cognivanta-labs-42757b400/",
         "https://x.com/cognivantalabs",
@@ -39,6 +44,7 @@ const organizationStructuredData = {
       name: "Cognivanta Labs",
       url: "https://cognivantalabs.com/",
       publisher: { "@id": "https://cognivantalabs.com/#organization" },
+      image: BRAND.socialImage,
     },
   ],
 };
@@ -130,11 +136,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         },
         {
           property: "og:image",
-          content: "https://cognivantalabs.com/hero/hero-poster-clean.png",
+          content: BRAND.socialImage,
         },
         { property: "og:image:alt", content: "Cognivanta Labs cognitive AI platform" },
-        { property: "og:image:width", content: "1840" },
-        { property: "og:image:height", content: "1095" },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: "Cognivanta Labs - Building the future beyond AI" },
         {
@@ -144,7 +150,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         },
         {
           name: "twitter:image",
-          content: "https://cognivantalabs.com/hero/hero-poster-clean.png",
+          content: BRAND.socialImage,
         },
         { name: "theme-color", content: "#04060d" },
         { name: "mobile-web-app-capable", content: "yes" },
@@ -154,14 +160,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       links: [
         { rel: "stylesheet", href: appCss },
         { rel: "manifest", href: "/manifest.webmanifest" },
+        { rel: "icon", href: "/favicon.ico" },
         {
           rel: "icon",
-          href: "/logos/cognivanta-favicon.png",
+          href: "/brand/favicon-32x32.png",
           type: "image/png",
         },
         {
           rel: "apple-touch-icon",
-          href: "/logos/cognivanta-favicon.png",
+          href: "/brand/apple-touch-icon.png",
+          sizes: "180x180",
         },
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },

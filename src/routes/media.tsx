@@ -30,9 +30,19 @@ const leadership = publishedTeam.filter((member) => member.group === "leadership
 
 const assets = [
   {
-    label: "Cognivanta Labs logo (white, PNG)",
-    href: "/logos/cognivanta-logo-white.png",
-    note: "For use on dark backgrounds.",
+    label: "Cognivanta Labs logo (dark backgrounds, PNG)",
+    href: "/brand/cognivanta-labs-logo-dark.png",
+    note: "Full approved mark with the Human + AI identity.",
+  },
+  {
+    label: "Cognivanta Labs logo (light backgrounds, PNG)",
+    href: "/brand/cognivanta-labs-logo-light.png",
+    note: "Full approved mark with dark text for light backgrounds.",
+  },
+  {
+    label: "Cognivanta Labs compact logo (PNG)",
+    href: "/brand/cognivanta-labs-logo-compact-dark.png",
+    note: "Compact wordmark for headers, navigation, and partner materials.",
   },
   {
     label: "CINTENT icon (PNG)",
@@ -40,9 +50,9 @@ const assets = [
     note: "Product mark, square format.",
   },
   {
-    label: "Cognivanta Labs favicon (PNG)",
-    href: "/logos/cognivanta-favicon.png",
-    note: "Small-format brand mark.",
+    label: "Cognivanta cognitive symbol (PNG)",
+    href: "/brand/cognivanta-symbol.png",
+    note: "Standalone symbol for small-format use.",
   },
 ];
 

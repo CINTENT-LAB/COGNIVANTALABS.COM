@@ -24,9 +24,18 @@ const capabilities = [
 // this site. See docs/CLAIMS_REGISTER.md for the full note.
 const presetScenarios = [
   { label: "Legal case research (NyayNetra)", q: "How would CINTENT help research a legal case?" },
-  { label: "Hospital care pathway (Health Hub)", q: "How does CINTENT reason across a patient's medical history?" },
-  { label: "Aerial mission tasking (CHAXU)", q: "How does CINTENT coordinate a drone fleet mission?" },
-  { label: "Investment research (CWOS)", q: "How does CINTENT generate explainable investment research?" },
+  {
+    label: "Hospital care pathway (Health Hub)",
+    q: "How does CINTENT reason across a patient's medical history?",
+  },
+  {
+    label: "Aerial mission tasking (CHAXU)",
+    q: "How does CINTENT coordinate a drone fleet mission?",
+  },
+  {
+    label: "Investment research (CWOS)",
+    q: "How does CINTENT generate explainable investment research?",
+  },
 ];
 
 type SpeechResultEvent = {

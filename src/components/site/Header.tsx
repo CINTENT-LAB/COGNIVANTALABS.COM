@@ -5,7 +5,7 @@ import { products } from "@/data/products";
 import { pauseMotion } from "@/lib/heroMotion";
 import { getLucideIcon } from "@/lib/lucideIcon";
 
-const COGNIVANTA_LOGO = "/logos/cognivanta-logo-white.png";
+const COGNIVANTA_LOGO = "/brand/cognivanta-labs-logo-compact-dark.png";
 
 // CR-1 persona-driven / business-function navigation. Every top-level item
 // here has a real destination. Items from change_scope.md Section 3 that
@@ -126,7 +126,13 @@ export function Header() {
       <div className="scroll-progress-bar" style={{ width: `${progress}%` }} aria-hidden="true" />
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
         <Link to="/" className="group flex items-center gap-2.5">
-          <img src={COGNIVANTA_LOGO} alt="Cognivanta Labs" className="h-8 w-auto object-contain" />
+          <img
+            src={COGNIVANTA_LOGO}
+            alt="Cognivanta Labs"
+            width={1040}
+            height={280}
+            className="h-9 w-auto object-contain"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">

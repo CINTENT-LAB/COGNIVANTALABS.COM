@@ -258,9 +258,11 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
               <img
-                src="/logos/cognivanta-logo-white.png"
+                src="/brand/cognivanta-labs-logo-compact-dark.png"
                 alt="Cognivanta Labs"
-                className="h-8 w-auto object-contain"
+                width={1040}
+                height={280}
+                className="h-10 w-auto object-contain"
               />
             </div>
             <p className="mt-5 max-w-sm text-sm text-muted-foreground">

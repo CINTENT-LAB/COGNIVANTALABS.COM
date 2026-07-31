@@ -18,32 +18,32 @@ accuracy, savings, or deployment claim may be published on `cognivantalabs.com` 
 
 ## Status definitions
 
-| Status | Definition |
-| --- | --- |
-| Verified | Evidence reviewed; exact approved wording may publish. |
-| Qualified | Evidence supports a narrower or caveated wording. |
-| Pending owner review | Evidence exists but wording or scope is not approved. |
-| Evidence required | No sufficient evidence supplied. |
-| Internal only | May be used in internal material, not public. |
-| Remove | Unsupported, expired, misleading, or superseded. |
-| Superseded | Replaced by a newer verified claim. |
+| Status               | Definition                                             |
+| -------------------- | ------------------------------------------------------ |
+| Verified             | Evidence reviewed; exact approved wording may publish. |
+| Qualified            | Evidence supports a narrower or caveated wording.      |
+| Pending owner review | Evidence exists but wording or scope is not approved.  |
+| Evidence required    | No sufficient evidence supplied.                       |
+| Internal only        | May be used in internal material, not public.          |
+| Remove               | Unsupported, expired, misleading, or superseded.       |
+| Superseded           | Replaced by a newer verified claim.                    |
 
 ## Register
 
-| Claim ID | Category | Proposed public claim | Evidence/source | Owner | Status | Approved wording | Verified | Review |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| CLM-001 | Company identity | "Cognivanta Labs Pvt. Ltd.", CIN U86900UP2025PTC236604, GSTIN 09AANCC2670G1ZH | Already published in site footer; presumed sourced from official incorporation/GST filings | Ron | Qualified | Use exactly as filed; confirm CIN/GSTIN against the actual certificate before reuse on /media or /investors | 22 Jul 2026 (pulled from live footer, not independently verified against source document) | — |
-| CLM-002 | Team credentials | Rajesh bio: "a deterministic, explainable cognitive engine with no generative LLM, running under 500ms at under $0.0001 per query" (live on /about) | None recorded | Ron | Evidence required | — | | |
-| CLM-003 | Pilots / deployment | Specific pilot claims previously on homepage ("7 pilot platforms", "processing real contracts, real bookings, real operational constraints") | None recorded | Ron | Evidence required | Softened to general "domain pilots" language on homepage 22 Jul 2026 pending real evidence | | |
-| CLM-004 | Team / advisors | "40+ patents across the advisory board", named partners (HKSTP, Avnet, element14), "15+ years of deep-tech operating experience" (was on homepage) | None recorded | Ron | Evidence required | Removed from homepage 22 Jul 2026 pending real evidence | | |
-| CLM-005 | | | | | Evidence required | | | |
-| CLM-006 | | | | | Evidence required | | | |
-| CLM-007 | | | | | Evidence required | | | |
-| CLM-008 | | | | | Evidence required | | | |
-| CLM-009 | | | | | Evidence required | | | |
-| CLM-010 | | | | | Evidence required | | | |
-| CLM-011 | | | | | Evidence required | | | |
-| CLM-012 | | | | | Evidence required | | | |
+| Claim ID | Category            | Proposed public claim                                                                                                                               | Evidence/source                                                                            | Owner | Status            | Approved wording                                                                                            | Verified                                                                                  | Review |
+| -------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ----- | ----------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------ |
+| CLM-001  | Company identity    | "Cognivanta Labs Pvt. Ltd.", CIN U86900UP2025PTC236604, GSTIN 09AANCC2670G1ZH                                                                       | Already published in site footer; presumed sourced from official incorporation/GST filings | Ron   | Qualified         | Use exactly as filed; confirm CIN/GSTIN against the actual certificate before reuse on /media or /investors | 22 Jul 2026 (pulled from live footer, not independently verified against source document) | —      |
+| CLM-002  | Team credentials    | Rajesh bio: "a deterministic, explainable cognitive engine with no generative LLM, running under 500ms at under $0.0001 per query" (live on /about) | None recorded                                                                              | Ron   | Evidence required | —                                                                                                           |                                                                                           |        |
+| CLM-003  | Pilots / deployment | Specific pilot claims previously on homepage ("7 pilot platforms", "processing real contracts, real bookings, real operational constraints")        | None recorded                                                                              | Ron   | Evidence required | Softened to general "domain pilots" language on homepage 22 Jul 2026 pending real evidence                  |                                                                                           |        |
+| CLM-004  | Team / advisors     | "40+ patents across the advisory board", named partners (HKSTP, Avnet, element14), "15+ years of deep-tech operating experience" (was on homepage)  | None recorded                                                                              | Ron   | Evidence required | Removed from homepage 22 Jul 2026 pending real evidence                                                     |                                                                                           |        |
+| CLM-005  |                     |                                                                                                                                                     |                                                                                            |       | Evidence required |                                                                                                             |                                                                                           |        |
+| CLM-006  |                     |                                                                                                                                                     |                                                                                            |       | Evidence required |                                                                                                             |                                                                                           |        |
+| CLM-007  |                     |                                                                                                                                                     |                                                                                            |       | Evidence required |                                                                                                             |                                                                                           |        |
+| CLM-008  |                     |                                                                                                                                                     |                                                                                            |       | Evidence required |                                                                                                             |                                                                                           |        |
+| CLM-009  |                     |                                                                                                                                                     |                                                                                            |       | Evidence required |                                                                                                             |                                                                                           |        |
+| CLM-010  |                     |                                                                                                                                                     |                                                                                            |       | Evidence required |                                                                                                             |                                                                                           |        |
+| CLM-011  |                     |                                                                                                                                                     |                                                                                            |       | Evidence required |                                                                                                             |                                                                                           |        |
+| CLM-012  |                     |                                                                                                                                                     |                                                                                            |       | Evidence required |                                                                                                             |                                                                                           |        |
 
 Add new rows (CLM-013, CLM-014, ...) as new claims are proposed. Do not delete a row;
 set its status to `Remove` or `Superseded` instead, so the history stays auditable.
@@ -118,6 +118,7 @@ They still need real rows above before any number/name goes back in:
   restating unverified numbers (market size, funding, pilot outcome metrics,
   patent counts) and link out to where the real state of each thing lives
   (`/pilots`, `/cognites`, `/platform`) instead.
+
 ## CR-4 evidence-governed solution profiles (22 July 2026)
 
 - Found the same "illustrative demo dressed as a real, precisely-measured
@@ -182,14 +183,14 @@ They still need real rows above before any number/name goes back in:
 
 - Rebuilt `src/components/site/Footer.tsx`: verified every link resolves to a
   real route, anchor, or live external destination (checked `research-hub.
-  cognivantalabs.com` — it's a real deployed site). Split "Trust & support"
+cognivantalabs.com` — it's a real deployed site). Split "Trust & support"
   into "Legal & trust" and added Privacy/Terms links.
 - Added `/privacy` and `/terms` — both `noindex`, both banner-marked
   "Draft — not yet reviewed by legal counsel," structural placeholders only
   (no invented data-retention periods, jurisdictions, or compliance claims).
   These need real legal drafting before the draft banner comes off.
 - Added a real newsletter signup wired to the CR-0 backend (`formType:
-  "newsletter"`), with an explicit opt-in checkbox rather than an implied one.
+"newsletter"`), with an explicit opt-in checkbox rather than an implied one.
 - **Registered office address**: CR-13 asks for one in the footer. We don't
   have a real street address on file anywhere in this repo, so rather than
   invent one, the footer now says "registered office address pending
@@ -322,7 +323,7 @@ requirements and pre-flagged fabrication risks.
   real API surface (`/intent /context /memory /reason /orchestrate /govern`),
   and deployment surfaces already live on `/platform`, plus the canonical
   7-stage lifecycle (`Intent → Context → Reason → Decide → Act → Learn →
-  Refined Intent Understanding`) already declared in `src/routes/index.tsx`.
+Refined Intent Understanding`) already declared in `src/routes/index.tsx`.
   No new architecture claims introduced.
 - **CR-10 (interactive lifecycle strip)**: Made the homepage's lifecycle
   strip interactive — each stage now has a hover tooltip with real detail

@@ -18,7 +18,10 @@ export default defineConfig({
         enabled: true,
         autoSubfolderIndex: true,
         autoStaticPathsDiscovery: true,
-        crawlLinks: true,
+        // Route discovery already covers the file-based route tree. Crawling
+        // every href/src in prerendered HTML treats public binary assets as
+        // pages and can rewrite PNG responses as UTF-8 text in dist/client.
+        crawlLinks: false,
         concurrency: 8,
         failOnError: true,
       },

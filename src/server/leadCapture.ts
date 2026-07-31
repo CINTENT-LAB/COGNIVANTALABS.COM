@@ -66,9 +66,7 @@ function isValidEmail(email: string): boolean {
 
 function checkRateLimit(key: string): boolean {
   const now = Date.now();
-  const timestamps = (rateLimitStore.get(key) ?? []).filter(
-    (t) => now - t < RATE_LIMIT_WINDOW_MS,
-  );
+  const timestamps = (rateLimitStore.get(key) ?? []).filter((t) => now - t < RATE_LIMIT_WINDOW_MS);
   if (timestamps.length >= RATE_LIMIT_MAX) {
     rateLimitStore.set(key, timestamps);
     return false;
@@ -96,10 +94,7 @@ function isDuplicateSubmission(key: string): boolean {
  * nothing is silently dropped — but `routed` comes back false and the UI must
  * say so honestly rather than promising a team will follow up.
  */
-async function routeLead(
-  payload: LeadSubmission,
-  ticketId: string,
-): Promise<boolean> {
+async function routeLead(payload: LeadSubmission, ticketId: string): Promise<boolean> {
   const record = {
     ticketId,
     receivedAt: new Date().toISOString(),
