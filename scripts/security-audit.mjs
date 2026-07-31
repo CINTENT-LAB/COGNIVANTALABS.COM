@@ -185,7 +185,20 @@ async function auditProduction() {
   ]) {
     const response = await fetchManual(url);
     const location = response.headers.get("location") ?? "";
-    if (
+    const hostingerTlsHop =
+      url === "http://www.cognivantalabs.com/" &&
+      response.status === 301 &&
+      location.startsWith("https://www.cognivantalabs.com/");
+    if (hostingerTlsHop) {
+      const canonicalResponse = await fetchManual(location);
+      const canonicalLocation = canonicalResponse.headers.get("location") ?? "";
+      if (
+        ![301, 308].includes(canonicalResponse.status) ||
+        !canonicalLocation.startsWith("https://cognivantalabs.com/")
+      ) {
+        fail(`hostname normalization failed after Hostinger TLS hop for ${url}`);
+      }
+    } else if (
       ![301, 308].includes(response.status) ||
       !location.startsWith("https://cognivantalabs.com/")
     ) {
