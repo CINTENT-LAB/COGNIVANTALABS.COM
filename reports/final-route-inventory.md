@@ -1,0 +1,49 @@
+# Final Route Inventory
+
+Audit date: 2026-08-03
+Production evidence source: `reports/final-production-crawl.json`
+
+All listed public routes returned HTTP 200, had one H1, unique route metadata, a self-canonical URL, and appeared in the 32-entry sitemap.
+
+| URL                     | Source                                | Expected status | Indexable | Canonical | Sitemap | H1  | Metadata |
+| ----------------------- | ------------------------------------- | --------------: | --------- | --------- | ------- | --- | -------- |
+| `/`                     | `src/routes/index.tsx`                |             200 | yes       | self      | yes     | yes | yes      |
+| `/about`                | `src/routes/about.tsx`                |             200 | yes       | self      | yes     | yes | yes      |
+| `/applications`         | `src/routes/applications.tsx`         |             200 | yes       | self      | yes     | yes | yes      |
+| `/architecture`         | `src/routes/architecture.tsx`         |             200 | yes       | self      | yes     | yes | yes      |
+| `/blog`                 | `src/routes/blog.tsx`                 |             200 | yes       | self      | yes     | yes | yes      |
+| `/careers`              | `src/routes/careers.tsx`              |             200 | yes       | self      | yes     | yes | yes      |
+| `/cognites`             | `src/routes/cognites.tsx`             |             200 | yes       | self      | yes     | yes | yes      |
+| `/contact`              | `src/routes/contact.tsx`              |             200 | yes       | self      | yes     | yes | yes      |
+| `/developers`           | `src/routes/developers.tsx`           |             200 | yes       | self      | yes     | yes | yes      |
+| `/enterprise`           | `src/routes/enterprise.tsx`           |             200 | yes       | self      | yes     | yes | yes      |
+| `/investors`            | `src/routes/investors.tsx`            |             200 | yes       | self      | yes     | yes | yes      |
+| `/media`                | `src/routes/media.tsx`                |             200 | yes       | self      | yes     | yes | yes      |
+| `/pilots`               | `src/routes/pilots.tsx`               |             200 | yes       | self      | yes     | yes | yes      |
+| `/platform`             | `src/routes/platform.tsx`             |             200 | yes       | self      | yes     | yes | yes      |
+| `/pricing`              | `src/routes/pricing.tsx`              |             200 | yes       | self      | yes     | yes | yes      |
+| `/privacy`              | `src/routes/privacy.tsx`              |             200 | yes       | self      | yes     | yes | yes      |
+| `/products`             | `src/routes/products.tsx`             |             200 | yes       | self      | yes     | yes | yes      |
+| `/research`             | `src/routes/research.tsx`             |             200 | yes       | self      | yes     | yes | yes      |
+| `/roadmap`              | `src/routes/roadmap.tsx`              |             200 | yes       | self      | yes     | yes | yes      |
+| `/terms`                | `src/routes/terms.tsx`                |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/askcogni`    | `src/routes/products.askcogni.tsx`    |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/awcs`        | `src/routes/products.awcs.tsx`        |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/blisstrail`  | `src/routes/products.blisstrail.tsx`  |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/chaxu`       | `src/routes/products.chaxu.tsx`       |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/cobots`      | `src/routes/products.cobots.tsx`      |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/cogni-doc`   | `src/routes/products.cogni-doc.tsx`   |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/cwos`        | `src/routes/products.cwos.tsx`        |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/externovate` | `src/routes/products.externovate.tsx` |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/health-hub`  | `src/routes/products.health-hub.tsx`  |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/ikshana`     | `src/routes/products.ikshana.tsx`     |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/nyaynetra`   | `src/routes/products.nyaynetra.tsx`   |             200 | yes       | self      | yes     | yes | yes      |
+| `/products/shunyai`     | `src/routes/products.shunyai.tsx`     |             200 | yes       | self      | yes     | yes | yes      |
+
+## Utility routes
+
+| URL                 | Source                            |           Expected status | Indexable         | Canonical        | Sitemap | H1  | Metadata |
+| ------------------- | --------------------------------- | ------------------------: | ----------------- | ---------------- | ------- | --- | -------- |
+| `/cognites/login`   | `src/routes/cognites.login.tsx`   |                       200 | noindex, nofollow | self             | no      | yes | yes      |
+| `/cognites/mycogni` | `src/routes/cognites.mycogni.tsx` |               302 handoff | noindex, nofollow | external handoff | no      | n/a | n/a      |
+| `/404.html`         | `public/404.html`                 | 200 direct / 404 fallback | noindex, nofollow | none             | no      | yes | utility  |
