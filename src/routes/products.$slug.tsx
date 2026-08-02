@@ -11,23 +11,7 @@ import { ProductPageLayout } from "@/components/site/ProductPageLayout";
 // COGNI Doc — has its own standalone route file, which TanStack Router
 // matches before falling back to this $slug catch-all.
 export const Route = createFileRoute("/products/$slug")({
-  head: ({ params }) => {
-    const product = products.find((p) => p.id === params.slug);
-    const title = product
-      ? `${product.name} — Cognivanta Labs`
-      : "Product not found — Cognivanta Labs";
-    const description =
-      product?.description ?? "This product isn't part of the Cognivanta ecosystem yet.";
-    return {
-      meta: [
-        { title },
-        { name: "description", content: description },
-        { property: "og:title", content: title },
-        { property: "og:description", content: description },
-      ],
-      links: [{ rel: "canonical", href: `https://cognivantalabs.com/products/${params.slug}` }],
-    };
-  },
+  head: () => ({}),
   component: ProductPage,
 });
 

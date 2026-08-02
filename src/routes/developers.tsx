@@ -40,18 +40,7 @@ import { ecosystemApiCount } from "@/data/products";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const Route = createFileRoute("/developers")({
-  head: () => ({
-    meta: [
-      { title: "Developer Platform - Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Build governed cognitive applications with CINTENT APIs, reference flows, and production-minded controls.",
-      },
-      { property: "og:title", content: "Developer Platform - Cognivanta Labs" },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/developers" }],
-  }),
+  head: () => ({}),
   component: DevelopersPage,
 });
 

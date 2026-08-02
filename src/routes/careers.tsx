@@ -5,22 +5,7 @@ import { Send, AlertCircle, CheckCircle2, Loader2, Mail } from "lucide-react";
 import { useLeadForm } from "@/lib/useLeadForm";
 
 export const Route = createFileRoute("/careers")({
-  head: () => ({
-    meta: [
-      { title: "Careers — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Join the team building CINTENT, an indigenous Indian cognitive AI platform. No open roles listed today — register your interest and we'll reach out when there's a fit.",
-      },
-      { property: "og:title", content: "Careers at Cognivanta Labs" },
-      {
-        property: "og:description",
-        content: "Human + AI. India-built for the world.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/careers" }],
-  }),
+  head: () => ({}),
   component: CareersPage,
 });
 

@@ -6,17 +6,7 @@ import { Reveal } from "@/components/site/Reveal";
 const MYCOGNI_URL = "https://hcm.cognivantalabs.com/app/mycogni";
 
 export const Route = createFileRoute("/cognites/mycogni")({
-  head: () => ({
-    meta: [
-      { title: "MyCogni — Cognivanta Labs" },
-      {
-        name: "description",
-        content: "Open the MyCogni workspace in Cognivanta Labs HCM.",
-      },
-      { name: "robots", content: "noindex, nofollow" },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/cognites/mycogni" }],
-  }),
+  head: () => ({}),
   component: MyCogniHandoff,
 });
 

@@ -8,14 +8,6 @@ const product = products.find((p) => p.id === "health-hub")!;
 const content = productContent["health-hub"];
 
 export const Route = createFileRoute("/products/health-hub")({
-  head: () => ({
-    meta: [
-      { title: `${product.name} — Cognivanta Labs` },
-      { name: "description", content: getProductDescription(product) },
-      { property: "og:title", content: `${product.name} — Cognivanta Labs` },
-      { property: "og:description", content: getProductDescription(product) },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/products/health-hub" }],
-  }),
+  head: () => ({}),
   component: () => <ProductPageLayout product={product} content={content} />,
 });

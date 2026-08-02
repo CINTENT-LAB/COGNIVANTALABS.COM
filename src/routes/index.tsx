@@ -32,25 +32,7 @@ import { onPauseMotion } from "@/lib/heroMotion";
 import { getLucideIcon } from "@/lib/lucideIcon";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Cognivanta Labs — CINTENT understands intent before AI decides or acts" },
-      {
-        name: "description",
-        content:
-          "Cognivanta Labs develops CINTENT™, a governed cognitive intelligence platform that understands intent, interprets context, reasons across knowledge and constraints, makes accountable decisions, and enables purposeful action.",
-      },
-      {
-        property: "og:title",
-        content: "Cognivanta Labs — CINTENT understands intent before AI decides or acts",
-      },
-      {
-        property: "og:description",
-        content: "Intent → Context → Reason → Decide → Act → Learn → Refined Intent Understanding.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/" }],
-  }),
+  head: () => ({}),
   component: Home,
 });
 

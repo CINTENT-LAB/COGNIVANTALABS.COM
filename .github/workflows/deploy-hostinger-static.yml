@@ -38,13 +38,14 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: SEO and publication checks
-        run: |
-          npm run test:seo
-          npm run test:publications
-
       - name: Build static artifact
         run: npm run build
+
+      - name: SEO, metadata, and publication checks
+        run: |
+          npm run test:seo
+          npm run test:metadata
+          npm run test:publications
 
       - name: Security audit
         run: npm run test:security

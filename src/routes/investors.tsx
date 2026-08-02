@@ -19,22 +19,7 @@ import { publishedTeam } from "@/data/team";
 import { useLeadForm } from "@/lib/useLeadForm";
 
 export const Route = createFileRoute("/investors")({
-  head: () => ({
-    meta: [
-      { title: "Investor Relations — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Investment thesis, market opportunity, leadership, and how to request Cognivanta Labs / CINTENT investor materials.",
-      },
-      { property: "og:title", content: "Investor Relations — Cognivanta Labs" },
-      {
-        property: "og:description",
-        content: "CINTENT's moat, roadmap, leadership, and a controlled path to request materials.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/investors" }],
-  }),
+  head: () => ({}),
   component: InvestorsPage,
 });
 

@@ -10,23 +10,7 @@ import { CognitiveLoopDiagram } from "@/components/site/CognitiveLoopDiagram";
 // instead of the prototype's light/white theme, per Ron's direction.
 
 export const Route = createFileRoute("/enterprise")({
-  head: () => ({
-    meta: [
-      { title: "Enterprise AI — From Responses to Real-World Decisions | Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "CINTENT™ turns text, voice, documents, data and sensor signals into governed, structured decisions — ready for human approval or real-world execution.",
-      },
-      { property: "og:title", content: "From Responses to Real-World Decisions — CINTENT™" },
-      {
-        property: "og:description",
-        content:
-          "A cognitive loop that goes Ask → Decide → Act, with governance and human oversight built in.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/enterprise" }],
-  }),
+  head: () => ({}),
   component: EnterprisePage,
 });
 

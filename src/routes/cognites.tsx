@@ -3,20 +3,7 @@ import { Handshake, UserCog, Mail, UserCircle2, ArrowRight, ArrowUpRight } from 
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/cognites")({
-  head: ({ matches }) => ({
-    meta: [
-      { title: "Cognites — Cognivanta Labs" },
-      {
-        name: "description",
-        content: "Cognites — sign-in hub for Cognivanta Labs partners, customers, and employees.",
-      },
-      { property: "og:title", content: "Cognites — Cognivanta Labs" },
-    ],
-    links:
-      matches.at(-1)?.pathname === "/cognites" || matches.at(-1)?.pathname === "/cognites/"
-        ? [{ rel: "canonical", href: "https://cognivantalabs.com/cognites" }]
-        : [],
-  }),
+  head: () => ({}),
   component: CognitesPage,
 });
 

@@ -5,22 +5,7 @@ import { Reveal } from "@/components/site/Reveal";
 const CINTENT_URL = "https://cintent.tech/";
 
 export const Route = createFileRoute("/architecture")({
-  head: () => ({
-    meta: [
-      { title: "Architecture — CINTENT™ Technical Deep Dive" },
-      {
-        name: "description",
-        content:
-          "How CINTENT is actually built: the four-layer cognitive pipeline, the Intent-to-Refined-Intent-Understanding loop, the real API surface, and deployment surfaces — written for engineering evaluators.",
-      },
-      { property: "og:title", content: "CINTENT™ Architecture" },
-      {
-        property: "og:description",
-        content: "The real system, not a diagram of a generic AI brain.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/architecture" }],
-  }),
+  head: () => ({}),
   component: ArchitecturePage,
 });
 

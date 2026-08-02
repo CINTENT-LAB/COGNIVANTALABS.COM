@@ -4,18 +4,7 @@ import { Check, ArrowRight, ShieldCheck, Lock, Info } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/pricing")({
-  head: () => ({
-    meta: [
-      { title: "Pricing — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Plans for building on CINTENT™ — from a free sandbox to governed enterprise deployment.",
-      },
-      { property: "og:title", content: "Pricing — Cognivanta Labs" },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/pricing" }],
-  }),
+  head: () => ({}),
   component: PricingPage,
 });
 

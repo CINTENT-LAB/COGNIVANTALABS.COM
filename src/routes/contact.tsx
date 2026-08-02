@@ -5,19 +5,7 @@ import { Send, Mail, MapPin, AlertCircle, CheckCircle2, Loader2 } from "lucide-r
 import { useLeadForm } from "@/lib/useLeadForm";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Get API access, propose a pilot, or post your use case for CINTENT™ and the Cognivanta ecosystem.",
-      },
-      { property: "og:title", content: "Contact Cognivanta Labs" },
-      { property: "og:description", content: "Get API access. Propose a pilot. Post a use case." },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/contact" }],
-  }),
+  head: () => ({}),
   component: ContactPage,
 });
 

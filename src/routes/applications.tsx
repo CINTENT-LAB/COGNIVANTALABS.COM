@@ -18,22 +18,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { productContent } from "@/data/productContent";
 
 export const Route = createFileRoute("/applications")({
-  head: () => ({
-    meta: [
-      { title: "Applications — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Application domains for Cognivanta Labs: autonomous systems, enterprise intelligence, cybersecurity, finance, legal intelligence, and smart infrastructure.",
-      },
-      { property: "og:title", content: "Applications — Cognivanta Labs" },
-      {
-        property: "og:description",
-        content: "Cognitive AI applied where context, memory, and control matter.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/applications" }],
-  }),
+  head: () => ({}),
   component: ApplicationsPage,
 });
 

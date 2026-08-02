@@ -7,22 +7,7 @@ import { publishedTeam } from "@/data/team";
 import { useLeadForm } from "@/lib/useLeadForm";
 
 export const Route = createFileRoute("/media")({
-  head: () => ({
-    meta: [
-      { title: "Media & Press — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Fact sheets, approved logos, executive profiles, and a media contact for Cognivanta Labs and CINTENT™ coverage.",
-      },
-      { property: "og:title", content: "Media & Press — Cognivanta Labs" },
-      {
-        property: "og:description",
-        content: "Approved assets and a direct line to the team for press and media requests.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/media" }],
-  }),
+  head: () => ({}),
   component: MediaPage,
 });
 

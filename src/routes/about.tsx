@@ -5,19 +5,7 @@ import { publishedTeam } from "@/data/team";
 import { CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Indigenous Indian Cognitive AI platform. CINTENT™ MVP complete, platform-first architecture, multi-domain ecosystem, strong IP strategy, global vision.",
-      },
-      { property: "og:title", content: "About Cognivanta Labs" },
-      { property: "og:description", content: "Human + AI. India-built for the world." },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/about" }],
-  }),
+  head: () => ({}),
   component: AboutPage,
 });
 

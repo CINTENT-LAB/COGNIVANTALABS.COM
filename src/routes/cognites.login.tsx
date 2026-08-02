@@ -4,14 +4,7 @@ import { Handshake, ArrowLeft } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/cognites/login")({
-  head: () => ({
-    meta: [
-      { title: "Partner & Customer Login — Cognivanta Labs" },
-      { name: "description", content: "Sign in as a Cognivanta Labs partner or customer." },
-      { name: "robots", content: "noindex, nofollow" },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/cognites/login" }],
-  }),
+  head: () => ({}),
   component: LoginPage,
 });
 

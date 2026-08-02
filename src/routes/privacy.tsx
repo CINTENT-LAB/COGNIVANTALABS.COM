@@ -3,16 +3,7 @@ import { AlertTriangle } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/privacy")({
-  head: () => ({
-    meta: [
-      { title: "Privacy Policy (Draft) — Cognivanta Labs" },
-      {
-        name: "description",
-        content: "Draft privacy policy for Cognivanta Labs, pending legal review.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/privacy" }],
-  }),
+  head: () => ({}),
   component: PrivacyPage,
 });
 

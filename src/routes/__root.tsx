@@ -17,6 +17,7 @@ import { Footer } from "@/components/site/Footer";
 import { CogniLauncher } from "@/components/site/CogniLauncher";
 import { googleTagManagerHeadScript, shouldLoadGoogleTagManager } from "@/lib/google-tag-manager";
 import { GoogleTagManagerNoscript } from "@/components/site/GoogleTagManager";
+import { getSeoMetadata } from "@/lib/seo-metadata";
 
 const SITE_URL = "https://cognivantalabs.com";
 const BRAND = {
@@ -113,54 +114,36 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: ({ matches }) => {
     const pathname = matches.at(-1)?.pathname ?? "/";
+    const metadata = getSeoMetadata(pathname);
 
     return {
       meta: [
         { charSet: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { title: "Cognivanta Labs — Cognitive AI beyond generation" },
-        {
-          name: "description",
-          content:
-            "Cognivanta Labs builds CINTENT™, the sovereign Cognitive Intent Platform powering a multi-domain ecosystem of reasoning-first AI products. Human + AI, India-built for the world.",
-        },
+        { title: metadata.title },
+        { name: "description", content: metadata.description },
+        ...(metadata.robots ? [{ name: "robots", content: metadata.robots }] : []),
         { name: "author", content: "Cognivanta Labs" },
         { property: "og:site_name", content: "Cognivanta Labs" },
-        { property: "og:title", content: "Cognivanta Labs — Cognitive AI beyond generation" },
-        {
-          property: "og:description",
-          content:
-            "The future won't be generated. It will be understood. Explore CINTENT™ and the Cognivanta ecosystem.",
-        },
+        { property: "og:title", content: metadata.title },
+        { property: "og:description", content: metadata.description },
         { property: "og:type", content: "website" },
-        {
-          property: "og:url",
-          content: `${SITE_URL}${pathname === "/" ? "/" : pathname}`,
-        },
-        {
-          property: "og:image",
-          content: BRAND.socialImage,
-        },
+        { property: "og:url", content: metadata.canonical },
+        { property: "og:image", content: BRAND.socialImage },
         { property: "og:image:alt", content: "Cognivanta Labs cognitive AI platform" },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: "Cognivanta Labs - Building the future beyond AI" },
-        {
-          name: "twitter:description",
-          content:
-            "The future will not be generated. It will be understood. Explore CINTENT and the Cognivanta ecosystem.",
-        },
-        {
-          name: "twitter:image",
-          content: BRAND.socialImage,
-        },
+        { name: "twitter:title", content: metadata.title },
+        { name: "twitter:description", content: metadata.description },
+        { name: "twitter:image", content: BRAND.socialImage },
         { name: "theme-color", content: "#04060d" },
         { name: "mobile-web-app-capable", content: "yes" },
         { name: "apple-mobile-web-app-capable", content: "yes" },
         { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
       ],
       links: [
+        { rel: "canonical", href: metadata.canonical },
         { rel: "stylesheet", href: appCss },
         { rel: "manifest", href: "/manifest.webmanifest" },
         { rel: "icon", href: "/favicon.ico" },

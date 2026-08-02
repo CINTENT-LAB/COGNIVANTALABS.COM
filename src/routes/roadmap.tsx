@@ -3,22 +3,7 @@ import { ArrowRight, CircleDot } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/roadmap")({
-  head: () => ({
-    meta: [
-      { title: "Roadmap — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Cognivanta Labs' technology roadmap: where CINTENT and its pilots stand today, and the direction the platform is heading through 2030.",
-      },
-      { property: "og:title", content: "Roadmap — Cognivanta Labs" },
-      {
-        property: "og:description",
-        content: "Where CINTENT is today, and where it's headed.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/roadmap" }],
-  }),
+  head: () => ({}),
   component: RoadmapPage,
 });
 

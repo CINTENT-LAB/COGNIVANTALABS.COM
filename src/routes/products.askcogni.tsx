@@ -7,14 +7,6 @@ const product = products.find((p) => p.id === "askcogni")!;
 const content = productContent.askcogni;
 
 export const Route = createFileRoute("/products/askcogni")({
-  head: () => ({
-    meta: [
-      { title: `${product.name} — Cognivanta Labs` },
-      { name: "description", content: content.overview },
-      { property: "og:title", content: `${product.name} — Cognivanta Labs` },
-      { property: "og:description", content: content.overview },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/products/askcogni" }],
-  }),
+  head: () => ({}),
   component: () => <ProductPageLayout product={product} content={content} />,
 });

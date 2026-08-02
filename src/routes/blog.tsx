@@ -30,18 +30,7 @@ import {
 } from "@/data/publications";
 
 export const Route = createFileRoute("/blog")({
-  head: () => ({
-    meta: [
-      { title: "Blog and publications - Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Public articles, research, and visual publications on cognitive architecture, CINTENT, and the Cognivanta product ecosystem, drawn from one owner-approved publication catalogue.",
-      },
-      { property: "og:title", content: "Blog and publications - Cognivanta Labs" },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/blog" }],
-  }),
+  head: () => ({}),
   component: BlogPage,
 });
 

@@ -66,18 +66,7 @@ const pilotMethodStages = [
 ];
 
 export const Route = createFileRoute("/pilots")({
-  head: () => ({
-    meta: [
-      { title: "Pilot Platforms — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "Applied programs built on the CINTENT core — research, deployment and enterprise pilots testing the cognitive architecture under real-world constraints.",
-      },
-      { property: "og:title", content: "Pilot Platforms — Cognivanta Labs" },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/pilots" }],
-  }),
+  head: () => ({}),
   component: PilotsPage,
 });
 

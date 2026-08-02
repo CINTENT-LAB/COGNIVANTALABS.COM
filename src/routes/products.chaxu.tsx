@@ -7,14 +7,6 @@ const product = products.find((p) => p.id === "chaxu")!;
 const content = productContent["chaxu"];
 
 export const Route = createFileRoute("/products/chaxu")({
-  head: () => ({
-    meta: [
-      { title: `${product.name} — Cognivanta Labs` },
-      { name: "description", content: product.description },
-      { property: "og:title", content: `${product.name} — Cognivanta Labs` },
-      { property: "og:description", content: product.description },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/products/chaxu" }],
-  }),
+  head: () => ({}),
   component: () => <ProductPageLayout product={product} content={content} />,
 });

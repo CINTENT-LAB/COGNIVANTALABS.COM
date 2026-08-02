@@ -21,22 +21,7 @@ import { OrbitDiagram } from "@/components/site/OrbitDiagram";
 const CINTENT_URL = "https://cintent.tech/";
 
 export const Route = createFileRoute("/platform")({
-  head: () => ({
-    meta: [
-      { title: "Platform — CINTENT™ Cognitive Intent Platform" },
-      {
-        name: "description",
-        content:
-          "CINTENT™ is an API-first cognitive operating system fusing intent, context, memory, reasoning, orchestration, governance and decision intelligence.",
-      },
-      { property: "og:title", content: "CINTENT™ — the Cognitive Intent Platform" },
-      {
-        property: "og:description",
-        content: "Perception → Cognitive → Decision → Action, bound by a shared memory spine.",
-      },
-    ],
-    links: [{ rel: "canonical", href: "https://cognivantalabs.com/platform" }],
-  }),
+  head: () => ({}),
   component: PlatformPage,
 });
 

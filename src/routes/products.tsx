@@ -5,25 +5,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { products } from "@/data/products";
 
 export const Route = createFileRoute("/products")({
-  head: ({ matches }) => ({
-    meta: [
-      { title: "Products — Cognivanta Labs" },
-      {
-        name: "description",
-        content:
-          "The Cognivanta ecosystem: CINTENT™, Shunya AI™, NyayNetra™, CHAXU™, BlissTrail™, IKSHANA™, CWOS™, Health Hub, AskCOGNI, Cognitive Cobots, AWCS, Externovate.",
-      },
-      { property: "og:title", content: "Products — Cognivanta Labs" },
-      {
-        property: "og:description",
-        content: "One shared cognitive core, many reasoning-first products across domains.",
-      },
-    ],
-    links:
-      matches.at(-1)?.pathname === "/products" || matches.at(-1)?.pathname === "/products/"
-        ? [{ rel: "canonical", href: "https://cognivantalabs.com/products" }]
-        : [],
-  }),
+  head: () => ({}),
   component: ProductsRoute,
 });
 

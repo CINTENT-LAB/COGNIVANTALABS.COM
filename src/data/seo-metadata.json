@@ -1,0 +1,140 @@
+{
+  "/": {
+    "title": "Cognitive AI Platform & Enterprise Decision Intelligence | Cognivanta Labs",
+    "description": "Cognivanta Labs develops CINTENT™, a cognitive AI platform for enterprise decision intelligence, multimodal reasoning, governed automation, and industry-specific AI applications."
+  },
+  "/platform": {
+    "title": "CINTENT™ Cognitive AI Platform | Enterprise Intelligence",
+    "description": "Explore CINTENT™, the cognitive AI platform combining contextual reasoning, multimodal intelligence, governance, and decision automation for enterprise systems."
+  },
+  "/architecture": {
+    "title": "CINTENT™ Cognitive Architecture | Enterprise AI Systems",
+    "description": "Explore CINTENT’s cognitive architecture, including contextual memory, multimodal processing, reasoning, governance, explainability, and decision execution."
+  },
+  "/applications": {
+    "title": "Cognitive AI Applications Across Industries | Cognivanta Labs",
+    "description": "Discover CINTENT-powered cognitive AI applications across healthcare, legal, travel, finance, UAVs, robotics, smart cities, and Industry 5.0."
+  },
+  "/developers": {
+    "title": "Cognitive AI APIs & SDKs | CINTENT Developer Platform",
+    "description": "Build cognitive AI applications using CINTENT APIs, SDKs, documentation, authentication, integration tools, and enterprise developer resources."
+  },
+  "/research": {
+    "title": "Cognitive AI Research & Technical Publications | Cognivanta Labs",
+    "description": "Explore cognitive AI research, architecture papers, decision intelligence, multimodal systems, responsible AI, and future computing from Cognivanta Labs."
+  },
+  "/products": {
+    "title": "Cognitive AI Products Powered by CINTENT™ | Cognivanta Labs",
+    "description": "Explore CINTENT-powered products including Ask COGNI, CHAXU, CWOS, Health-Hub, NyayNetra, BlissTrail, Shunya AI, Externovate, and IKSHANA."
+  },
+  "/pricing": {
+    "title": "CINTENT Cognitive AI Pricing & API Plans | Cognivanta Labs",
+    "description": "Explore CINTENT API access, developer plans, enterprise deployment options, pilots, and commercial cognitive AI engagement models."
+  },
+  "/enterprise": {
+    "title": "Enterprise Cognitive AI & Decision Intelligence | Cognivanta Labs",
+    "description": "Build enterprise cognitive AI systems for decision intelligence, governed automation, multimodal reasoning, workflow integration, and operational execution."
+  },
+  "/about": {
+    "title": "About Cognivanta Labs | Cognitive AI and Intelligence Engineering",
+    "description": "Learn about Cognivanta Labs, our cognitive AI vision, CINTENT platform, intelligence engineering approach, products, research, and long-term technology roadmap."
+  },
+  "/contact": {
+    "title": "Contact Cognivanta Labs | AI Partnerships and Platform Access",
+    "description": "Contact Cognivanta Labs for CINTENT platform access, APIs, enterprise pilots, partnerships, investment discussions, and technology collaboration."
+  },
+  "/careers": {
+    "title": "Careers at Cognivanta Labs | Build Cognitive AI Systems",
+    "description": "Join Cognivanta Labs to develop cognitive AI platforms, enterprise intelligence, autonomous systems, APIs, and next-generation decision technologies."
+  },
+  "/blog": {
+    "title": "Cognitive AI Insights and Enterprise AI Blog | Cognivanta Labs",
+    "description": "Read insights on cognitive AI, decision intelligence, enterprise AI, multimodal systems, Industry 5.0, healthcare, robotics, UAVs, and emerging technology."
+  },
+  "/investors": {
+    "title": "Invest in Cognitive AI Innovation | Cognivanta Labs",
+    "description": "Explore Cognivanta Labs’ cognitive AI platform, product portfolio, market opportunity, technical roadmap, applications, and investment proposition."
+  },
+  "/roadmap": {
+    "title": "CINTENT Cognitive AI Roadmap & Technology Vision",
+    "description": "Explore the CINTENT roadmap covering cognitive APIs, applications, edge intelligence, cognitive runtime, AI accelerators, and quantum-ready architecture."
+  },
+  "/media": {
+    "title": "Cognivanta Labs News, Media and Press",
+    "description": "View Cognivanta Labs announcements, media coverage, platform updates, product releases, research publications, and corporate news."
+  },
+  "/privacy": {
+    "title": "Privacy Policy | Cognivanta Labs",
+    "description": "Learn how Cognivanta Labs collects, processes, protects, and manages information across its website, platforms, APIs, and digital services."
+  },
+  "/terms": {
+    "title": "Terms and Conditions | Cognivanta Labs",
+    "description": "Review the terms governing use of Cognivanta Labs websites, CINTENT services, APIs, products, content, and enterprise offerings."
+  },
+  "/pilots": {
+    "title": "CINTENT Pilot Programs | Applied Cognitive AI Systems",
+    "description": "Explore applied CINTENT pilot programs that test cognitive AI research, deployment, and enterprise systems under real-world constraints."
+  },
+  "/cognites": {
+    "title": "Cognivanta Labs Cognites | Partner and Customer Access",
+    "description": "Access Cognivanta Labs partner and customer workspaces, platform resources, and governed application handoffs through the Cognites hub."
+  },
+  "/products/askcogni": {
+    "title": "Ask COGNI™ | Enterprise Cognitive AI Assistant",
+    "description": "Ask COGNI is a CINTENT-powered cognitive assistant for enterprise knowledge, contextual reasoning, multilingual interaction, and decision support."
+  },
+  "/products/chaxu": {
+    "title": "CHAXU™ | Cognitive AI for Drones, UAVs and UAS",
+    "description": "CHAXU provides cognitive AI APIs and intelligent systems for drones, UAVs, UAS, aerial autonomy, robotics, mission planning, and autonomous operations."
+  },
+  "/products/cwos": {
+    "title": "CWOS™ | CINTENT WealthOS for Financial Intelligence",
+    "description": "CWOS is a cognitive wealth intelligence platform for investment research, portfolio analytics, financial decision support, and wealth-management workflows."
+  },
+  "/products/health-hub": {
+    "title": "Health-Hub™ | Cognitive Healthcare Intelligence Platform",
+    "description": "Health-Hub provides cognitive healthcare intelligence, medical APIs, clinical decision support, care workflows, patient engagement, and digital health services."
+  },
+  "/products/nyaynetra": {
+    "title": "NyayNetra™ | Cognitive Legal Intelligence Platform",
+    "description": "NyayNetra supports legal research, document intelligence, case analysis, compliance reasoning, judicial insight, and legal decision support."
+  },
+  "/products/blisstrail": {
+    "title": "BlissTrail™ | Cognitive Travel Intelligence Platform",
+    "description": "BlissTrail delivers cognitive travel planning, itinerary optimization, contextual recommendations, destination intelligence, and travel workflow support."
+  },
+  "/products/shunyai": {
+    "title": "Shunya AI™ | Multilingual Cognitive Intelligence Platform",
+    "description": "Shunya AI enables multilingual and culturally aware cognitive interaction for enterprise, voice, language, and regional intelligence applications."
+  },
+  "/products/externovate": {
+    "title": "Externovate | Global Research and Internship Platform",
+    "description": "Externovate connects students, universities, researchers, mentors, and enterprises through real-world internships, projects, research, and innovation programs."
+  },
+  "/products/ikshana": {
+    "title": "IKSHANA™ | Cognitive Vision and Autonomous Systems Platform",
+    "description": "IKSHANA combines cognitive vision, multimodal intelligence, robotics, drones, and contextual reasoning for inspection, monitoring, automation, and autonomous systems."
+  },
+  "/products/awcs": {
+    "title": "AWCS | Cognitive Autonomous Wheelchair System",
+    "description": "AWCS applies cognitive AI to assistive mobility, safe navigation, environmental awareness, human oversight, and autonomous wheelchair intelligence."
+  },
+  "/products/cobots": {
+    "title": "Cognitive Cobots | Human-Robot Collaboration with CINTENT",
+    "description": "Cognitive Cobots combine situational awareness, task memory, safety constraints, adaptive reasoning, and human-machine collaboration."
+  },
+  "/products/cogni-doc": {
+    "title": "COGNI-DOC | Cognitive Document Intelligence Platform",
+    "description": "COGNI-DOC transforms documents into contextual knowledge, structured insights, decision support, and enterprise workflow intelligence."
+  },
+  "/cognites/login": {
+    "title": "Partner and Customer Login | Cognivanta Labs",
+    "description": "Sign in as a Cognivanta Labs partner or customer.",
+    "robots": "noindex, nofollow"
+  },
+  "/cognites/mycogni": {
+    "title": "MyCogni Workspace | Cognivanta Labs",
+    "description": "Open the MyCogni workspace in Cognivanta Labs HCM.",
+    "robots": "noindex, nofollow"
+  }
+}
