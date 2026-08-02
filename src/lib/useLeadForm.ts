@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { submitLead, type LeadFormType, type LeadSubmission } from "@/server/leadCapture";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 export type LeadFormStatus = "idle" | "submitting" | "success" | "duplicate" | "error";
 
@@ -27,6 +28,7 @@ export function useLeadForm(formType: LeadFormType): UseLeadFormResult {
   async function submit(payload: Omit<LeadSubmission, "formType" | "sourcePath">) {
     setStatus("submitting");
     setError(null);
+    trackAnalyticsEvent("contact_start", { form_type: formType });
     try {
       const result = await submitLead({
         data: {
@@ -38,14 +40,20 @@ export function useLeadForm(formType: LeadFormType): UseLeadFormResult {
       if (!result.ok) {
         setStatus("error");
         setError(result.error ?? "Something went wrong. Please try again.");
+        trackAnalyticsEvent("contact_submit_error", { form_type: formType, status: "error" });
         return;
       }
       setTicketId(result.ticketId ?? null);
       setRouted(Boolean(result.routed));
       setStatus(result.duplicate ? "duplicate" : "success");
+      trackAnalyticsEvent("contact_submit_success", {
+        form_type: formType,
+        status: result.duplicate ? "duplicate" : "success",
+      });
     } catch {
       setStatus("error");
       setError("We couldn't reach the server. Check your connection and try again.");
+      trackAnalyticsEvent("contact_submit_error", { form_type: formType, status: "network" });
     }
   }
 

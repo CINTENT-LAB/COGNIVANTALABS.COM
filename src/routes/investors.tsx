@@ -281,16 +281,28 @@ function RequestMaterials() {
                 className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-6"
               >
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <input name="name" required className="input" placeholder="Your full name" />
+                  <input
+                    name="name"
+                    required
+                    data-clarity-mask="true"
+                    className="input"
+                    placeholder="Your full name"
+                  />
                   <input
                     name="email"
                     required
                     type="email"
+                    data-clarity-mask="true"
                     className="input"
                     placeholder="you@fund.com"
                   />
                 </div>
-                <input name="organization" className="input" placeholder="Fund / firm" />
+                <input
+                  name="organization"
+                  data-clarity-mask="true"
+                  className="input"
+                  placeholder="Fund / firm"
+                />
                 <select name="interest" className="input" defaultValue="materials">
                   <option value="materials">Request the investor deck</option>
                   <option value="financials">Request financial model</option>
@@ -299,6 +311,7 @@ function RequestMaterials() {
                 <textarea
                   name="message"
                   rows={4}
+                  data-clarity-mask="true"
                   className="input resize-none"
                   placeholder="Anything specific you'd like covered."
                 />

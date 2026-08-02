@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { MessageSquareCode, FileSearch, X, Sparkles, Send, Mic, MicOff } from "lucide-react";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 const ASKCOGNI_URL = "/products/askcogni";
 
@@ -126,6 +127,7 @@ export function CogniLauncher() {
   const handleSend = () => {
     const trimmed = message.trim();
     const url = trimmed ? `${ASKCOGNI_URL}?q=${encodeURIComponent(trimmed)}` : ASKCOGNI_URL;
+    trackAnalyticsEvent("ask_cogni_open");
     window.open(url, "_blank", "noreferrer noopener");
     setMessage("");
   };
@@ -235,6 +237,7 @@ export function CogniLauncher() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleSend()}
+              data-clarity-mask="true"
               placeholder={listening ? "Listening…" : "Type or speak your question…"}
               className="min-w-0 flex-1 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs outline-none placeholder:text-muted-foreground focus:border-electric/40"
             />
@@ -264,7 +267,10 @@ export function CogniLauncher() {
       )}
 
       <button
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => {
+          setOpen((v) => !v);
+          trackAnalyticsEvent("ask_cogni_open");
+        }}
         aria-label={open ? "Close COGNI assistant" : "Ask COGNI"}
         aria-expanded={open}
         className="group inline-flex items-center gap-2 rounded-full bg-[var(--gradient-electric)] py-3 pl-4 pr-5 shadow-[var(--shadow-glow-electric)] transition-transform hover:scale-105"

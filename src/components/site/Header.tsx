@@ -4,6 +4,7 @@ import { ArrowUpRight, ChevronDown, Menu, Search, X } from "lucide-react";
 import { products } from "@/data/products";
 import { pauseMotion } from "@/lib/heroMotion";
 import { getLucideIcon } from "@/lib/lucideIcon";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 const COGNIVANTA_LOGO = "/brand/cognivanta-labs-logo-compact-dark.png";
 
@@ -312,7 +313,11 @@ export function Header() {
           >
             Pricing
           </Link>
-          <Link to="/developers" className="btn-electric rounded-md px-4 py-2 text-sm font-medium">
+          <Link
+            to="/developers"
+            className="btn-electric rounded-md px-4 py-2 text-sm font-medium"
+            onClick={() => trackAnalyticsEvent("api_access_click")}
+          >
             Get API Access
           </Link>
         </div>

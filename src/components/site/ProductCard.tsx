@@ -4,6 +4,7 @@ import * as Icons from "lucide-react";
 import type { Product } from "@/data/products";
 import { getProductDescription, getProductDraftNote } from "@/data/productDisplay";
 import { getLucideIcon } from "@/lib/lucideIcon";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 function hostnameOf(url: string) {
   try {
@@ -131,13 +132,18 @@ export function ProductCard({ product }: { product: Product }) {
         target="_blank"
         rel="noreferrer noopener"
         className="group block h-full"
+        onClick={() => trackAnalyticsEvent("product_external_click", { product: product.id })}
       >
         {inner}
       </a>
     );
   }
   return (
-    <Link to={product.href!} className="group block h-full">
+    <Link
+      to={product.href!}
+      className="group block h-full"
+      onClick={() => trackAnalyticsEvent("product_view", { product: product.id })}
+    >
       {inner}
     </Link>
   );

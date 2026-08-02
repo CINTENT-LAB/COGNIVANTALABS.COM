@@ -16,6 +16,7 @@ import {
   Twitter,
 } from "lucide-react";
 import { useLeadForm } from "@/lib/useLeadForm";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 const trustBadges = [
   { icon: ShieldCheck, label: "Constraint-evaluated decisions" },
@@ -160,13 +161,20 @@ function NewsletterForm() {
           className="flex w-full max-w-md shrink-0 flex-col gap-2"
         >
           <div className="hidden" aria-hidden="true">
-            <input name="company_website" tabIndex={-1} autoComplete="off" className="input" />
+            <input
+              name="company_website"
+              tabIndex={-1}
+              autoComplete="off"
+              data-clarity-mask="true"
+              className="input"
+            />
           </div>
           <div className="flex flex-col gap-2 sm:flex-row">
             <input
               name="email"
               type="email"
               required
+              data-clarity-mask="true"
               placeholder="you@company.com"
               className="input flex-1"
             />
@@ -234,6 +242,7 @@ export function Footer() {
             <Link
               to="/developers"
               className="btn-electric inline-flex items-center gap-2 rounded-md px-4 py-2.5 text-sm font-semibold"
+              onClick={() => trackAnalyticsEvent("api_access_click")}
             >
               Get API access <ArrowRight className="h-4 w-4" />
             </Link>

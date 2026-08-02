@@ -59,13 +59,20 @@ function ContactPage() {
               >
                 <div className="grid gap-5 md:grid-cols-2">
                   <Field label="Name">
-                    <input name="name" required className="input" placeholder="Your full name" />
+                    <input
+                      name="name"
+                      required
+                      data-clarity-mask="true"
+                      className="input"
+                      placeholder="Your full name"
+                    />
                   </Field>
                   <Field label="Email">
                     <input
                       name="email"
                       required
                       type="email"
+                      data-clarity-mask="true"
                       className="input"
                       placeholder="you@company.com"
                     />
@@ -74,6 +81,7 @@ function ContactPage() {
                 <Field label="Organization">
                   <input
                     name="organization"
+                    data-clarity-mask="true"
                     className="input"
                     placeholder="Company / lab / institution"
                   />
@@ -96,6 +104,7 @@ function ContactPage() {
                     name="message"
                     required
                     rows={5}
+                    data-clarity-mask="true"
                     className="input resize-none"
                     placeholder="Describe your use case, domain, and constraints."
                   />

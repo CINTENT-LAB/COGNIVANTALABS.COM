@@ -34,7 +34,7 @@ const sections = [
   },
   {
     title: "Cookies",
-    body: "Google Tag Manager is installed as the site's controlled measurement layer. This website does not directly load Google Analytics or Microsoft Clarity. Analytics, conversion, and advertising tags must remain unpublished inside the container until the consent and privacy configuration has been reviewed and approved. The dataLayer must not receive names, contact details, form messages, health information, legal information, credentials, or other personal data.",
+    body: "Google Tag Manager is installed as the site's controlled measurement layer. Google Analytics 4 and Microsoft Clarity are intended to be configured inside that container rather than directly in the website source. Analytics cookies or similar storage, session recordings, and heatmaps must remain disabled until the consent and privacy configuration has been reviewed and approved. Sensitive fields are marked for masking, and analytics events must not intentionally capture form messages, names, email addresses, phone numbers, passwords, API keys, authentication tokens, legal data, or medical data. There is currently no website cookie-consent banner or consent-management platform in this repository; account-side tags must therefore remain unpublished until an approved analytics-consent mechanism is available.",
   },
   {
     title: "Children's privacy",

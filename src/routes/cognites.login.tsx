@@ -73,6 +73,7 @@ function LoginPage() {
                 <input
                   type="email"
                   required
+                  data-clarity-mask="true"
                   placeholder={role === "partner" ? "you@partner-company.com" : "you@company.com"}
                   className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-sm outline-none placeholder:text-muted-foreground focus:border-electric/40"
                 />
@@ -84,6 +85,7 @@ function LoginPage() {
                 <input
                   type="password"
                   required
+                  data-clarity-mask="true"
                   placeholder="••••••••"
                   className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-sm outline-none placeholder:text-muted-foreground focus:border-electric/40"
                 />

@@ -226,20 +226,33 @@ function MediaContact() {
                 className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-6"
               >
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <input name="name" required className="input" placeholder="Your full name" />
+                  <input
+                    name="name"
+                    required
+                    data-clarity-mask="true"
+                    className="input"
+                    placeholder="Your full name"
+                  />
                   <input
                     name="email"
                     required
                     type="email"
+                    data-clarity-mask="true"
                     className="input"
                     placeholder="you@publication.com"
                   />
                 </div>
-                <input name="organization" className="input" placeholder="Publication / outlet" />
+                <input
+                  name="organization"
+                  data-clarity-mask="true"
+                  className="input"
+                  placeholder="Publication / outlet"
+                />
                 <textarea
                   name="message"
                   required
                   rows={4}
+                  data-clarity-mask="true"
                   className="input resize-none"
                   placeholder="What are you working on and what do you need?"
                 />

@@ -300,12 +300,30 @@ function CheckoutPanel({
               setSubmitted(true);
             }}
           >
-            <input required placeholder="Full name" className="input" />
-            <input required type="email" placeholder="Work email" className="input" />
-            <input placeholder="Company (optional)" className="input" />
+            <input required data-clarity-mask="true" placeholder="Full name" className="input" />
+            <input
+              required
+              type="email"
+              data-clarity-mask="true"
+              placeholder="Work email"
+              className="input"
+            />
+            <input data-clarity-mask="true" placeholder="Company (optional)" className="input" />
             <div className="grid grid-cols-2 gap-3">
-              <input required placeholder="Card number" inputMode="numeric" className="input" />
-              <input required placeholder="MM/YY" inputMode="numeric" className="input" />
+              <input
+                required
+                data-clarity-mask="true"
+                placeholder="Card number"
+                inputMode="numeric"
+                className="input"
+              />
+              <input
+                required
+                data-clarity-mask="true"
+                placeholder="MM/YY"
+                inputMode="numeric"
+                className="input"
+              />
             </div>
             <button
               type="submit"
