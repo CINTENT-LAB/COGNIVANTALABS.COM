@@ -1,0 +1,1 @@
+import{j as o,p as n}from"./index-DDM-IydX.js";import{p as r}from"./productContent-GU_Er7J7.js";import{P as p}from"./ProductPageLayout-s83t8Nsx.js";import"./Reveal-DWTaQvdj.js";import"./productDisplay-Cyi2llwI.js";const s=n.find(t=>t.id==="nyaynetra"),a=r.nyaynetra,u=()=>o.jsx(p,{product:s,content:a});export{u as component};

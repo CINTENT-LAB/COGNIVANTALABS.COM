@@ -1,0 +1,1 @@
+import{j as o,p}from"./index-DDM-IydX.js";import{p as r}from"./productContent-GU_Er7J7.js";import{P as n}from"./ProductPageLayout-s83t8Nsx.js";import"./Reveal-DWTaQvdj.js";import"./productDisplay-Cyi2llwI.js";const s=p.find(t=>t.id==="health-hub"),m=r["health-hub"],d=()=>o.jsx(n,{product:s,content:m});export{d as component};

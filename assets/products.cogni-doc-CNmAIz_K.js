@@ -1,0 +1,1 @@
+import{j as t,p as n}from"./index-DDM-IydX.js";import{p}from"./productContent-GU_Er7J7.js";import{P as r}from"./ProductPageLayout-s83t8Nsx.js";import"./Reveal-DWTaQvdj.js";import"./productDisplay-Cyi2llwI.js";const c=n.find(o=>o.id==="cogni-doc"),s=p["cogni-doc"],u=()=>t.jsx(r,{product:c,content:s});export{u as component};

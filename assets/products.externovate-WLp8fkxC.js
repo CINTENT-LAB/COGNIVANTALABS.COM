@@ -1,0 +1,1 @@
+import{j as o,p as r}from"./index-DDM-IydX.js";import{p as n}from"./productContent-GU_Er7J7.js";import{P as p}from"./ProductPageLayout-s83t8Nsx.js";import"./Reveal-DWTaQvdj.js";import"./productDisplay-Cyi2llwI.js";const e=r.find(t=>t.id==="externovate"),s=n.externovate,u=()=>o.jsx(p,{product:e,content:s});export{u as component};

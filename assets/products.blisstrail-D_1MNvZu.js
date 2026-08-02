@@ -1,0 +1,1 @@
+import{j as o,p as r}from"./index-DDM-IydX.js";import{p as s}from"./productContent-GU_Er7J7.js";import{P as p}from"./ProductPageLayout-s83t8Nsx.js";import"./Reveal-DWTaQvdj.js";import"./productDisplay-Cyi2llwI.js";const i=r.find(t=>t.id==="blisstrail"),n=s.blisstrail,u=()=>o.jsx(p,{product:i,content:n});export{u as component};

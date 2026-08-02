@@ -1,0 +1,1 @@
+import{j as t,p}from"./index-DDM-IydX.js";import{p as r}from"./productContent-GU_Er7J7.js";import{P as n}from"./ProductPageLayout-s83t8Nsx.js";import"./Reveal-DWTaQvdj.js";import"./productDisplay-Cyi2llwI.js";const s=p.find(o=>o.id==="chaxu"),c=r.chaxu,d=()=>t.jsx(n,{product:s,content:c});export{d as component};

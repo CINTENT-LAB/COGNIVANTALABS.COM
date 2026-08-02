@@ -1,0 +1,1 @@
+import{j as t,p}from"./index-DDM-IydX.js";import{p as r}from"./productContent-GU_Er7J7.js";import{P as s}from"./ProductPageLayout-s83t8Nsx.js";import"./Reveal-DWTaQvdj.js";import"./productDisplay-Cyi2llwI.js";const n=p.find(o=>o.id==="awcs"),c=r.awcs,u=()=>t.jsx(s,{product:n,content:c});export{u as component};
