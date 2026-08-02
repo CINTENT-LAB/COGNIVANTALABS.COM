@@ -43,7 +43,7 @@ const sections = [
   },
   {
     title: "Cookies",
-    body: "This site's current analytics and cookie posture is being finalized as part of CR-11 (consent-aware analytics). No tracking is enabled ahead of a documented consent mechanism.",
+    body: "Google Tag Manager is installed as the site's controlled measurement layer. This website does not directly load Google Analytics or Microsoft Clarity. Analytics, conversion, and advertising tags must remain unpublished inside the container until the consent and privacy configuration has been reviewed and approved. The dataLayer must not receive names, contact details, form messages, health information, legal information, credentials, or other personal data.",
   },
   {
     title: "Children's privacy",

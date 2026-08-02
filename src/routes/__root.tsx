@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  useRouterState,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
@@ -14,6 +15,8 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { CogniLauncher } from "@/components/site/CogniLauncher";
+import { googleTagManagerHeadScript, shouldLoadGoogleTagManager } from "@/lib/google-tag-manager";
+import { GoogleTagManagerNoscript } from "@/components/site/GoogleTagManager";
 
 const SITE_URL = "https://cognivantalabs.com";
 const BRAND = {
@@ -179,6 +182,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap",
         },
       ],
+      scripts: shouldLoadGoogleTagManager(pathname)
+        ? [{ id: "google-tag-manager", children: googleTagManagerHeadScript }]
+        : [],
     };
   },
   shellComponent: RootShell,
@@ -188,6 +194,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  const pathname = useRouterState({ select: (state) => state.location.pathname });
+
   return (
     <html lang="en" className="dark">
       <head>
@@ -198,6 +206,7 @@ function RootShell({ children }: { children: ReactNode }) {
         />
       </head>
       <body>
+        {shouldLoadGoogleTagManager(pathname) && <GoogleTagManagerNoscript />}
         {children}
         <Scripts />
       </body>
