@@ -1,1 +1,0 @@
-import{j as t,al as o,aG as n}from"./index-9EwUQZzM.js";import{P as r}from"./ProductPageLayout-Db7wgNfm.js";import"./Reveal-Cq7fM9nC.js";const a=o.externovate,m=()=>t.jsx(r,{product:n,content:a});export{m as component};

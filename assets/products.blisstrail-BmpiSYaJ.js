@@ -1,0 +1,1 @@
+import{j as t,al as o,aL as s}from"./index-BK8W011t.js";import{P as n}from"./ProductPageLayout-DmnXT67j.js";import"./Reveal-DvPcoEq_.js";const r=o.blisstrail,c=()=>t.jsx(n,{product:s,content:r});export{c as component};

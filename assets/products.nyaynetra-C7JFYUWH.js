@@ -1,1 +1,0 @@
-import{j as t,al as o,aD as n}from"./index-9EwUQZzM.js";import{P as a}from"./ProductPageLayout-Db7wgNfm.js";import"./Reveal-Cq7fM9nC.js";const r=o.nyaynetra,m=()=>t.jsx(a,{product:n,content:r});export{m as component};

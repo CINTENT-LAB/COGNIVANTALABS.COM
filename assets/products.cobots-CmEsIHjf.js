@@ -1,0 +1,1 @@
+import{j as o,al as t,aJ as n}from"./index-BK8W011t.js";import{P as s}from"./ProductPageLayout-DmnXT67j.js";import"./Reveal-DvPcoEq_.js";const p=t.cobots,m=()=>o.jsx(s,{product:n,content:p});export{m as component};
