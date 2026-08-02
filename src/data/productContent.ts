@@ -1,5 +1,5 @@
 // Rich, per-product one-pager content — sourced from each product's own live
-// site (shunya-ai.space, blisstrail.space, nyaynetra.space, cwos.cognivantalabs.com,
+// site (shunya-ai.space, blisstrail.in, nyaynetra.in, cwos.cognivantalabs.com,
 // ikshana.chaxu.co.in, externovate.org) plus Cognivanta Labs' own application
 // pages and pilot briefs. Feeds the extended sections rendered on
 // src/routes/products.$slug.tsx, on top of the base Product record in
