@@ -5,7 +5,7 @@ Release classification: **RC-1 COMPLETE FOR CURRENT SCOPE**
 
 | Area                   | Status                          | Evidence                                                                                                         | Remaining action                       |
 | ---------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| Repository             | PASS                            | Clean `master`; source and origin/master at `db10cb3`                                                            | None                                   |
+| Repository             | PASS                            | Clean `master`; deployed website source at `db10cb3`; closure reports pushed in the final report commit          | None                                   |
 | Build                  | PASS                            | `npm run build`; 35 HTML files, 34 prerendered routes plus 404                                                   | None                                   |
 | Routes                 | PASS                            | 32 sitemap routes 200; redirects and genuine 404s verified                                                       | None                                   |
 | SEO                    | PASS                            | `npm run test:seo`; live crawl and self-canonicals                                                               | Monitor recrawl                        |

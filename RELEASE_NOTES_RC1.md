@@ -6,6 +6,7 @@ Classification: **RC-1 COMPLETE FOR CURRENT SCOPE**
 ## Release
 
 - Source: `db10cb38c6043f9234d5453189a7edce683bbe1d`
+- Closure documentation: report-only commit after the deployed website source; it does not change `dist/client`.
 - Hostinger artifact: `6c1dff08226d700a1407b1bab2f4a9bda5307808`
 - Workflow: [Publish Hostinger static artifact #5](https://github.com/CINTENT-LAB/COGNIVANTALABS.COM/actions/runs/30764089936)
 
