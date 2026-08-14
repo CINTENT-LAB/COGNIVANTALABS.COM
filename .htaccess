@@ -30,8 +30,8 @@ RewriteRule (^|/)(?:_headers|package(?:-lock)?\.json|README(?:\.md)?|vite\.confi
 
 # Resolve these exact legacy URLs directly to the canonical apex routes. These
 # rules must precede hostname normalization so a legacy www request is one hop.
-RedirectMatch 301 ^/pages/applications\.html$ https://cognivantalabs.com/applications
-RedirectMatch 301 ^/pages/platform\.html$ https://cognivantalabs.com/platform
+RewriteRule ^pages/applications\.html$ https://cognivantalabs.com/applications [R=301,L,NE]
+RewriteRule ^pages/platform\.html$ https://cognivantalabs.com/platform [R=301,L,NE]
 
 # Keep the public hostname canonical. Hostinger terminates TLS before Apache;
 # the HTTPS condition remains valid for direct Apache requests as well.
