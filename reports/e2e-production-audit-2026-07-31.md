@@ -1,11 +1,11 @@
 # Cognivanta Labs Production E2E Technical Audit (2026-07-31)
 
-Generated: 2026-08-02T20:24:11.467Z
+Generated: 2026-08-14T11:58:05.426Z
 
 ## Executive Summary
 
-- Source commit: db10cb38c6043f9234d5453189a7edce683bbe1d
-- Remote origin/master: db10cb38c6043f9234d5453189a7edce683bbe1d
+- Source commit: a8b549a4aa971292d2b9398d1f902b1391976ed1
+- Remote origin/master: a8b549a4aa971292d2b9398d1f902b1391976ed1
 - Public sitemap routes: 32 (32 unique)
 - Generated HTML documents: 35
 - Broken internal links or same-origin resources: 0
@@ -62,6 +62,8 @@ Generated: 2026-08-02T20:24:11.467Z
 
 | Route | Expected | Actual status | Final URL |
 | --- | --- | ---: | --- |
+| /pages/applications.html | redirect to /applications | 301 | https://cognivantalabs.com/applications |
+| /pages/platform.html | redirect to /platform | 301 | https://cognivantalabs.com/platform |
 | /about-us.html | redirect to /about | 301 | https://cognivantalabs.com/about |
 | /contact.html | redirect to /contact | 301 | https://cognivantalabs.com/contact |
 | /privacy-policy.html | redirect to /privacy | 301 | https://cognivantalabs.com/privacy |
