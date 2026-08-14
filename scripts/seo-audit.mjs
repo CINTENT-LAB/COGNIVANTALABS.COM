@@ -8,6 +8,8 @@ const reportsDir = path.join(root, "reports");
 const siteOrigin = "https://cognivantalabs.com";
 const allowedNoindex = new Set(["/cognites/login", "/cognites/mycogni"]);
 const legacyPaths = [
+  "/pages/applications.html",
+  "/pages/platform.html",
   "/shop-left-sidebar.html",
   "/projects.html",
   "/pricing-plan.html",
@@ -30,6 +32,8 @@ const legacyPaths = [
   "/terms-conditions.html",
 ];
 const redirectMap = new Map([
+  ["/pages/applications.html", "/applications"],
+  ["/pages/platform.html", "/platform"],
   ["/about-us.html", "/about"],
   ["/contact.html", "/contact"],
   ["/privacy-policy.html", "/privacy"],

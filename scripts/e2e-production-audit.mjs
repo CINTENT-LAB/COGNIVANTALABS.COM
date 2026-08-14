@@ -11,6 +11,8 @@ const clientDir = path.join(root, "dist", "client");
 const timeoutMs = 20_000;
 
 const legacyRedirects = new Map([
+  ["/pages/applications.html", "/applications"],
+  ["/pages/platform.html", "/platform"],
   ["/about-us.html", "/about"],
   ["/contact.html", "/contact"],
   ["/privacy-policy.html", "/privacy"],

@@ -44,6 +44,7 @@ jobs:
       - name: SEO, metadata, and publication checks
         run: |
           npm run test:seo
+          npm run test:legacy-redirects
           npm run test:metadata
           npm run test:analytics
           npm run test:publications

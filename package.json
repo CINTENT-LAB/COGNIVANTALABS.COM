@@ -14,6 +14,7 @@
     "typecheck": "tsc --noEmit --pretty false",
     "test": "node --test scripts/validate-publications.test.mjs scripts/publications-ui.test.mjs",
     "test:analytics": "node --test scripts/analytics.test.mjs",
+    "test:legacy-redirects": "node --test scripts/legacy-redirects.test.mjs",
     "sync:publications": "node scripts/sync-publications.mjs",
     "test:publications": "node --test scripts/validate-publications.test.mjs scripts/publications-ui.test.mjs",
     "test:seo": "node scripts/seo-audit.mjs",
