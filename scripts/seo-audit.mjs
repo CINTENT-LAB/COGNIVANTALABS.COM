@@ -170,7 +170,12 @@ const htaccess = read(path.join(root, "public", ".htaccess"));
 if (/RewriteRule\s+\^\s+index\.html\s+\[L\]/i.test(htaccess))
   sitemapErrors.push(".htaccess still has a universal SPA fallback");
 for (const legacy of legacyPaths) {
-  if (redirectMap.has(legacy) && !htaccess.includes(legacy.replaceAll(".", "\\.")))
+  const redirectSource = legacy.startsWith("/pages/") ? legacy.slice(1) : legacy;
+  const escapedRedirectSource = redirectSource.replaceAll(".", "\\.");
+  const hasLegacyRedirect =
+    htaccess.includes(legacy.replaceAll(".", "\\.")) ||
+    htaccess.includes(`^${escapedRedirectSource}$`);
+  if (redirectMap.has(legacy) && !hasLegacyRedirect)
     sitemapErrors.push(`missing legacy redirect: ${legacy}`);
   if (sitemapPaths.includes(legacy)) sitemapErrors.push(`legacy route in sitemap: ${legacy}`);
 }
