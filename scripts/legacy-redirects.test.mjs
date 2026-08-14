@@ -30,7 +30,7 @@ test("generated Hostinger artifact contains exact legacy redirects before hostna
   assert.ok(distHtaccess, "run npm run build before legacy redirect tests");
 
   for (const { source, target } of redirects) {
-    const ruleLine = `RedirectMatch 301 ^${source.replaceAll(".", "\\.")}$ ${target}`;
+    const ruleLine = `RewriteRule ^${source.slice(1).replaceAll(".", "\\.")}$ ${target} [R=301,L,NE]`;
 
     assert.ok(
       publicHtaccess.split(/\r?\n/).includes(ruleLine),
